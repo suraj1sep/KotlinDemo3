@@ -18,7 +18,6 @@ import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
-import com.dairy.pre_login.MainActivity1
 import com.dairy.pre_login.WelcomeActivity
 
 
