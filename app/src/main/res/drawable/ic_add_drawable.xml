@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="@dimen/size25"
+        android:height="@dimen/size25"
+        android:drawable="@android:drawable/ic_input_add" />
+
+</layer-list>

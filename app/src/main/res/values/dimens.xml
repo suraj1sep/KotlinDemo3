@@ -1,0 +1,74 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16sp</dimen>
+    <dimen name="activity_vertical_margin">16sp</dimen>
+    <dimen name="fab_margin">16sp</dimen>
+    <dimen name="appbar_padding_top">8sp</dimen>
+
+    <dimen name="size10">10sp</dimen>
+    <dimen name="size5">5sp</dimen>
+    <dimen name="size11">11sp</dimen>
+    <dimen name="size12">12sp</dimen>
+    <dimen name="size13">13sp</dimen>
+    <dimen name="size14">14sp</dimen>
+    <dimen name="size15">15sp</dimen>
+    <dimen name="size16">16sp</dimen>
+    <dimen name="size17">17sp</dimen>
+    <dimen name="size20">20sp</dimen>
+    <dimen name="size3">3sp</dimen>
+    <dimen name="size18">18sp</dimen>
+    <dimen name="size8">8sp</dimen>
+    <dimen name="size7">7sp</dimen>
+    <dimen name="size25">25sp</dimen>
+    <dimen name="app_bar_height">180sp</dimen>
+    <dimen name="text_margin">16sp</dimen>
+    <dimen name="size0">0sp</dimen>
+
+    <dimen name="settings_content_marginBottom">30sp</dimen>
+    <dimen name="widget_3x3_text_size">14sp</dimen>
+
+    <!-- CardView dimensions -->
+    <dimen name="cardview_text_size">20sp</dimen>
+    <dimen name="cardview_padding">4sp</dimen>
+
+    <dimen name="cardview_margin">8sp</dimen>
+    <dimen name="cardview_content_padding">8sp</dimen>
+    <!-- title bar -->
+    <dimen name="title_bar_button_width">36sp</dimen>
+    <dimen name="title_bar_button_height">36sp</dimen>
+
+    <!-- day -->
+    <dimen name="day_circle_width">24sp</dimen>
+    <dimen name="day_circle_height">24sp</dimen>
+    <dimen name="day_circle_radius">120sp</dimen>
+    <dimen name="day_circle_stroke_width">1sp</dimen>
+    <dimen name="pin_content_layout_padding">40dp</dimen>
+    <dimen name="pin_label_margin">10dp</dimen>
+    <dimen name="pin_min_width">32dp</dimen>
+
+
+    <dimen name="half_view_margin_standard">8dp</dimen>
+    <dimen name="quarter_margin_standard">4dp</dimen>
+    <dimen name="app_captions_text_size">12sp</dimen>
+    <dimen name="very_small_image_dp_size">36sp</dimen>
+    <dimen name="view_margin_standard">16sp</dimen>
+    <dimen name="app_sub_heads_text_size">16sp</dimen>
+    <dimen name="profile_tiny_image_sp_size">28sp</dimen>
+    <dimen name="app_titles_text_size">20sp</dimen>
+    <dimen name="common_titles_text_size">20sp</dimen>
+    <dimen name="app_body_type_1_text_size">14sp</dimen>
+    <dimen name="app_body_type_2_text_size">14sp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <!--Pe login -->
+   <!-- <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>-->
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">240dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+</resources>

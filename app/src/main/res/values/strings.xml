@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">tazur</string>
+    <string name="app_name1">BreedFeeding</string>
+
+    <string name="user_name">Enter User name/Mobile No. </string>
+    <!--<string name="password">Enter Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="create_account">Create account?</string>
+    <string name="enter_name">Enter Farmer Name</string>
+    <string name="enter_mobile_no">Enter Mobile No</string>-->
+    <string name="enter_email">Enter Email ID</string>
+    <string name="already_account">Already have an account?</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!--Sign Up -->
+    <string name="adhar_no">Enter Adhar No.</string>
+    <string name="password">Enter Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="create_account">Create account?</string>
+    <string name="enter_name">Enter Farmer Name</string>
+    <string name="enter_mobile_no">Enter Mobile No.</string>
+    <string name="distric">Enter Distric</string>
+    <string name="taluka">Enter Taluka</string>
+    <string name="village">Enter Village</string>
+    <string name="address">Enter Address</string>
+
+    <!--Login screen-->
+    <string name="user_id">Enter User Name/Mobile No. </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="data_not_found">data not found</string>
+    <string name="add_new_address">Add a new address</string>
+    <string name="add">Add</string>
+
+    <!--Pre Login-->
+    <string name="title_activity_main1">MainActivity</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Amrit Mahal</string>
+    <string name="slide_1_desc">The Amrit Mahal cattle, hitherto known as Benne Chavadi, is a breed of cattle that originated from the erstwhile state of Mysore in Karnataka, India!</string>
+
+    <string name="slide_2_title">Ankole-Watusi</string>
+    <string name="slide_2_desc">The Ankole-Watusi is a modern American breed of domestic cattle!</string>
+
+    <string name="slide_3_title">Kherigarh cattle</string>
+    <string name="slide_3_desc">Kherigarh is an indigenous breed of cattle in India. It originated in the Lakhimpur Kheri district of the state of Uttar Pradesh!</string>
+
+    <string name="slide_4_title">Australian Lowline</string>
+    <string name="slide_4_desc">The Australian Lowline is a modern Australian breed of small, polled beef cattle!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+</resources>
