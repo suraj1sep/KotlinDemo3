@@ -969,6 +969,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btn_Distribute
 id btn_add
 id btn_next
 id btn_play_again
@@ -1013,6 +1014,8 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id et_address
+id et_agency_name
+id et_batch_no
 id et_bull_no
 id et_bull_origin
 id et_dam_milk_yield
@@ -1020,8 +1023,11 @@ id et_email_id
 id et_mobile_no
 id et_name
 id et_password
+id et_pt_bull_test
 id et_search
 id et_sire_dam_milk_yield
+id et_straw_produced_no
+id et_straw_supply_no
 id et_taluka
 id et_userId
 id et_user_name
@@ -1126,7 +1132,13 @@ id smallLabel
 id snackbar_action
 id snackbar_text
 id snap
+id sp_Batch_Number
+id sp_animal_cate
+id sp_bluu_reg_no
+id sp_breed_blood_level
+id sp_breed_cate
 id sp_breed_level
+id sp_bull_reg_no
 id spacer
 id split_action_bar
 id spread
@@ -1167,7 +1179,9 @@ id transition_transform
 id tv_DAM_milk_yield
 id tv_DOB
 id tv_ProcurementDate
+id tv_Production_Date
 id tv_Sire_DAM_milk_yield
+id tv_agency_name
 id tv_already_account
 id tv_animal_cate
 id tv_appName
@@ -1189,6 +1203,7 @@ id tv_pt_bull_tested
 id tv_slogan
 id tv_straw_balance
 id tv_straw_produced
+id tv_supply_date
 id tv_title
 id uniform
 id up
@@ -1196,7 +1211,6 @@ id useLogo
 id view_offset_helper
 id view_pager
 id visible
-id welcome_tv
 id withText
 id wrap
 id wrap_content
@@ -1262,8 +1276,11 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_annual_straw_plan_list
 layout fragment_bull_list
+layout fragment_distribution
 layout fragment_home
 layout fragment_login
+layout fragment_production_add
+layout fragment_purchase_add
 layout fragment_register_bull
 layout fragment_signup
 layout item_annual_straw_plan_lab
@@ -1272,6 +1289,7 @@ layout item_home
 layout item_home_main_menu
 layout item_home_main_menu_less
 layout item_production
+layout item_purchase
 layout nav_header_home
 layout notification_action
 layout notification_action_tombstone
@@ -1338,7 +1356,6 @@ string address
 string adhar_no
 string already_account
 string app_name
-string app_name1
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_pattern

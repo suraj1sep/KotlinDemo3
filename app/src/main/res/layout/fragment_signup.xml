@@ -6,9 +6,19 @@
     android:orientation="vertical"
     android:padding="@dimen/size10">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:padding="@dimen/size10"
+        android:text="Sign Up"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/size20" />
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,13 +28,6 @@
             android:orientation="vertical"
             android:padding="@dimen/size10">
 
-            <ImageView
-                android:id="@+id/welcome_tv"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:padding="@dimen/size5"
-                android:src="@mipmap/ic_launcher" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -36,8 +39,8 @@
                     android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:digits="qwertyuioplkjhgfdsazxcvbnm@.1234567890QWERTYUIOPLKJHGFDSAZXCVBNM"
                     android:hint="@string/enter_name"
+                    android:imeOptions="actionNext"
                     android:paddingBottom="10dp"
                     android:singleLine="true"
                     android:textSize="@dimen/size15" />
@@ -47,16 +50,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10"
                 app:passwordToggleEnabled="true">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/et_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:digits="qwertyuioplkjhgfdsazxcvbnm@.1234567890QWERTYUIOPLKJHGFDSAZXCVBNM"
                     android:hint="@string/address"
+                    android:imeOptions="actionNext"
                     android:paddingBottom="10dp"
-                    android:singleLine="false"
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
 
@@ -64,6 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10"
                 app:passwordToggleEnabled="true">
 
                 <android.support.design.widget.TextInputEditText
@@ -71,7 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/distric"
-                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionNext"
                     android:paddingBottom="10dp"
                     android:singleLine="true"
                     android:textSize="@dimen/size15" />
@@ -81,14 +85,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10"
                 app:passwordToggleEnabled="true">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/et_taluka"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:digits="qwertyuioplkjhgfdsazxcvbnm@.1234567890QWERTYUIOPLKJHGFDSAZXCVBNM"
                     android:hint="@string/taluka"
+                    android:imeOptions="actionNext"
                     android:paddingBottom="10dp"
                     android:singleLine="true"
                     android:textSize="@dimen/size15" />
@@ -98,14 +103,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginTop="10dp"
                 app:passwordToggleEnabled="true">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/et_village"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:digits="qwertyuioplkjhgfdsazxcvbnm@.1234567890QWERTYUIOPLKJHGFDSAZXCVBNM"
                     android:hint="@string/village"
+                    android:imeOptions="actionNext"
                     android:paddingBottom="10dp"
                     android:singleLine="true"
                     android:textSize="@dimen/size15" />
@@ -115,6 +121,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10"
                 app:passwordToggleEnabled="true">
 
                 <android.support.design.widget.TextInputEditText
@@ -122,6 +129,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_mobile_no"
+                    android:imeOptions="actionNext"
                     android:inputType="number"
                     android:paddingBottom="10dp"
                     android:singleLine="true"
@@ -132,6 +140,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10"
                 app:passwordToggleEnabled="true">
 
                 <android.support.design.widget.TextInputEditText
@@ -139,6 +148,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/adhar_no"
+                    android:imeOptions="actionNext"
                     android:inputType="number"
                     android:paddingBottom="10dp"
                     android:singleLine="true"
@@ -150,14 +160,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10"
                 app:passwordToggleEnabled="true">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/et_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:digits="qwertyuioplkjhgfdsazxcvbnm@,#$%.1234567890QWERTYUIOPLKJHGFDSAZXCVBNM"
                     android:hint="@string/password"
+                    android:imeOptions="actionDone"
                     android:inputType="textPassword"
                     android:paddingBottom="10dp"
                     android:singleLine="true"
@@ -207,7 +218,7 @@
                     android:padding="@dimen/size5"
                     android:text="@string/already_account"
                     android:textColor="@color/txt_blue"
-                    android:textStyle="italic" />
+                    android:textStyle="normal" />
 
             </LinearLayout>
 

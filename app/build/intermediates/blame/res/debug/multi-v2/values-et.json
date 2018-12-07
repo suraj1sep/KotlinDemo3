@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Android Examples\\backaps\\kotlinDemo3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-et\\values-et.xml",
+            "outputFile": "D:\\Android_Projects_23_11_18\\KotlinDemo3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-et\\values-et.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\cc544b334e7aeb7bc18c41c12f98e340\\res\\values-et\\values-et.xml",
+                    "source": "C:\\Users\\SAI\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\0d5018fe64c03484b448b23076be4730\\res\\values-et\\values-et.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\668b198461592779a54e24780d36edc4\\res\\values-et\\values-et.xml",
+                    "source": "C:\\Users\\SAI\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e94d4f3fb0c30f83de8002315e2134df\\res\\values-et\\values-et.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

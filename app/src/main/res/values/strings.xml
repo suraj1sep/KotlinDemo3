@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">tazur</string>
-    <string name="app_name1">BreedFeeding</string>
+    <string name="app_name">Breed Feeding</string>
 
     <string name="user_name">Enter User name/Mobile No. </string>
     <!--<string name="password">Enter Password</string>

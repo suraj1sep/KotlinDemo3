@@ -39,7 +39,7 @@ class StrawProductionAddFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar!!.title = "Add STRAW Produced"
+        (activity as AppCompatActivity).supportActionBar!!.title = "Add STRAW Production"
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,

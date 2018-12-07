@@ -10,10 +10,10 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import com.cdat.R
 import com.cdat.helper.Utils
 import android.app.DatePickerDialog
 import android.widget.Spinner
+import com.cdat.R
 import java.util.*
 
 
@@ -46,7 +46,7 @@ class StrawPurchaseAddFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        var view = inflater.inflate(R.layout.fragment_production_add, container, false)
+        var view = inflater.inflate(R.layout.fragment_purchase_add, container, false)
 
         tv_Production_Date = view.findViewById<TextView>(R.id.tv_Production_Date) as TextView
 

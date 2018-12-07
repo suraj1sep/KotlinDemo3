@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.cdat.AppController"
+        android:name=".AppController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.cdat.activity.SplashActivity"
+            android:name=".activity.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,20 +22,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.cdat.activity.BackgroundActivity"
+            android:name=".activity.BackgroundActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.cdat.activity.HomeActivity"
+            android:name=".activity.HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name="com.cdat.pre_login.MainActivity1"
+            android:name=".pre_login.MainActivity1"
             android:label="@string/title_activity_main1"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name="com.cdat.pre_login.WelcomeActivity"
+            android:name=".pre_login.WelcomeActivity"
             android:label="@string/title_activity_main1"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

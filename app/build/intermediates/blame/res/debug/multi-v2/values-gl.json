@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Android Examples\\backaps\\kotlinDemo3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
+            "outputFile": "D:\\Android_Projects_23_11_18\\KotlinDemo3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\cc544b334e7aeb7bc18c41c12f98e340\\res\\values-gl\\values-gl.xml",
+                    "source": "C:\\Users\\SAI\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e94d4f3fb0c30f83de8002315e2134df\\res\\values-gl\\values-gl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,217,329,437,522,624,750,834,915,997,1104,1213,1312,1420,1524,1631,1790,1890",
+                        "endColumns": "111,111,107,84,101,125,83,80,81,106,108,98,107,103,106,158,99,81",
+                        "endOffsets": "212,324,432,517,619,745,829,910,992,1099,1208,1307,1415,1519,1626,1785,1885,1967"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SAI\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\0d5018fe64c03484b448b23076be4730\\res\\values-gl\\values-gl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -18,16 +28,6 @@
                         "startOffsets": "1972",
                         "endColumns": "100",
                         "endOffsets": "2068"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\668b198461592779a54e24780d36edc4\\res\\values-gl\\values-gl.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,217,329,437,522,624,750,834,915,997,1104,1213,1312,1420,1524,1631,1790,1890",
-                        "endColumns": "111,111,107,84,101,125,83,80,81,106,108,98,107,103,106,158,99,81",
-                        "endOffsets": "212,324,432,517,619,745,829,910,992,1099,1208,1307,1415,1519,1626,1785,1885,1967"
                     }
                 }
             ]

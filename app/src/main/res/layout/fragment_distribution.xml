@@ -27,11 +27,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Production Date"
+                android:text="Supply Date"
                 android:textColor="@color/txt_secondary" />
 
             <TextView
-                android:id="@+id/tv_Production_Date"
+                android:id="@+id/tv_supply_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableRight="@android:drawable/ic_menu_my_calendar"
@@ -103,7 +103,25 @@
                 android:textColor="@color/txt_secondary" />
 
             <Spinner
-                android:id="@+id/sp_bluu_reg_no"
+                android:id="@+id/sp_bull_reg_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/txt_third" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size5"
+                android:text="Batch Number"
+                android:textColor="@color/txt_secondary" />
+
+            <Spinner
+                android:id="@+id/sp_Batch_Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -120,65 +138,12 @@
                 android:textColorHint="@color/txt_secondary">
 
                 <EditText
-                    android:id="@+id/et_batch_no"
+                    android:id="@+id/et_straw_supply_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Batch Number"
-                    android:imeOptions="actionNext"
-                    android:singleLine="true"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size15" />
-            </android.support.design.widget.TextInputLayout>
-
-
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/size10"
-                android:textColorHint="@color/txt_secondary">
-
-                <EditText
-                    android:id="@+id/et_pt_bull_test"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="P.T. Bulls Tested"
-                    android:imeOptions="actionNext"
-                    android:singleLine="true"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size15" />
-            </android.support.design.widget.TextInputLayout>
-
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/size10"
-                android:textColorHint="@color/txt_secondary">
-
-                <EditText
-                    android:id="@+id/et_straw_produced_no"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="STRAWS Produced Number"
-                    android:imeOptions="actionNext"
-                    android:singleLine="true"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size15" />
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/size10"
-                android:textColorHint="@color/txt_secondary">
-
-                <EditText
-                    android:id="@+id/et_agency_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Agency Name"
-                    android:imeOptions="actionNext"
+                    android:hint="STRAW Supplied Number"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
                     android:singleLine="true"
                     android:textColor="@color/txt_primary"
                     android:textSize="@dimen/size15" />
@@ -186,12 +151,12 @@
 
 
             <Button
-                android:id="@+id/btn_add"
+                android:id="@+id/btn_Distribute"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/add" />
+                android:text="Distribution" />
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
