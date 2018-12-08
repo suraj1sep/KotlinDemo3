@@ -1,4 +1,4 @@
-package com.cdat.adapter
+package com.cdat.adapter.lab
 
 import android.graphics.Color
 import android.graphics.Typeface
@@ -18,8 +18,8 @@ import java.text.Normalizer
 /**
  * Created by SAM on 17-11-2018.
  */
-class StrawPurchaseListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
-    : RecyclerView.Adapter<StrawPurchaseListAdapter.ViewHolder>(), Filterable {
+class StrawDistributionListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
+    : RecyclerView.Adapter<StrawDistributionListAdapter.ViewHolder>(), Filterable {
 
 
     private var mFilteredList: ArrayList<String>
@@ -60,7 +60,7 @@ class StrawPurchaseListAdapter(private val context: FragmentActivity, private va
     private var mClickListener: ManageCart = clickListener
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_production, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.item_distribution, parent, false)
         return ViewHolder(view)
     }
 

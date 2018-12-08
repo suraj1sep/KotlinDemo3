@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Production Date"
+                android:text="Purchase Date"
                 android:textColor="@color/txt_secondary" />
 
             <TextView
@@ -163,12 +163,28 @@
                     android:layout_height="wrap_content"
                     android:hint="STRAWS Produced Number"
                     android:inputType="number"
-                    android:imeOptions="actionNext"
+                    android:imeOptions="actionDone"
                     android:singleLine="true"
                     android:textColor="@color/txt_primary"
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
 
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size10"
+                android:textColorHint="@color/txt_secondary">
+
+                <EditText
+                    android:id="@+id/et_agency_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Agency Name"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="@dimen/size15" />
+            </android.support.design.widget.TextInputLayout>
 
 
             <Button

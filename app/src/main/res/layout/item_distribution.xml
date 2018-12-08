@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_mainItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:ignore="NamespaceTypo"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Supply Date : "
+                android:textColor="@color/txt_secondary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_supply_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text="11/12/2018"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size3"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Animal Category : "
+                android:textColor="@color/txt_secondary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_animal_cate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text="abc"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size3"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Breed Category : "
+                android:textColor="@color/txt_secondary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_breed_cate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text="80"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size3"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Breed with Blood level :"
+                android:textColor="@color/txt_secondary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_date_procurement"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text="80"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size3"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Bull Reg. No :"
+                android:textColor="@color/txt_secondary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_bull_reg_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text="1"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size3"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Batch No :"
+                android:textColor="@color/txt_secondary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_Sire_DAM_milk_yield"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text="A121"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size3"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="P.T. Bull Tested :"
+                android:textColor="@color/txt_secondary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_pt_bull_tested"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text="abc"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size3"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="STRAW Supplied Number :"
+                android:textColor="@color/txt_secondary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_straw_supply"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text="12"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

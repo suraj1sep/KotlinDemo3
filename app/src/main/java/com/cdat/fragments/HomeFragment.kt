@@ -16,6 +16,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import com.cdat.R
 import com.cdat.adapter.HomeMenuAdapter
+import com.cdat.fragments.lab.*
 import com.cdat.helper.AutoScrollViewPager
 import com.cdat.helper.Config
 import com.cdat.helper.DensityUtil
@@ -78,7 +79,7 @@ class HomeFragment : Fragment() {
                     var registerFragment = StrawPurchaseLabListFragment()
                     Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "ankole")
                  } else if (position == 4) {
-                    var registerFragment = StrawDistributionFragment()
+                    var registerFragment = StrawDistribitionListFragment()
                     Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "ankole")
                 } else
                     Utils.customMessage(activity!!, "Coming soon!!")

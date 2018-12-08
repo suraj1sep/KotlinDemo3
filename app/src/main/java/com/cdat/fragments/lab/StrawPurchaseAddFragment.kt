@@ -1,4 +1,4 @@
-package com.cdat.fragments
+package com.cdat.fragments.lab
 
 import android.annotation.SuppressLint
 import android.os.Bundle

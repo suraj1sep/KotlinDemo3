@@ -1,4 +1,4 @@
-package com.cdat.fragments
+package com.cdat.fragments.lab
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -20,7 +20,7 @@ import java.util.*
 /**
  * Created by SAM on 17-11-2018.
  */
-class StrawDistributionFragment : Fragment() {
+class StrawProductionAddFragment : Fragment() {
 
     companion object {
         private lateinit var tv_Production_Date: TextView
@@ -28,7 +28,6 @@ class StrawDistributionFragment : Fragment() {
         private lateinit var et_batch_no: EditText
         private lateinit var et_pt_bull_test: EditText
         private lateinit var et_straw_produced_no: EditText
-        private lateinit var et_agency_name: EditText
 
         private lateinit var sp_animal_cate: Spinner
         private lateinit var sp_breed_blood_level: Spinner
@@ -40,7 +39,7 @@ class StrawDistributionFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar!!.title = "Add STRAW Purchase"
+        (activity as AppCompatActivity).supportActionBar!!.title = "Add STRAW Production"
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -53,7 +52,6 @@ class StrawDistributionFragment : Fragment() {
         et_batch_no = view.findViewById<EditText>(R.id.et_batch_no) as EditText
         et_pt_bull_test = view.findViewById<EditText>(R.id.et_pt_bull_test) as EditText
         et_straw_produced_no = view.findViewById<EditText>(R.id.et_straw_produced_no) as EditText
-        et_agency_name = view.findViewById<EditText>(R.id.et_agency_name) as EditText
 
         sp_animal_cate = view.findViewById<Spinner>(R.id.sp_animal_cate) as Spinner
         sp_breed_blood_level = view.findViewById<Spinner>(R.id.sp_breed_blood_level) as Spinner
@@ -125,11 +123,6 @@ class StrawDistributionFragment : Fragment() {
         if (et_straw_produced_no.text.toString().isEmpty()) {
             Utils.customMessage(this!!.context!!, "Please enter STRAWS produced no!!")
             et_straw_produced_no.requestFocus()
-            return false
-        }
-        if (et_agency_name.text.toString().isEmpty()) {
-            Utils.customMessage(this!!.context!!, "Please enter agency name!!")
-            et_agency_name.requestFocus()
             return false
         }
 

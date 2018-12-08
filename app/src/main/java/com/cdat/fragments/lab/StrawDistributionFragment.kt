@@ -1,4 +1,4 @@
-package com.cdat.fragments
+package com.cdat.fragments.lab
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -20,46 +20,44 @@ import java.util.*
 /**
  * Created by SAM on 17-11-2018.
  */
-class StrawProductionAddFragment : Fragment() {
+class StrawDistributionFragment : Fragment() {
 
     companion object {
-        private lateinit var tv_Production_Date: TextView
+        private lateinit var tv_supply_date: TextView
 
-        private lateinit var et_batch_no: EditText
-        private lateinit var et_pt_bull_test: EditText
-        private lateinit var et_straw_produced_no: EditText
+        private lateinit var et_straw_supply_no: EditText
 
         private lateinit var sp_animal_cate: Spinner
         private lateinit var sp_breed_blood_level: Spinner
-        private lateinit var sp_bluu_reg_no: Spinner
+        private lateinit var sp_bull_reg_no: Spinner
+        private lateinit var sp_Batch_Number: Spinner
 
-        private lateinit var btn_add: Button
+        private lateinit var btn_Distribute: Button
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar!!.title = "Add STRAW Production"
+        (activity as AppCompatActivity).supportActionBar!!.title = "STRAW Distribution"
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        var view = inflater.inflate(R.layout.fragment_production_add, container, false)
+        var view = inflater.inflate(R.layout.fragment_distribution, container, false)
 
-        tv_Production_Date = view.findViewById<TextView>(R.id.tv_Production_Date) as TextView
+        tv_supply_date = view.findViewById<TextView>(R.id.tv_supply_date) as TextView
 
-        et_batch_no = view.findViewById<EditText>(R.id.et_batch_no) as EditText
-        et_pt_bull_test = view.findViewById<EditText>(R.id.et_pt_bull_test) as EditText
-        et_straw_produced_no = view.findViewById<EditText>(R.id.et_straw_produced_no) as EditText
+        et_straw_supply_no = view.findViewById<EditText>(R.id.et_straw_supply_no) as EditText
 
         sp_animal_cate = view.findViewById<Spinner>(R.id.sp_animal_cate) as Spinner
         sp_breed_blood_level = view.findViewById<Spinner>(R.id.sp_breed_blood_level) as Spinner
-        sp_bluu_reg_no = view.findViewById<Spinner>(R.id.sp_bluu_reg_no) as Spinner
+        sp_bull_reg_no = view.findViewById<Spinner>(R.id.sp_bull_reg_no) as Spinner
+        sp_Batch_Number = view.findViewById<Spinner>(R.id.sp_Batch_Number) as Spinner
 
-        btn_add = view.findViewById<Button>(R.id.btn_add) as Button
+        btn_Distribute = view.findViewById<Button>(R.id.btn_Distribute) as Button
 
-        tv_Production_Date.setOnClickListener {
+        tv_supply_date.setOnClickListener {
 
             val c = Calendar.getInstance()
             val mYear = c.get(Calendar.YEAR) // current year
@@ -83,7 +81,7 @@ class StrawProductionAddFragment : Fragment() {
                         } else {
                             month = "" + monthOfYear
                         }
-                        tv_Production_Date.text = (day + "/" + month + "/" + year)
+                        tv_supply_date.text = (day + "/" + month + "/" + year)
                     }, mYear, mMonth, mDay)
             datePickerDialog.datePicker.maxDate = Date().getTime()
             datePickerDialog.show()
@@ -91,7 +89,7 @@ class StrawProductionAddFragment : Fragment() {
 
 
 
-        btn_add.setOnClickListener {
+        btn_Distribute.setOnClickListener {
             if (isValid())
                 Utils.customMessage(this!!.context!!, "Added")
         }
@@ -102,27 +100,16 @@ class StrawProductionAddFragment : Fragment() {
     @SuppressLint("NewApi")
     fun isValid(): Boolean {
 
-        val production_date: String = tv_Production_Date.text.toString()
+        val production_date: String = tv_supply_date.text.toString()
 
         if (production_date.isEmpty()) {
             Utils.customMessage(this!!.context!!, "Please select date !!")
             return false
         }
 
-        if (et_batch_no.text.toString().isEmpty()) {
-            Utils.customMessage(this!!.context!!, "Please enter batch no!!")
-            et_batch_no.requestFocus()
-            return false
-        }
-
-        if (et_pt_bull_test.text.toString().isEmpty()) {
-            Utils.customMessage(this!!.context!!, "Please enter P. T. bull test!!")
-            et_pt_bull_test.requestFocus()
-            return false
-        }
-        if (et_straw_produced_no.text.toString().isEmpty()) {
-            Utils.customMessage(this!!.context!!, "Please enter STRAWS produced no!!")
-            et_straw_produced_no.requestFocus()
+        if (et_straw_supply_no.text.toString().isEmpty()) {
+            Utils.customMessage(this!!.context!!, "Please enter no of supply STRAW!!")
+            et_straw_supply_no.requestFocus()
             return false
         }
 

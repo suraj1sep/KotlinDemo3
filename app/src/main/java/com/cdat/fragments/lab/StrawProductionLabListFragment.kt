@@ -1,4 +1,4 @@
-package com.cdat.fragments
+package com.cdat.fragments.lab
 
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
@@ -13,7 +13,7 @@ import android.view.ViewGroup
 import android.widget.EditText
 import com.cdat.R
 import android.support.v7.app.AppCompatActivity
-import com.cdat.adapter.StrawProductionListAdapter
+import com.cdat.adapter.lab.StrawProductionListAdapter
 import com.cdat.helper.Config
 
 
