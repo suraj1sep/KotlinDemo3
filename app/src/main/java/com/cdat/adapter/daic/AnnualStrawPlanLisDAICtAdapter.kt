@@ -1,4 +1,4 @@
-package com.cdat.adapter.lab
+package com.cdat.adapter.daic
 
 import android.graphics.Color
 import android.graphics.Typeface
@@ -19,8 +19,8 @@ import java.text.Normalizer
 /**
  * Created by SAM on 17-11-2018.
  */
-class AnnualStrawPlanLabListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
-    : RecyclerView.Adapter<AnnualStrawPlanLabListAdapter.ViewHolder>(), Filterable {
+class AnnualStrawPlanLisDAICtAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
+    : RecyclerView.Adapter<AnnualStrawPlanLisDAICtAdapter.ViewHolder>(), Filterable {
 
 
     private var mFilteredList: ArrayList<String>
@@ -61,7 +61,7 @@ class AnnualStrawPlanLabListAdapter(private val context: FragmentActivity, priva
     private var mClickListener: ManageCart = clickListener
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_annual_straw_plan_lab, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.item_annual_straw_plan_daic, parent, false)
         return ViewHolder(view)
     }
 

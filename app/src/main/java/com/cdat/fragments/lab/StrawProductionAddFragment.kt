@@ -13,6 +13,7 @@ import android.widget.TextView
 import com.cdat.R
 import com.cdat.helper.Utils
 import android.app.DatePickerDialog
+import android.support.design.widget.TextInputLayout
 import android.widget.Spinner
 import java.util.*
 
@@ -24,22 +25,25 @@ class StrawProductionAddFragment : Fragment() {
 
     companion object {
         private lateinit var tv_Production_Date: TextView
+        private lateinit var tv_lbl_mode: TextView
 
         private lateinit var et_batch_no: EditText
         private lateinit var et_pt_bull_test: EditText
         private lateinit var et_straw_produced_no: EditText
 
+        private lateinit var sp_mode: Spinner
         private lateinit var sp_animal_cate: Spinner
         private lateinit var sp_breed_blood_level: Spinner
         private lateinit var sp_bluu_reg_no: Spinner
 
         private lateinit var btn_add: Button
+        private lateinit var tl_agency_name: TextInputLayout
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar!!.title = "Add STRAW Production"
+        (activity as AppCompatActivity).supportActionBar!!.title = "Add Straw Production"
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -48,16 +52,23 @@ class StrawProductionAddFragment : Fragment() {
         var view = inflater.inflate(R.layout.fragment_production_add, container, false)
 
         tv_Production_Date = view.findViewById<TextView>(R.id.tv_Production_Date) as TextView
+        tv_lbl_mode = view.findViewById<TextView>(R.id.tv_lbl_mode) as TextView
 
         et_batch_no = view.findViewById<EditText>(R.id.et_batch_no) as EditText
         et_pt_bull_test = view.findViewById<EditText>(R.id.et_pt_bull_test) as EditText
         et_straw_produced_no = view.findViewById<EditText>(R.id.et_straw_produced_no) as EditText
 
+        sp_mode = view.findViewById<Spinner>(R.id.sp_mode) as Spinner
         sp_animal_cate = view.findViewById<Spinner>(R.id.sp_animal_cate) as Spinner
         sp_breed_blood_level = view.findViewById<Spinner>(R.id.sp_breed_blood_level) as Spinner
         sp_bluu_reg_no = view.findViewById<Spinner>(R.id.sp_bluu_reg_no) as Spinner
 
         btn_add = view.findViewById<Button>(R.id.btn_add) as Button
+        tl_agency_name = view.findViewById<TextInputLayout>(R.id.tl_agency_name) as TextInputLayout
+
+        tl_agency_name.visibility = View.GONE
+
+        //   sp_mode.se
 
         tv_Production_Date.setOnClickListener {
 

@@ -1,4 +1,4 @@
-package com.cdat.adapter.lab
+package com.cdat.adapter.daic
 
 import android.graphics.Color
 import android.graphics.Typeface
@@ -13,13 +13,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import com.cdat.R
+import java.lang.Exception
 import java.text.Normalizer
 
 /**
  * Created by SAM on 17-11-2018.
  */
-class StrawPurchaseListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
-    : RecyclerView.Adapter<StrawPurchaseListAdapter.ViewHolder>(), Filterable {
+class StrawDistributionListDAICAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
+    : RecyclerView.Adapter<StrawDistributionListDAICAdapter.ViewHolder>(), Filterable {
 
 
     private var mFilteredList: ArrayList<String>
@@ -60,7 +61,7 @@ class StrawPurchaseListAdapter(private val context: FragmentActivity, private va
     private var mClickListener: ManageCart = clickListener
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_production, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.item_distribution_daic, parent, false)
         return ViewHolder(view)
     }
 
@@ -73,20 +74,24 @@ class StrawPurchaseListAdapter(private val context: FragmentActivity, private va
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
-//        if (BullListFragment.searchText!!.isEmpty())
-//            holder.tv_product_name.text = mFilteredList.get(position)
-//        else
-//            holder.tv_product_name.text = highlightText(BullListFragment.searchText, mFilteredList.get(position))
+        try {
+            holder.ll_demand.removeAllViews()
+        } catch (e: Exception) {
+        }
+        for (i in 0..4) {
+            val inflater = context.getLayoutInflater()
+            val mView = inflater.inflate(R.layout.item_anual_sub_view, null)
+            var tv_date: TextView = mView.findViewById<TextView>(R.id.tv_date) as TextView
+            var tv_animal_cate: TextView = mView.findViewById<TextView>(R.id.tv_animal_cate) as TextView
+            var tv_breed_cate: TextView = mView.findViewById<TextView>(R.id.tv_breed_cate) as TextView
+            var tv_breed_blood_level: TextView = mView.findViewById<TextView>(R.id.tv_breed_blood_level) as TextView
+            var tv_straw: TextView = mView.findViewById<TextView>(R.id.tv_straw) as TextView
+            holder.ll_demand.addView(mView)
+        }
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-//        var tv_product_name: TextView = itemView.findViewById<TextView>(R.id.tv_product_name) as TextView
-//        var tv_qty: TextView = itemView.findViewById<TextView>(R.id.tv_qty) as TextView
-//        var tv_price: TextView = itemView.findViewById<TextView>(R.id.tv_price) as TextView
-//        var btn_add_cart: Button = itemView.findViewById<Button>(R.id.btn_add_cart) as Button
-//        var iv_product_image: ImageView = itemView.findViewById<ImageView>(R.id.iv_product_image) as ImageView
+        var ll_demand: LinearLayout = itemView.findViewById<LinearLayout>(R.id.ll_demand) as LinearLayout
 
     }
 

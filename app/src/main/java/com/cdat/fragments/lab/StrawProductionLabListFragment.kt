@@ -47,7 +47,7 @@ class StrawProductionLabListFragment : Fragment() {
 
         fab_add.setOnClickListener {
             val registerFragment = StrawProductionAddFragment()
-            Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "ankole")
+            Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
         }
 
         manageCart = object : StrawProductionListAdapter.ManageCart {

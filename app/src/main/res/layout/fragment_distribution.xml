@@ -99,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Bull Registration Number"
+                android:text="Bull Registration No."
                 android:textColor="@color/txt_secondary" />
 
             <Spinner
@@ -117,11 +117,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Batch Number"
+                android:text="Batch No."
                 android:textColor="@color/txt_secondary" />
 
             <Spinner
                 android:id="@+id/sp_Batch_Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/txt_third" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size5"
+                android:text="DAIC Name"
+                android:textColor="@color/txt_secondary" />
+
+            <Spinner
+                android:id="@+id/sp_daic_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -141,8 +160,9 @@
                     android:id="@+id/et_straw_supply_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="STRAW Supplied Number"
+                    android:hint="Straw Distributed"
                     android:imeOptions="actionDone"
+                    android:maxLength="4"
                     android:inputType="number"
                     android:singleLine="true"
                     android:textColor="@color/txt_primary"
@@ -156,7 +176,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Distribution" />
+                android:text="Save" />
 
         </LinearLayout>
     </android.support.v7.widget.CardView>

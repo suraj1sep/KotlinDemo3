@@ -31,6 +31,7 @@ class StrawDistributionFragment : Fragment() {
         private lateinit var sp_breed_blood_level: Spinner
         private lateinit var sp_bull_reg_no: Spinner
         private lateinit var sp_Batch_Number: Spinner
+        private lateinit var sp_daic_name: Spinner
 
         private lateinit var btn_Distribute: Button
 
@@ -38,7 +39,7 @@ class StrawDistributionFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar!!.title = "STRAW Distribution"
+        (activity as AppCompatActivity).supportActionBar!!.title = "Straw Distribution"
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -54,6 +55,7 @@ class StrawDistributionFragment : Fragment() {
         sp_breed_blood_level = view.findViewById<Spinner>(R.id.sp_breed_blood_level) as Spinner
         sp_bull_reg_no = view.findViewById<Spinner>(R.id.sp_bull_reg_no) as Spinner
         sp_Batch_Number = view.findViewById<Spinner>(R.id.sp_Batch_Number) as Spinner
+        sp_daic_name = view.findViewById<Spinner>(R.id.sp_daic_name) as Spinner
 
         btn_Distribute = view.findViewById<Button>(R.id.btn_Distribute) as Button
 
@@ -108,7 +110,7 @@ class StrawDistributionFragment : Fragment() {
         }
 
         if (et_straw_supply_no.text.toString().isEmpty()) {
-            Utils.customMessage(this!!.context!!, "Please enter no of supply STRAW!!")
+            Utils.customMessage(this!!.context!!, "Please enter no of supply Straw!!")
             et_straw_supply_no.requestFocus()
             return false
         }

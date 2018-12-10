@@ -16,6 +16,8 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import com.cdat.R
 import com.cdat.adapter.HomeMenuAdapter
+import com.cdat.fragments.daic.AnnualStrawPlanListDAICFragment
+import com.cdat.fragments.daic.StrawDistribitionListDAICFragment
 import com.cdat.fragments.lab.*
 import com.cdat.helper.AutoScrollViewPager
 import com.cdat.helper.Config
@@ -32,6 +34,8 @@ class HomeFragment : Fragment() {
         //        internal var sampleImages: IntArray? = intArrayOf(R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo)
         private val categoryList: ArrayList<String> = ArrayList()
         lateinit var clickListener: HomeMenuAdapter.ClickListener
+
+        var loginType: Int = 2
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -55,42 +59,96 @@ class HomeFragment : Fragment() {
         setViewPagerChangeListener()
 
         categoryList.clear()
-        categoryList.add("Bull")
-        categoryList.add("STRAW Plan")
-        categoryList.add("Production")
-        categoryList.add("Purchase STRAW")
-        categoryList.add("STRAW Distribution")
-        categoryList.add(" ")
-
+        if (loginType == 1) {
+            categoryList.add("Bull Registration")
+            categoryList.add("Straw Plan")
+            categoryList.add("Straw Production")
+            categoryList.add("Straw Distribution")
+        } else if (loginType == 2) {
+            categoryList.add("Straw Plan")
+            categoryList.add("Straw Received")
+            categoryList.add("Straw Distribution")
+            categoryList.add("Straw Motility")
+        } else if (loginType == 3) {
+            categoryList.add("Straw Plan")
+            categoryList.add("Straw Received")
+            categoryList.add("Straw Distribution")
+            categoryList.add("Straw Motility")
+        } else if (loginType == 4) {
+            categoryList.add("Straw Plan")
+            categoryList.add("Straw Received")
+            categoryList.add("Straw Distribution")
+            categoryList.add("Straw Motility")
+        }
 
         clickListener = object : HomeMenuAdapter.ClickListener {
 
             override fun click(position: Int) {
-                if (position == 0) {
-                    var registerFragment = BullListFragment()
-                    Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "ankole")
-                } else if (position == 1) {
-                    var registerFragment = AnnualStrawPlanListFragment()
-                    Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "ankole")
-                } else if (position == 2) {
-                    var registerFragment = StrawProductionLabListFragment()
-                    Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "ankole")
-                } else if (position == 3) {
-                    var registerFragment = StrawPurchaseLabListFragment()
-                    Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "ankole")
-                 } else if (position == 4) {
-                    var registerFragment = StrawDistribitionListFragment()
-                    Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "ankole")
-                } else
-                    Utils.customMessage(activity!!, "Coming soon!!")
+                if (loginType == 1)
+                    if (position == 0) {
+                        var registerFragment = BullListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else if (position == 1) {
+                        var registerFragment = AnnualStrawPlanListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else if (position == 2) {
+                        var registerFragment = StrawProductionLabListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else if (position == 3) {
+                        var registerFragment = StrawDistribitionListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else
+                        Utils.customMessage(activity!!, "Coming soon!!")
+                else if (loginType == 2)
+                    if (position == 0) {
+                        var registerFragment = AnnualStrawPlanListDAICFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else if (position == 1) {
+                        var registerFragment = AnnualStrawPlanListFragment()
+                        //  Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else if (position == 2) {
+                        var registerFragment = StrawDistribitionListDAICFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else if (position == 3) {
+                        var registerFragment = StrawDistribitionListFragment()
+                        //   Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else
+                        Utils.customMessage(activity!!, "Coming soon!!")
+                else if (loginType == 3)
+                    if (position == 0) {
+                        var registerFragment = BullListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else if (position == 1) {
+                        var registerFragment = AnnualStrawPlanListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else if (position == 2) {
+                        var registerFragment = StrawProductionLabListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else if (position == 3) {
+                        var registerFragment = StrawDistribitionListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else
+                        Utils.customMessage(activity!!, "Coming soon!!")
+                else if (loginType == 4)
+                    if (position == 0) {
+                        var registerFragment = BullListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else if (position == 1) {
+                        var registerFragment = AnnualStrawPlanListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else if (position == 2) {
+                        var registerFragment = StrawProductionLabListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else if (position == 3) {
+                        var registerFragment = StrawDistribitionListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    } else
+                        Utils.customMessage(activity!!, "Coming soon!!")
             }
 
         }
         recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView) as RecyclerView
-        if (categoryList.size <= 5)
-            recyclerView.layoutManager = GridLayoutManager(activity, 1)
-        else
-            recyclerView.layoutManager = GridLayoutManager(activity, 2)
+        recyclerView.layoutManager = GridLayoutManager(activity, 2)
         recyclerView.adapter = HomeMenuAdapter(this!!.activity!!, categoryList, clickListener)
         return view
     }
@@ -165,3 +223,5 @@ class HomeFragment : Fragment() {
 
 
 }// Required empty public constructor
+
+

@@ -25,12 +25,7 @@ class HomeMenuAdapter(private val context: FragmentActivity, private val wellnes
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view: View
-
-        if (viewType <= 5)
-            view = LayoutInflater.from(context).inflate(R.layout.item_home_main_menu_less, parent, false)
-        else
-            view = LayoutInflater.from(context).inflate(R.layout.item_home_main_menu, parent, false)
+        var view: View = LayoutInflater.from(context).inflate(R.layout.item_home_main_menu, parent, false)
 
         return ViewHolder(view)
     }

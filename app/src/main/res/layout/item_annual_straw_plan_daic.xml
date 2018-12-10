@@ -29,7 +29,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:text="DAIC Name :"
+                android:text="Dispensary Name :"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size12"
                 android:textStyle="normal" />
@@ -41,7 +41,38 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:gravity="left"
-                android:text="Pune DAIC"
+                android:text="Pune Dispensary"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size5"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Taluka :"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_taluka"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text="Mulashi"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size12"
                 android:textStyle="normal"

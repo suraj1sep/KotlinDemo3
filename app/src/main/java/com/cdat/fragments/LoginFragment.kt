@@ -48,7 +48,7 @@ class LoginFragment : Fragment() {
         tv_create_account.setOnClickListener(View.OnClickListener {
             fragmentManager!!.popBackStack()
             val registerFragment = SignUpFragment()
-            Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "ankole")
+            Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
         })
         tv_forgotPass.setOnClickListener(View.OnClickListener {
             Utils.customMessage(activity!!, "forgot password")

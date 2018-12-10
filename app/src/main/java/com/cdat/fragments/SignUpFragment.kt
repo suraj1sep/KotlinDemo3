@@ -31,7 +31,7 @@ class SignUpFragment : Fragment() {
         tv_already_account.setOnClickListener(View.OnClickListener {
             fragmentManager!!.popBackStack()
             val registerFragment = LoginFragment()
-            Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "ankole")
+            Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
         })
 
         return view

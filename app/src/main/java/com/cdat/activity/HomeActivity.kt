@@ -1,5 +1,7 @@
 package com.cdat.activity
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
@@ -9,6 +11,8 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.LinearLayout
 import com.cdat.R
 import com.cdat.fragments.HomeFragment
 import com.cdat.helper.Config
@@ -40,7 +44,15 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         nav_view.setNavigationItemSelectedListener(this)
 
         val loginFrgment = HomeFragment()
-        Config.slideFragment(loginFrgment, "", supportFragmentManager, R.id.content_frame, "ankole")
+        Config.slideFragment(loginFrgment, "", supportFragmentManager, R.id.content_frame, "2")
+
+        val llPoweredBy = findViewById<LinearLayout>(R.id.ll_poweredBy)
+
+        llPoweredBy.setOnClickListener {
+            val uri = Uri.parse("http://c-dat.org")
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
     }
 
     override fun onBackPressed() {
@@ -78,11 +90,11 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_my_order -> {
 //                val loginFrgment = MyOrderListFragment()
-//                Config.slideFragment(loginFrgment, "", supportFragmentManager, R.id.content_frame, "ankole")
+//                Config.slideFragment(loginFrgment, "", supportFragmentManager, R.id.content_frame, "2")
             }
             R.id.nav_my_cart -> {
 //                val loginFrgment = MyCartListFragment()
-//                Config.slideFragment(loginFrgment, "", supportFragmentManager, R.id.content_frame, "ankole")
+//                Config.slideFragment(loginFrgment, "", supportFragmentManager, R.id.content_frame, "2")
             }
             R.id.nav_track_order -> {
 
@@ -92,7 +104,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_my_address -> {
 //                var addressListFragment = AddressListFragment()
-//                Config.slideFragment(addressListFragment, "", supportFragmentManager, R.id.content_frame, "ankole")
+//                Config.slideFragment(addressListFragment, "", supportFragmentManager, R.id.content_frame, "2")
             }
             R.id.nav_logout -> {
 
