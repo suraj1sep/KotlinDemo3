@@ -32,10 +32,12 @@ class SplashActivity : AppCompatActivity() {
         val ivLogo = findViewById(R.id.iv_splashLogo) as ImageView
         val tvAppName = findViewById(R.id.tv_appName) as TextView
         val tvSlogan = findViewById(R.id.tv_slogan) as TextView
+        val tvSlogan1 = findViewById(R.id.tv_slogan1) as TextView
 
         ivLogo.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.zoom_in);
         tvAppName.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_left);
         tvSlogan.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_right);
+        tvSlogan1.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_left);
 
         try {
             window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,

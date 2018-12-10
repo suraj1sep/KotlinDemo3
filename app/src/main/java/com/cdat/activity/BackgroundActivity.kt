@@ -11,6 +11,7 @@ import com.cdat.R
 import com.cdat.fragments.LoginFragment
 import com.cdat.helper.Config
 import com.cdat.helper.SharePrefUtil
+import com.cdat.pre_login.PreLoginDashbordFragment
 
 
 class BackgroundActivity : AppCompatActivity() {
@@ -26,8 +27,10 @@ class BackgroundActivity : AppCompatActivity() {
         setContentView(R.layout.activity_background)
 
 
-        val loginFrgment = LoginFragment()
-        Config.slideFragment(loginFrgment, "", supportFragmentManager, R.id.content_frame, "ankole")
+        val PreLoginDashbordFragment = PreLoginDashbordFragment()
+        Config.slideFragment(PreLoginDashbordFragment, "", supportFragmentManager, R.id.content_frame, "ankole")
+//        val loginFrgment = LoginFragment()
+//        Config.slideFragment(loginFrgment, "", supportFragmentManager, R.id.content_frame, "ankole")
 
     }
 

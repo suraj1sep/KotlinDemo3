@@ -1,5 +1,6 @@
 package com.cdat.fragments
 
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -34,6 +35,8 @@ class LoginFragment : Fragment() {
         var btn_sign_in = view.findViewById<Button>(R.id.btn_sign_in)
         var tv_create_account = view.findViewById<TextView>(R.id.tv_create_account)
         var tv_forgotPass = view.findViewById<TextView>(R.id.tv_forgotPass)
+
+
 
         btn_sign_in.setOnClickListener(View.OnClickListener {
             Utils.customMessage(activity!!, "login successful")

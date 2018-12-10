@@ -51,4 +51,18 @@
 
     <color name="bg">#23bdbdbd</color>
     <color name="sami_tran">#92424242</color>
+
+    <color name="off_white_new">#a0fafafa</color>
+    <color name="off_white_new1">#82fafafa</color>
+    <color name="remboy1">#F83F4D</color>
+    <color name="remboy2">#29A6C2</color>
+    <color name="remboy3">#bea946</color>
+    <color name="remboy4">#C075F4</color>
+    <color name="remboy5">#EF6F24</color>
+    <color name="remboy6">#98CB48</color>
+    <color name="remboy7">#F15B78</color>
+    <color name="remboy8">#2C639C</color>
+    <color name="remboy9">#3c8159</color>
+    <color name="remboy10">#2C639C</color>
+    <color name="gray">@android:color/darker_gray</color>
 </resources>

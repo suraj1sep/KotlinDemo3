@@ -10,7 +10,7 @@
         android:layout_width="10dp"
         android:layout_height="10dp"
         android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@drawable/logo" />
 
     <TextView
         android:id="@+id/tv_appName"
@@ -25,7 +25,16 @@
         android:id="@+id/tv_slogan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Spreading happiness"
+        android:text="Maharashtra Livestock Development Board (MLDB)"
+        android:layout_marginTop="@dimen/size15"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/tv_slogan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animal Husbandry Department, Govt. of Maharashtra"
         android:layout_marginTop="@dimen/size10"
         android:visibility="visible"
         android:textColor="#000000"/>

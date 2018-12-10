@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txthead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center_vertical|center"
+        android:text="Health Calculator"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/size20">
+
+            <LinearLayout
+                android:id="@+id/ll_login"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/remboy1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/shadow"
+                    android:padding="@dimen/size20"
+                    app:srcCompat="@drawable/ic_login"
+                    android:tint="@color/white" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/shadow"
+                    android:text="Login"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_contactUs"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/remboy4"
+                android:layout_marginTop="@dimen/size20"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/shadow"
+                    android:padding="@dimen/size20"
+                    app:srcCompat="@drawable/ic_contactus"
+                    android:tint="@color/white" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/shadow"
+                    android:padding="@dimen/size5"
+                    android:text="Contact Us"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_techSupport"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/remboy3"
+                android:layout_marginTop="@dimen/size20"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/shadow"
+                    android:padding="@dimen/size20"
+                    app:srcCompat="@drawable/ic_tech_support"
+                    android:tint="@color/white" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/shadow"
+                    android:padding="@dimen/size5"
+                    android:text="Technical Support"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_usrManual"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/remboy10"
+                android:layout_marginTop="@dimen/size20"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/shadow"
+                    android:padding="@dimen/size20"
+                    app:srcCompat="@drawable/ic_user_manual"
+                    android:tint="@color/white" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:padding="@dimen/size5"
+                    android:background="@drawable/shadow"
+                    android:text="User Manual"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
