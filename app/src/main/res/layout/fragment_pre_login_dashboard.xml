@@ -35,6 +35,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="@color/remboy1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -61,6 +63,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="@color/remboy4"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginTop="@dimen/size20"
                 android:orientation="horizontal"
                 android:weightSum="1">
@@ -89,6 +93,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="@color/remboy3"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginTop="@dimen/size20"
                 android:orientation="horizontal"
                 android:weightSum="1">
@@ -117,6 +123,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="@color/remboy10"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginTop="@dimen/size20"
                 android:orientation="horizontal"
                 android:weightSum="1">
