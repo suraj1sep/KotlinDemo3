@@ -4,6 +4,7 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.app.Activity
 import android.os.Bundle
 import android.os.SystemClock
 import android.support.v4.app.Fragment
@@ -11,8 +12,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
+import android.widget.FrameLayout
 import android.widget.LinearLayout
+import android.widget.Toast
 import com.cdat.R
+import com.cdat.fragments.HomeFragment
 import com.cdat.fragments.LoginFragment
 import com.cdat.fragments.SignUpFragment
 import com.cdat.helper.Config
@@ -20,10 +24,10 @@ import com.cdat.helper.Config
 
 class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
 
-    private var llLogin: LinearLayout? = null
-    private var llContactUs: LinearLayout? = null
-    private var llTechSupport: LinearLayout? = null
-    private var llUsrManual: LinearLayout? = null
+    private lateinit var llLogin: LinearLayout
+    private lateinit var llContactUs: LinearLayout
+    private lateinit var llTechSupport: LinearLayout
+    private lateinit var llUsrManual: LinearLayout
     private var mLastClickTime: Long = 0
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -41,15 +45,16 @@ class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
         val rootView = inflater.inflate(R.layout.fragment_pre_login_dashboard, container, false)
 
         try {
-            llLogin = rootView.findViewById<View>(R.id.ll_login) as LinearLayout
-            llContactUs = rootView.findViewById<View>(R.id.ll_contactUs) as LinearLayout
-            llTechSupport = rootView.findViewById<View>(R.id.ll_techSupport) as LinearLayout
-            llUsrManual = rootView.findViewById<View>(R.id.ll_usrManual) as LinearLayout
+            llLogin = rootView.findViewById<LinearLayout>(R.id.ll_login) as LinearLayout
+            llContactUs = rootView.findViewById<LinearLayout>(R.id.ll_contactUs) as LinearLayout
+            llTechSupport = rootView.findViewById<LinearLayout>(R.id.ll_techSupport) as LinearLayout
+            llUsrManual = rootView.findViewById<LinearLayout>(R.id.ll_usrManual) as LinearLayout
 
-            llLogin!!.setAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.slide_in_left))
-            llContactUs!!.setAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.slide_in_right))
-            llTechSupport!!.setAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.slide_in_left))
-            llUsrManual!!.setAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.slide_in_right))
+
+            llLogin!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_left))
+            llContactUs!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_right))
+            llTechSupport!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_left))
+            llUsrManual!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_right))
 
             /* final AnimatorSet mAnimationSet = new AnimatorSet();
 
@@ -78,19 +83,27 @@ class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
             });
             mAnimationSet.start();*/
 
-            llLogin!!.setOnClickListener(this)
-            llContactUs!!.setOnClickListener(this)
-            llTechSupport!!.setOnClickListener(this)
-            llUsrManual!!.setOnClickListener(this)
+
 
         } catch (e: Exception) {
 
         }
 
         llLogin!!.setOnClickListener {
-            fragmentManager!!.popBackStack()
             val loginFragment = LoginFragment()
             Config.slideFragment(loginFragment, "", fragmentManager!!, R.id.content_frame, "2")
+        }
+        llContactUs!!.setOnClickListener {
+//            val loginFragment = LoginFragment()
+//            Config.slideFragment(loginFragment, "", fragmentManager!!, R.id.content_frame, "2")
+        }
+        llTechSupport!!.setOnClickListener {
+//            val loginFragment = LoginFragment()
+//            Config.slideFragment(loginFragment, "", fragmentManager!!, R.id.content_frame, "2")
+        }
+        llUsrManual!!.setOnClickListener {
+            val loginFragment1 = HomeFragment()
+            Config.slideFragment(loginFragment1, "", fragmentManager!!, R.id.content_frame, "2")
         }
         return rootView
     }
@@ -105,12 +118,20 @@ class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
             when (view.id) {
 
                 R.id.ll_login -> {
+
+//                    fragmentManager!!.popBackStack()
+                    val loginFragment = LoginFragment()
+                    Config.slideFragment(loginFragment, "", fragmentManager!!, R.id.content_frame, "2")
                 }
                 R.id.ll_contactUs -> {
                 }
                 R.id.ll_techSupport -> {
+
                 }
                 R.id.ll_usrManual -> {
+//                    fragmentManager!!.popBackStack()
+                    val homeFragment = HomeFragment()
+                    Config.slideFragment(homeFragment, "", fragmentManager!!, R.id.content_frame, "2")
                 }
 
                 else -> {

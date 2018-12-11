@@ -7,7 +7,6 @@
     <string name="create_account">Create account?</string>
     <string name="enter_name">Enter Farmer Name</string>
     <string name="enter_mobile_no">Enter Mobile No</string>-->
-    <string name="enter_email">Enter Email ID</string>
     <string name="already_account">Already have an account?</string>
     <string name="title_activity_home">HomeActivity</string>
 
@@ -15,9 +14,12 @@
     <string name="adhar_no">Enter Adhar No.</string>
     <string name="password">Enter Password</string>
     <string name="forgot_password">Forgot Password?</string>
-    <string name="create_account">Create account?</string>
-    <string name="enter_name">Enter Farmer Name</string>
+    <string name="new_user">New User?</string>
+    <string name="first_name">Enter First Name</string>
+    <string name="middle_name">Enter Middle Name</string>
+    <string name="last_name">Enter Last Name</string>
     <string name="enter_mobile_no">Enter Mobile No.</string>
+    <string name="enter_email">Enter Email ID</string>
     <string name="distric">Enter Distric</string>
     <string name="taluka">Enter Taluka</string>
     <string name="village">Enter Village</string>

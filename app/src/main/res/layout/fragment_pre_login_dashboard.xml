@@ -36,24 +36,25 @@
                 android:layout_height="80dp"
                 android:background="@color/remboy1"
                 android:clickable="true"
+                android:gravity="center|center_vertical"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="80dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.2"
-                    android:background="@drawable/shadow"
-                    android:padding="@dimen/size20"
+                    android:padding="@dimen/size25"
                     app:srcCompat="@drawable/ic_login"
                     android:tint="@color/white" />
 
-                <Button
-                    android:layout_width="0dp"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.8"
-                    android:background="@drawable/shadow"
+                    android:gravity="center|center_vertical"
+                    android:textSize="@dimen/size20"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="@dimen/size20"
                     android:text="Login"
                     android:textColor="@color/white" />
             </LinearLayout>
@@ -70,21 +71,20 @@
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="80dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.2"
-                    android:background="@drawable/shadow"
-                    android:padding="@dimen/size20"
+                    android:padding="@dimen/size25"
                     app:srcCompat="@drawable/ic_contactus"
                     android:tint="@color/white" />
 
-                <Button
-                    android:layout_width="0dp"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.8"
-                    android:background="@drawable/shadow"
-                    android:padding="@dimen/size5"
                     android:text="Contact Us"
+                    android:gravity="center"
+                    android:textSize="@dimen/size20"
+                    android:layout_marginEnd="@dimen/size20"
+                    android:textStyle="bold"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -100,22 +100,20 @@
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="80dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.2"
-                    android:background="@drawable/shadow"
-                    android:padding="@dimen/size20"
+                    android:padding="@dimen/size25"
                     app:srcCompat="@drawable/ic_tech_support"
                     android:tint="@color/white" />
 
-                <Button
-                    android:layout_width="0dp"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.8"
-                    android:background="@drawable/shadow"
-                    android:padding="@dimen/size5"
+                    android:gravity="center"
                     android:text="Technical Support"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size20"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -130,20 +128,18 @@
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="80dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.2"
-                    android:background="@drawable/shadow"
-                    android:padding="@dimen/size20"
+                    android:padding="@dimen/size25"
                     app:srcCompat="@drawable/ic_user_manual"
                     android:tint="@color/white" />
 
-                <Button
-                    android:layout_width="0dp"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.8"
-                    android:padding="@dimen/size5"
-                    android:background="@drawable/shadow"
+                    android:gravity="center"
+                    android:textSize="@dimen/size20"
+                    android:textStyle="bold"
                     android:text="User Manual"
                     android:textColor="@color/white" />
             </LinearLayout>

@@ -33,10 +33,8 @@ class LoginFragment : Fragment() {
         activity!!.window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
 
         var btn_sign_in = view.findViewById<Button>(R.id.btn_sign_in)
-        var tv_create_account = view.findViewById<TextView>(R.id.tv_create_account)
+        var tv_create_account = view.findViewById<TextView>(R.id.tv_new_user)
         var tv_forgotPass = view.findViewById<TextView>(R.id.tv_forgotPass)
-
-
 
         btn_sign_in.setOnClickListener(View.OnClickListener {
             Utils.customMessage(activity!!, "login successful")
