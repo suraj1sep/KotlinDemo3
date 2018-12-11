@@ -18,7 +18,6 @@ import android.widget.Toast
 import com.cdat.R
 import com.cdat.fragments.HomeFragment
 import com.cdat.fragments.LoginFragment
-import com.cdat.fragments.SignUpFragment
 import com.cdat.helper.Config
 
 

@@ -35,7 +35,7 @@ class HomeFragment : Fragment() {
         private val categoryList: ArrayList<String> = ArrayList()
         lateinit var clickListener: HomeMenuAdapter.ClickListener
 
-        var loginType: Int = 2
+        var loginType: Int = 1
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

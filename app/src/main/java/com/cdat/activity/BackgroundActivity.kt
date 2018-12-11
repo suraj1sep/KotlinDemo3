@@ -27,8 +27,8 @@ class BackgroundActivity : AppCompatActivity() {
         setContentView(R.layout.activity_background)
 
 
-        val PreLoginDashbordFragment = PreLoginDashbordFragment()
-        Config.slideFragment(PreLoginDashbordFragment, "", supportFragmentManager, R.id.content_frame, "ankole")
+        val loginDashbordFragment = PreLoginDashbordFragment()
+        Config.slideFragment(loginDashbordFragment, "", supportFragmentManager, R.id.content_frame, "2")
 //        val loginFrgment = LoginFragment()
 //        Config.slideFragment(loginFrgment, "", supportFragmentManager, R.id.content_frame, "ankole")
 
@@ -36,7 +36,7 @@ class BackgroundActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         mFragment = supportFragmentManager.findFragmentById(R.id.content_frame)
-        if (mFragment is LoginFragment) {
+        if (mFragment is PreLoginDashbordFragment) {
             finish()
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
         } else {

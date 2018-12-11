@@ -133,7 +133,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.31"
+                android:layout_weight="0.33"
                 android:gravity="center"
                 android:text="Date"
                 android:textColor="@color/txt_primary"
@@ -197,7 +197,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.39"
+                android:layout_weight="0.37"
                 android:gravity="center"
                 android:text="Batch No."
                 android:textColor="@color/txt_primary"
@@ -255,7 +255,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.66"
+                android:layout_weight="0.68"
                 android:gravity="center"
                 android:text="Total"
                 android:textColor="@color/txt_primary"
@@ -305,7 +305,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.39"
+                android:layout_weight="0.37"
                 android:gravity="center"
                 android:text="100"
                 android:textColor="@color/txt_primary"

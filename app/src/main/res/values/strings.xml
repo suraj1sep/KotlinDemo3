@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Breed Feeding</string>
+    <string name="app_name">Inbreeding Monitoring</string>
 
     <string name="user_name">Enter User name/Mobile No. </string>
     <!--<string name="password">Enter Password</string>
