@@ -12,7 +12,7 @@
 
     <application
         android:name="com.cdat.AppController"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

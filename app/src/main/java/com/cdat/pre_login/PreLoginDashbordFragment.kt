@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.os.SystemClock
 import android.support.v4.app.Fragment
@@ -16,6 +17,7 @@ import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.Toast
 import com.cdat.R
+import com.cdat.activity.HomeActivity
 import com.cdat.fragments.HomeFragment
 import com.cdat.fragments.LoginFragment
 import com.cdat.helper.Config
@@ -93,16 +95,15 @@ class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
             Config.slideFragment(loginFragment, "", fragmentManager!!, R.id.content_frame, "2")
         }
         llContactUs!!.setOnClickListener {
-//            val loginFragment = LoginFragment()
-//            Config.slideFragment(loginFragment, "", fragmentManager!!, R.id.content_frame, "2")
+            Toast.makeText(getActivity(), "Coming soon", Toast.LENGTH_SHORT).show();
         }
         llTechSupport!!.setOnClickListener {
-//            val loginFragment = LoginFragment()
-//            Config.slideFragment(loginFragment, "", fragmentManager!!, R.id.content_frame, "2")
+            Toast.makeText(getActivity(), "Coming soon", Toast.LENGTH_SHORT).show();
         }
         llUsrManual!!.setOnClickListener {
-            val loginFragment1 = HomeFragment()
-            Config.slideFragment(loginFragment1, "", fragmentManager!!, R.id.content_frame, "2")
+            startActivity(Intent(activity, HomeActivity::class.java))
+            activity!!.finish()
+            activity!!.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
         return rootView
     }

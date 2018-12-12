@@ -1,2 +1,2 @@
 # Referenced at D:\Android Examples\backaps\kotlinDemo3\app\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13
--keep class com.dairy.AppController { <init>(...); }
+-keep class com.cdat.AppController { <init>(...); }

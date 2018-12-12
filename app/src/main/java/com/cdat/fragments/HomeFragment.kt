@@ -30,8 +30,8 @@ class HomeFragment : Fragment() {
         private lateinit var recyclerView: RecyclerView
         private lateinit var mPager: AutoScrollViewPager
         private lateinit var llIndexContainer: LinearLayout
-        internal var sampleImages: IntArray? = intArrayOf(R.drawable.banner2, R.drawable.banner3, R.drawable.banner4, R.drawable.banner1)
-        //        internal var sampleImages: IntArray? = intArrayOf(R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo)
+//        internal var sampleImages: IntArray? = intArrayOf(R.drawable.banner2, R.drawable.banner3, R.drawable.banner4, R.drawable.banner1)
+                internal var sampleImages: IntArray? = intArrayOf(R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo)
         private val categoryList: ArrayList<String> = ArrayList()
         lateinit var clickListener: HomeMenuAdapter.ClickListener
 
