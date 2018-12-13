@@ -11,7 +11,7 @@
         android:id="@+id/cv_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="top"
         card_view:cardBackgroundColor="@android:color/white"
         card_view:cardElevation="3dp"
         card_view:cardUseCompatPadding="true">
@@ -41,6 +41,7 @@
                     android:layout_gravity="bottom|right"
                     android:layout_marginRight="15dp"
                     android:layout_marginBottom="15dp"
+                    android:tint="@color/remboy1"
                     android:src="@android:drawable/ic_menu_edit" />
             </FrameLayout>
 

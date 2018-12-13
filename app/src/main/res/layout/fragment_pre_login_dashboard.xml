@@ -51,10 +51,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center|center_vertical"
+                    android:gravity="center"
                     android:textSize="@dimen/size20"
                     android:textStyle="bold"
-                    android:layout_marginEnd="@dimen/size20"
+                    android:layout_marginEnd="80dp"
                     android:text="Login"
                     android:textColor="@color/white" />
             </LinearLayout>
@@ -83,7 +83,7 @@
                     android:text="Contact Us"
                     android:gravity="center"
                     android:textSize="@dimen/size20"
-                    android:layout_marginEnd="@dimen/size20"
+                    android:layout_marginEnd="80dp"
                     android:textStyle="bold"
                     android:textColor="@color/white" />
             </LinearLayout>
@@ -112,6 +112,7 @@
                     android:gravity="center"
                     android:text="Technical Support"
                     android:textColor="@color/white"
+                    android:layout_marginEnd="80dp"
                     android:textSize="@dimen/size20"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -139,6 +140,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:textSize="@dimen/size20"
+                    android:layout_marginEnd="80dp"
                     android:textStyle="bold"
                     android:text="User Manual"
                     android:textColor="@color/white" />

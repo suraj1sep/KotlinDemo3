@@ -24,6 +24,10 @@
     <string name="taluka">Enter Taluka</string>
     <string name="village">Enter Village</string>
     <string name="address">Enter Address</string>
+    <string name="usr_name">User Name</string>
+
+    <!--Farmer Profile-->
+    <string name="no_of_animal">No Of Animals Owned</string>
 
     <!--Login screen-->
     <string name="user_id">Enter User Name/Mobile No. </string>

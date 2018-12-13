@@ -1,5 +1,7 @@
 package com.cdat.activity
 
+import android.app.PendingIntent.getActivity
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -13,9 +15,11 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.LinearLayout
+import android.widget.Toast
 import com.cdat.R
 import com.cdat.fragments.HomeFragment
 import com.cdat.helper.Config
+import com.cdat.profile.FarmerProfileFragment
 
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -89,22 +93,22 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_my_order -> {
-//                val loginFrgment = MyOrderListFragment()
-//                Config.slideFragment(loginFrgment, "", supportFragmentManager, R.id.content_frame, "2")
+                val home_Frgment = HomeFragment()
+                Config.slideFragment(home_Frgment, "", supportFragmentManager, R.id.content_frame, "2")
             }
             R.id.nav_my_cart -> {
-//                val loginFrgment = MyCartListFragment()
-//                Config.slideFragment(loginFrgment, "", supportFragmentManager, R.id.content_frame, "2")
+//                Toast.makeText(this, "Coming Soon..", Toast.LENGTH_SHORT).show()
+                val farmerPrfFrgment = FarmerProfileFragment()
+                Config.slideFragment(farmerPrfFrgment, "", supportFragmentManager, R.id.content_frame, "2")
             }
             R.id.nav_track_order -> {
-
+                Toast.makeText(this, "Coming Soon..", Toast.LENGTH_SHORT).show()
             }
             R.id.nav_my_reward -> {
-
+                Toast.makeText(this, "Coming Soon..", Toast.LENGTH_SHORT).show()
             }
             R.id.nav_my_address -> {
-//                var addressListFragment = AddressListFragment()
-//                Config.slideFragment(addressListFragment, "", supportFragmentManager, R.id.content_frame, "2")
+                Toast.makeText(this, "Coming Soon..", Toast.LENGTH_SHORT).show()
             }
             R.id.nav_logout -> {
 

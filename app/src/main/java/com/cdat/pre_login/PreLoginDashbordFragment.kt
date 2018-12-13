@@ -1,10 +1,5 @@
 package com.cdat.pre_login
 
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
-import android.animation.AnimatorSet
-import android.animation.ObjectAnimator
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.os.SystemClock
@@ -13,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
-import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.Toast
 import com.cdat.R
@@ -96,9 +90,13 @@ class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
         }
         llContactUs!!.setOnClickListener {
             Toast.makeText(getActivity(), "Coming soon", Toast.LENGTH_SHORT).show();
+//            val contactusFragment = ContactUsFragment()
+//            Config.slideFragment(contactusFragment, "", fragmentManager!!, R.id.content_frame, "2")
         }
         llTechSupport!!.setOnClickListener {
             Toast.makeText(getActivity(), "Coming soon", Toast.LENGTH_SHORT).show();
+//            val technicalsupFragment = TechnicalSupportFragment()
+//            Config.slideFragment(technicalsupFragment, "", fragmentManager!!, R.id.content_frame, "2")
         }
         llUsrManual!!.setOnClickListener {
             startActivity(Intent(activity, HomeActivity::class.java))

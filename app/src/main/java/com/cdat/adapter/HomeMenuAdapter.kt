@@ -1,5 +1,6 @@
 package com.cdat.adapter
 
+import android.content.Context
 import android.support.v4.app.FragmentActivity
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -17,6 +18,9 @@ class HomeMenuAdapter(private val context: FragmentActivity, private val wellnes
         holder.rl_back.setOnClickListener {
             mClickListener.click(position)
         }
+        holder.mainItem.setOnClickListener {
+            mClickListener.click(position)
+        }
     }
 
 
@@ -25,7 +29,7 @@ class HomeMenuAdapter(private val context: FragmentActivity, private val wellnes
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view: View = LayoutInflater.from(context).inflate(R.layout.item_home_main_menu, parent, false)
+        var view: View = LayoutInflater.from(context as Context?).inflate(R.layout.item_home_main_menu, parent, false)
 
         return ViewHolder(view)
     }
@@ -43,6 +47,7 @@ class HomeMenuAdapter(private val context: FragmentActivity, private val wellnes
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         var rl_back: LinearLayout = itemView.findViewById<LinearLayout>(R.id.rl_back) as LinearLayout
+        var mainItem: LinearLayout = itemView.findViewById<LinearLayout>(R.id.mainItem) as LinearLayout
         var tv_title: TextView = itemView.findViewById<TextView>(R.id.tv_title) as TextView
 
     }

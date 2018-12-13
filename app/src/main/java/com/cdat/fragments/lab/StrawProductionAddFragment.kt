@@ -18,9 +18,6 @@ import android.widget.Spinner
 import java.util.*
 
 
-/**
- * Created by SAM on 17-11-2018.
- */
 class StrawProductionAddFragment : Fragment() {
 
     companion object {
