@@ -9,9 +9,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.LinearLayout
-import android.widget.Toast
 import com.cdat.R
 import com.cdat.activity.HomeActivity
+import com.cdat.contact_us.ContactUsFragment
+import com.cdat.contact_us.TechnicalSupportFragment
 import com.cdat.fragments.HomeFragment
 import com.cdat.fragments.LoginFragment
 import com.cdat.helper.Config
@@ -89,14 +90,14 @@ class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
             Config.slideFragment(loginFragment, "", fragmentManager!!, R.id.content_frame, "2")
         }
         llContactUs!!.setOnClickListener {
-            Toast.makeText(getActivity(), "Coming soon", Toast.LENGTH_SHORT).show();
-//            val contactusFragment = ContactUsFragment()
-//            Config.slideFragment(contactusFragment, "", fragmentManager!!, R.id.content_frame, "2")
+//            Toast.makeText(getActivity(), "Coming soon", Toast.LENGTH_SHORT).show();
+            val contactusFragment = ContactUsFragment()
+            Config.slideFragment(contactusFragment, "", fragmentManager!!, R.id.content_frame, "2")
         }
         llTechSupport!!.setOnClickListener {
-            Toast.makeText(getActivity(), "Coming soon", Toast.LENGTH_SHORT).show();
-//            val technicalsupFragment = TechnicalSupportFragment()
-//            Config.slideFragment(technicalsupFragment, "", fragmentManager!!, R.id.content_frame, "2")
+//            Toast.makeText(getActivity(), "Coming soon", Toast.LENGTH_SHORT).show();
+            val technicalsupFragment = TechnicalSupportFragment()
+            Config.slideFragment(technicalsupFragment, "", fragmentManager!!, R.id.content_frame, "2")
         }
         llUsrManual!!.setOnClickListener {
             startActivity(Intent(activity, HomeActivity::class.java))
@@ -122,9 +123,14 @@ class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
                     Config.slideFragment(loginFragment, "", fragmentManager!!, R.id.content_frame, "2")
                 }
                 R.id.ll_contactUs -> {
+
+                    val contactusFragment = ContactUsFragment()
+                    Config.slideFragment(contactusFragment, "", fragmentManager!!, R.id.content_frame, "2")
                 }
                 R.id.ll_techSupport -> {
 
+                    val techSupportFragment = TechnicalSupportFragment()
+                    Config.slideFragment(techSupportFragment, "", fragmentManager!!, R.id.content_frame, "2")
                 }
                 R.id.ll_usrManual -> {
 //                    fragmentManager!!.popBackStack()
@@ -134,14 +140,8 @@ class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
 
                 else -> {
                 }
-            }//                    BmiCalculatorFragment bmiCalFrag = new BmiCalculatorFragment();
-            //                    Config.slideFragment(bmiCalFrag, "", getFragmentManager(), R.id.fragment_placeholder, "2");
-            //                    BMRCalculatorFragment bmrCalculatorFragment = new BMRCalculatorFragment();
-            //                    Config.slideFragment(bmrCalculatorFragment, "", getFragmentManager(), R.id.fragment_placeholder, "2");
-            //                    PregnancyCalculatorFragment pregFrag = new PregnancyCalculatorFragment();
-            //                    Config.slideFragment(pregFrag, "", getFragmentManager(), R.id.fragment_placeholder, "2");
-            //                    FertilityCalculatorFragment fertilityCalFragment = new FertilityCalculatorFragment();
-            //                    Config.slideFragment(fertilityCalFragment, "", getFragmentManager(), R.id.fragment_placeholder, "2");
+            }
+
         } catch (e: Exception) {
 
         }

@@ -13,7 +13,8 @@
         android:padding="@dimen/size10"
         android:text="Farmer Registration"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="@dimen/size15" />
+        android:textStyle="bold"
+        android:textSize="@dimen/size20" />
 
     <ScrollView
         android:layout_width="match_parent"

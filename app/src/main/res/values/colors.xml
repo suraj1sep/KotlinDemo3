@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--<color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimary">#673AB7</color>
     <color name="colorPrimaryDark">#512DA8</color>
-    <color name="colorAccent">#7C4DFF</color>-->
+    <color name="colorAccent">#7C4DFF</color>
 
     <color name="view_line">#424242</color>
     <color name="txt_blue">#3F51B5</color>
@@ -13,9 +13,9 @@
     <color name="txt_third">#BDBDBD</color>
 
     <!--Pe Login -->
-    <color name="colorPrimary">#F83F4D</color>
-    <color name="colorPrimaryDark">#3c8159</color>
-    <color name="colorAccent">#FFD70817</color>
+   <!-- <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#03A9F4</color>-->
 
     <!-- Screens background color-->
     <color name="bg_screen1">#f64c73</color>
