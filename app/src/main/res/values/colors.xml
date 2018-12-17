@@ -64,5 +64,7 @@
     <color name="remboy8">#2C639C</color>
     <color name="remboy9">#3c8159</color>
     <color name="remboy10">#2C639C</color>
+    <color name="remboy11">#20d2bb</color>
+    <color name="remboy12">#c873f4</color>
     <color name="gray">@android:color/darker_gray</color>
 </resources>

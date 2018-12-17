@@ -48,36 +48,72 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/size20"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_animalCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/animal_cat"
+                    android:imeOptions="actionNext"
+                    android:paddingBottom="10dp"
+                    android:drawableRight="@drawable/arrow_down"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size15" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_animalBreedCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/animal_breed_cat"
+                    android:imeOptions="actionNext"
+                    android:paddingBottom="10dp"
+                    android:drawableRight="@drawable/arrow_down"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size15" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_animalBreedBloodLvl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/animal_breed_blood_cat"
+                    android:imeOptions="actionNext"
+                    android:paddingBottom="10dp"
+                    android:drawableRight="@drawable/arrow_down"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size15" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size10"
                 android:textColorHint="@color/txt_secondary">
 
                 <EditText
                     android:id="@+id/et_bull_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Bull No. *"
+                    android:hint="@string/bull_id_no"
                     android:imeOptions="actionNext"
+                    android:maxLength="50"
                     android:singleLine="true"
                     android:textColor="@color/txt_primary"
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/size5"
-                android:text="Breed with blood level "
-                android:textColor="@color/txt_secondary" />
-
-            <Spinner
-                android:id="@+id/sp_breed_level"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.2dp"
-                android:background="@color/txt_third" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -104,7 +140,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Procurement Date *"
+                android:text="Date of Procurement *"
                 android:textColor="@color/txt_secondary" />
 
             <TextView
@@ -134,7 +170,8 @@
                     android:layout_height="wrap_content"
                     android:hint="DAM milk yield *"
                     android:imeOptions="actionNext"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
                     android:singleLine="true"
                     android:textColor="@color/txt_primary"
                     android:textSize="@dimen/size15" />
@@ -152,7 +189,8 @@
                     android:layout_height="wrap_content"
                     android:hint="SIRE DAM milk yield *"
                     android:imeOptions="actionNext"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
                     android:singleLine="true"
                     android:textColor="@color/txt_primary"
                     android:textSize="@dimen/size15" />
@@ -170,7 +208,8 @@
                     android:layout_height="wrap_content"
                     android:hint="Bull Origin *"
                     android:imeOptions="actionDone"
-                    android:inputType="number"
+                    android:inputType="text"
+                    android:maxLength="70"
                     android:singleLine="true"
                     android:textColor="@color/txt_primary"
                     android:textSize="@dimen/size15" />

@@ -148,7 +148,7 @@ class HomeFragment : Fragment() {
 
         }
         recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView) as RecyclerView
-        recyclerView.layoutManager = GridLayoutManager(activity, 2)
+        recyclerView.layoutManager = GridLayoutManager(activity, 2) as RecyclerView.LayoutManager?
         recyclerView.adapter = HomeMenuAdapter(this!!.activity!!, categoryList, clickListener)
         return view
     }

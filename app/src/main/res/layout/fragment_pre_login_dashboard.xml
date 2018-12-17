@@ -58,7 +58,35 @@
                     android:text="Login"
                     android:textColor="@color/white" />
             </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_registration"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/remboy10"
+                android:layout_marginTop="@dimen/size20"
+                android:clickable="true"
+                android:gravity="center|center_vertical"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:weightSum="1">
 
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/size25"
+                    app:srcCompat="@drawable/ic_farmer"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/size20"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="80dp"
+                    android:text="Farmer Registration"
+                    android:textColor="@color/white" />
+            </LinearLayout>
             <LinearLayout
                 android:id="@+id/ll_contactUs"
                 android:layout_width="match_parent"
@@ -121,7 +149,7 @@
                 android:id="@+id/ll_usrManual"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:background="@color/remboy10"
+                android:background="@color/remboy7"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginTop="@dimen/size20"

@@ -15,12 +15,14 @@ import com.cdat.contact_us.ContactUsFragment
 import com.cdat.contact_us.TechnicalSupportFragment
 import com.cdat.fragments.HomeFragment
 import com.cdat.fragments.LoginFragment
+import com.cdat.fragments.SignUpFragment
 import com.cdat.helper.Config
 
 
 class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
 
     private lateinit var llLogin: LinearLayout
+    private lateinit var llRegistration: LinearLayout
     private lateinit var llContactUs: LinearLayout
     private lateinit var llTechSupport: LinearLayout
     private lateinit var llUsrManual: LinearLayout
@@ -42,12 +44,14 @@ class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
 
         try {
             llLogin = rootView.findViewById<LinearLayout>(R.id.ll_login) as LinearLayout
+            llRegistration = rootView.findViewById<LinearLayout>(R.id.ll_registration) as LinearLayout
             llContactUs = rootView.findViewById<LinearLayout>(R.id.ll_contactUs) as LinearLayout
             llTechSupport = rootView.findViewById<LinearLayout>(R.id.ll_techSupport) as LinearLayout
             llUsrManual = rootView.findViewById<LinearLayout>(R.id.ll_usrManual) as LinearLayout
 
 
-            llLogin!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_left))
+            llLogin!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_right))
+            llRegistration!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_left))
             llContactUs!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_right))
             llTechSupport!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_left))
             llUsrManual!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_right))
@@ -88,6 +92,10 @@ class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
         llLogin!!.setOnClickListener {
             val loginFragment = LoginFragment()
             Config.slideFragment(loginFragment, "", fragmentManager!!, R.id.content_frame, "2")
+        }
+        llRegistration!!.setOnClickListener {
+            val registrationFragment = SignUpFragment()
+            Config.slideFragment(registrationFragment, "", fragmentManager!!, R.id.content_frame, "2")
         }
         llContactUs!!.setOnClickListener {
 //            Toast.makeText(getActivity(), "Coming soon", Toast.LENGTH_SHORT).show();
