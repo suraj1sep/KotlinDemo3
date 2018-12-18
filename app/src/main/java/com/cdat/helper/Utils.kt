@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit
  */
 class Utils {
     companion object {
+        var loginType: Int = 1
         fun customMessage(ctx: Context, message: String): Toast {
 
             val toast = Toast.makeText(ctx, message, Toast.LENGTH_SHORT)

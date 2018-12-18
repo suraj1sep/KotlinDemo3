@@ -1,6 +1,5 @@
 package com.cdat.fragments
 
-import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -10,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import com.cdat.R
 import com.cdat.activity.HomeActivity
@@ -18,10 +18,10 @@ import com.cdat.helper.Utils
 import com.cdat.services.request.GetVendorNameCityREQ
 import com.cdat.services.response.GetInsuranceCompResponse
 import com.cdat.services.response.GetVendorNameLogoNearByResponse
+import com.google.gson.GsonBuilder
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import com.google.gson.GsonBuilder
 
 
 class LoginFragment : Fragment() {
@@ -32,16 +32,24 @@ class LoginFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_login, container, false)
         activity!!.window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
 
+        var et_userId = view.findViewById<EditText>(R.id.et_userId)
         var btn_sign_in = view.findViewById<Button>(R.id.btn_sign_in)
         var tv_create_account = view.findViewById<TextView>(R.id.tv_new_user)
         var tv_forgotPass = view.findViewById<TextView>(R.id.tv_forgotPass)
 
-        btn_sign_in.setOnClickListener(View.OnClickListener {
+        btn_sign_in.setOnClickListener {
+            if (et_userId.text.isNotEmpty()) {
+                var string: String = et_userId.text.toString()
+                Utils.loginType = string.toInt()
+            }else {
+                Utils.customMessage(activity!!, "enter User ID")
+                return@setOnClickListener
+            }
             Utils.customMessage(activity!!, "login successful")
             startActivity(Intent(activity, HomeActivity::class.java))
             activity!!.finish()
             activity!!.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-        })
+        }
 
         tv_create_account.setOnClickListener(View.OnClickListener {
             fragmentManager!!.popBackStack()

@@ -18,7 +18,10 @@ import com.cdat.R
 import com.cdat.adapter.HomeMenuAdapter
 import com.cdat.fragments.daic.AnnualStrawPlanListDAICFragment
 import com.cdat.fragments.daic.StrawDistribitionListDAICFragment
-import com.cdat.fragments.lab.*
+import com.cdat.fragments.lab.AnnualStrawPlanListFragment
+import com.cdat.fragments.lab.BullListFragment
+import com.cdat.fragments.lab.StrawDistribitionListFragment
+import com.cdat.fragments.lab.StrawProductionLabListFragment
 import com.cdat.helper.AutoScrollViewPager
 import com.cdat.helper.Config
 import com.cdat.helper.DensityUtil
@@ -31,7 +34,7 @@ class HomeFragment : Fragment() {
         private lateinit var mPager: AutoScrollViewPager
         private lateinit var llIndexContainer: LinearLayout
         internal var sampleImages: IntArray? = intArrayOf(R.drawable.banner2, R.drawable.banner3, R.drawable.banner4, R.drawable.banner1)
-//                internal var sampleImages: IntArray? = intArrayOf(R.drawable.shadow, R.drawable.shadow, R.drawable.shadow, R.drawable.shadow)
+        //                internal var sampleImages: IntArray? = intArrayOf(R.drawable.shadow, R.drawable.shadow, R.drawable.shadow, R.drawable.shadow)
         private val categoryList: ArrayList<String> = ArrayList()
         lateinit var clickListener: HomeMenuAdapter.ClickListener
 
@@ -49,6 +52,8 @@ class HomeFragment : Fragment() {
         var view = inflater.inflate(R.layout.fragment_home, container, false)
         mPager = view.findViewById<AutoScrollViewPager>(R.id.carouselView2) as AutoScrollViewPager
         llIndexContainer = view.findViewById<LinearLayout>(R.id.ll_index_container) as LinearLayout
+
+        loginType = Utils.loginType
 
         val mPagerAdapter = ScreenSlidePagerAdapter(childFragmentManager)
         mPager.startAutoScroll()
