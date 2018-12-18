@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Breed Category"
+                android:text="Animal Breed Category"
                 android:textColor="@color/txt_secondary" />
 
             <Spinner
@@ -82,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Breed with Blood Level"
+                android:text="Animal Breed with Blood Level"
                 android:textColor="@color/txt_secondary" />
 
             <Spinner
@@ -99,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Bull Registration No."
+                android:text="Bull ID No."
                 android:textColor="@color/txt_secondary" />
 
             <Spinner
@@ -129,7 +129,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="0.1dp"
                 android:background="@color/txt_third" />
-
 
 
             <TextView

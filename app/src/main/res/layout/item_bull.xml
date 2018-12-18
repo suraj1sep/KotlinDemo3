@@ -331,21 +331,22 @@
                         android:id="@+id/iv_bullEdit"
                         android:layout_width="@dimen/size25"
                         android:layout_height="@dimen/size25"
-                        android:background="@drawable/round_shape"
                         android:layout_marginRight="@dimen/size5"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_shape"
                         android:clickable="true"
                         android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_weight="1"
                         android:src="@android:drawable/ic_menu_edit"
                         android:tint="@color/colorPrimary" />
+
                     <ImageView
                         android:id="@+id/iv_bullDell"
                         android:layout_width="@dimen/size25"
                         android:layout_height="@dimen/size25"
+                        android:layout_weight="1"
                         android:background="@drawable/round_shape"
                         android:clickable="true"
                         android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_weight="1"
                         android:src="@android:drawable/ic_delete" />
 
                 </LinearLayout>

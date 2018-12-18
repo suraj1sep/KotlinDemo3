@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Breed Category"
+                android:text="Animal Breed Category"
                 android:textColor="@color/txt_secondary" />
 
             <Spinner
@@ -80,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Breed with Blood Level"
+                android:text="Animal Breed with Blood Level"
                 android:textColor="@color/txt_secondary" />
 
             <Spinner
@@ -97,7 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Bull Registration No."
+                android:text="Bull ID No."
                 android:textColor="@color/txt_secondary" />
 
             <Spinner
@@ -116,7 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Production Date"
+                android:text="Production / Purchase Date"
                 android:textColor="@color/txt_secondary" />
 
             <TextView
@@ -144,7 +144,7 @@
                     android:id="@+id/et_batch_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Batch Number"
+                    android:hint="Batch No."
                     android:imeOptions="actionNext"
                     android:inputType="text"
                     android:singleLine="true"
@@ -163,7 +163,7 @@
                     android:id="@+id/et_pt_bull_test"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="P.T. Bulls Tested"
+                    android:hint="PT Bulls Tested"
                     android:imeOptions="actionNext"
                     android:singleLine="true"
                     android:textColor="@color/txt_primary"
@@ -181,7 +181,7 @@
                     android:id="@+id/et_straw_produced_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Straw Produced No."
+                    android:hint="No. of Straw Produced"
                     android:imeOptions="actionNext"
                     android:inputType="number"
                     android:singleLine="true"
@@ -200,7 +200,7 @@
                     android:id="@+id/et_agency_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Agency Name"
+                    android:hint="Purchase Agency Name"
                     android:imeOptions="actionDone"
                     android:singleLine="true"
                     android:textColor="@color/txt_primary"

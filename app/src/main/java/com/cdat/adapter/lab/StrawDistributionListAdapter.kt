@@ -80,11 +80,8 @@ class StrawDistributionListAdapter(private val context: FragmentActivity, privat
         }
         for (i in 0..4) {
             val inflater = context.getLayoutInflater()
-            val mView = inflater.inflate(R.layout.item_anual_sub_view, null)
+            val mView = inflater.inflate(R.layout.item_straw_distribute, null)
             var tv_date: TextView = mView.findViewById<TextView>(R.id.tv_date) as TextView
-            var tv_animal_cate: TextView = mView.findViewById<TextView>(R.id.tv_animal_cate) as TextView
-            var tv_breed_cate: TextView = mView.findViewById<TextView>(R.id.tv_breed_cate) as TextView
-            var tv_breed_blood_level: TextView = mView.findViewById<TextView>(R.id.tv_breed_blood_level) as TextView
             var tv_straw: TextView = mView.findViewById<TextView>(R.id.tv_straw) as TextView
             holder.ll_demand.addView(mView)
         }

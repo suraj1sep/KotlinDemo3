@@ -63,7 +63,7 @@ class StrawProductionAddFragment : Fragment() {
         btn_add = view.findViewById<Button>(R.id.btn_add) as Button
         tl_agency_name = view.findViewById<TextInputLayout>(R.id.tl_agency_name) as TextInputLayout
 
-        tl_agency_name.visibility = View.GONE
+      //  tl_agency_name.visibility = View.GONE
 
         //   sp_mode.se
 
