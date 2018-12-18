@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Inbreeding Monitoring App</string>
+    <!--<string name="app_name">Kotlin Demo</string>-->
 
     <string name="user_name">Enter User name *</string>
     <!--<string name="password">Enter Password</string>
