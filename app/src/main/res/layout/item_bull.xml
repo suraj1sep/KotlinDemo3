@@ -47,7 +47,7 @@
                         android:text="Animal Category "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="normal" />
+                        android:textStyle="bold" />
 
 
                     <TextView
@@ -78,7 +78,7 @@
                         android:text="Animal Breed Category "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="normal" />
+                        android:textStyle="bold" />
 
 
                     <TextView
@@ -109,7 +109,7 @@
                         android:text="Animal Breed with blood level "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="normal" />
+                        android:textStyle="bold" />
 
 
                     <TextView
@@ -140,7 +140,7 @@
                         android:text="Bull No "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="normal" />
+                        android:textStyle="bold" />
 
 
                     <TextView
@@ -171,7 +171,7 @@
                         android:text="DOB "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="normal" />
+                        android:textStyle="bold" />
 
 
                     <TextView
@@ -202,7 +202,7 @@
                         android:text="Date of Procurement "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="normal" />
+                        android:textStyle="bold" />
 
 
                     <TextView
@@ -233,7 +233,7 @@
                         android:text="DAM Milk Yield"
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="normal" />
+                        android:textStyle="bold" />
 
 
                     <TextView
@@ -264,7 +264,7 @@
                         android:text="SIRE DAM Milk Yield "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="normal" />
+                        android:textStyle="bold" />
 
 
                     <TextView
@@ -295,7 +295,7 @@
                         android:text="Bull Origin"
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="normal" />
+                        android:textStyle="bold" />
 
 
                     <TextView
@@ -326,7 +326,7 @@
                     android:id="@+id/iv_bullDell"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:padding="@dimen/size5"
+                    android:padding="@dimen/size8"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:src="@android:drawable/ic_delete" />
@@ -336,7 +336,7 @@
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_marginTop="@dimen/size5"
-                        android:padding="@dimen/size5"
+                        android:padding="@dimen/size8"
                         android:clickable="true"
                         android:foreground="?android:attr/selectableItemBackground"
                         android:src="@android:drawable/ic_menu_edit"
