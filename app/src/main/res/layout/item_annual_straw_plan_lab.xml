@@ -22,6 +22,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="visible"
             android:gravity="center|left"
             android:orientation="horizontal">
 
@@ -29,10 +30,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:text="DAIC Name :"
+                android:text="DAIC Name "
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size12"
-                android:textStyle="normal" />
+                android:textStyle="bold" />
 
 
             <TextView
@@ -41,7 +42,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:gravity="left"
-                android:text="Pune DAIC"
+                android:text=": Pune DAIC"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size12"
                 android:textStyle="normal"
@@ -52,49 +53,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/size5"
             android:gravity="center|left"
+            android:layout_marginTop="@dimen/size5"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:text="District :"
+                android:text="Financial Year "
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size12"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/tv_district"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.6"
-                android:gravity="left"
-                android:text="Pune"
-                android:textColor="@color/txt_primary"
-                android:textSize="@dimen/size12"
-                android:textStyle="normal"
-                android:visibility="visible" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/size5"
-            android:gravity="center|left"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.4"
-                android:text="Year :"
-                android:textColor="@color/txt_primary"
-                android:textSize="@dimen/size12"
-                android:textStyle="normal" />
+                android:textStyle="bold" />
 
 
             <TextView
@@ -103,7 +73,37 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:gravity="left"
-                android:text="2018"
+                android:text=": 2018"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size5"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="District "
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_district"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text=": Pune"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size12"
                 android:textStyle="normal"
@@ -115,12 +115,14 @@
             android:layout_width="match_parent"
             android:layout_height="0.1dp"
             android:layout_marginTop="@dimen/size5"
+            android:visibility="visible"
             android:background="@color/txt_primary" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:visibility="visible"
             android:orientation="horizontal">
 
             <View
@@ -137,12 +139,13 @@
                 android:text="Date"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size11"
-                android:textStyle="normal" />
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="0.1dp"
                 android:layout_height="match_parent"
                 android:background="@color/txt_primary"
+                android:visibility="gone"
                 android:paddingRight="2dp" />
 
             <TextView
@@ -152,13 +155,15 @@
                 android:gravity="center"
                 android:text="Animal Cate."
                 android:textColor="@color/txt_primary"
+                android:visibility="gone"
                 android:textSize="@dimen/size11"
-                android:textStyle="normal" />
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="0.1dp"
                 android:layout_height="match_parent"
                 android:background="@color/txt_primary"
+                android:visibility="gone"
                 android:paddingRight="2dp" />
 
             <TextView
@@ -167,14 +172,16 @@
                 android:layout_weight="0.4"
                 android:gravity="center"
                 android:text="Breed Cate."
+                android:visibility="gone"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size11"
-                android:textStyle="normal" />
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="0.1dp"
                 android:layout_height="match_parent"
                 android:background="@color/txt_primary"
+                android:visibility="gone"
                 android:paddingRight="2dp" />
 
             <TextView
@@ -184,13 +191,15 @@
                 android:gravity="center"
                 android:text="Breed With Blood level"
                 android:textColor="@color/txt_primary"
+                android:visibility="gone"
                 android:textSize="@dimen/size11"
-                android:textStyle="normal" />
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="0.1dp"
                 android:layout_height="match_parent"
                 android:background="@color/txt_primary"
+                android:visibility="visible"
                 android:paddingRight="2dp" />
 
             <TextView
@@ -198,10 +207,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.37"
                 android:gravity="center"
-                android:text="No. Straw"
+                android:text="Straw Demand"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size11"
-                android:textStyle="normal" />
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="0.1dp"
@@ -218,7 +227,7 @@
                 android:text="Opening Bal."
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size11"
-                android:textStyle="normal" />
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="0.1dp"
@@ -230,12 +239,14 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.1dp"
+            android:visibility="visible"
             android:background="@color/txt_primary" />
 
         <LinearLayout
             android:id="@+id/ll_demand"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="visible"
             android:orientation="vertical" />
 
 
@@ -243,6 +254,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="30dp"
+            android:visibility="visible"
+            android:weightSum="3"
             android:orientation="horizontal">
 
             <View
@@ -254,12 +267,12 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.68"
+                android:layout_weight="0.9"
                 android:gravity="center"
                 android:text="Total"
-                android:textColor="@color/txt_primary"
+                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/size11"
-                android:textStyle="normal" />
+                android:textStyle="bold" />
 
 
             <View
@@ -270,6 +283,7 @@
             <View
                 android:layout_width="0.1dp"
                 android:layout_height="match_parent"
+                android:visibility="gone"
                 android:paddingRight="2dp" />
 
             <TextView
@@ -279,11 +293,13 @@
                 android:gravity="center"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size11"
+                android:visibility="gone"
                 android:textStyle="normal" />
 
             <View
                 android:layout_width="0.1dp"
                 android:layout_height="match_parent"
+                android:visibility="gone"
                 android:paddingRight="2dp" />
 
             <TextView
@@ -292,6 +308,7 @@
                 android:layout_weight="0.4"
                 android:gravity="center"
                 android:textColor="@color/txt_primary"
+                android:visibility="gone"
                 android:textSize="@dimen/size11"
                 android:textStyle="normal" />
 
@@ -304,12 +321,12 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.37"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:text="100"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size11"
-                android:textStyle="normal" />
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="0.1dp"
@@ -321,12 +338,12 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.4"
+                android:layout_weight="1.1"
                 android:gravity="center"
                 android:text="100"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size11"
-                android:textStyle="normal" />
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="0.1dp"
@@ -338,6 +355,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.1dp"
+            android:visibility="visible"
             android:background="@color/txt_primary" />
 
     </LinearLayout>
