@@ -35,6 +35,10 @@
     <string name="animal_breed_cat">Animal Breed Category *</string>
     <string name="animal_breed_blood_cat">Animal Breed with Blood Level *</string>
     <string name="bull_id_no">Bull Id No. *</string>
+    <string name="animal_ear_tag_no">Animal Ear Tag No. *</string>
+    <string name="animal_age">Animal Age*</string>
+    <string name="milk_yield_animal">Milk Yield of Animal*</string>
+    <string name="milk_yield_dam">Milk Yield of Dam *</string>
 
     <!--Login screen-->
     <string name="user_id">Enter User Name *</string>

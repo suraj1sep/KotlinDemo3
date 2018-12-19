@@ -26,6 +26,8 @@ import com.cdat.helper.AutoScrollViewPager
 import com.cdat.helper.Config
 import com.cdat.helper.DensityUtil
 import com.cdat.helper.Utils
+import com.cdat.profile.AnimalProfileFragment
+import com.cdat.profile.FarmerProfileFragment
 
 class HomeFragment : Fragment() {
 
@@ -80,10 +82,12 @@ class HomeFragment : Fragment() {
             categoryList.add("Straw Distribution")
             categoryList.add("Straw Motility")
         } else if (loginType == 4) {
-            categoryList.add("Straw Plan")
-            categoryList.add("Straw Received")
-            categoryList.add("Straw Distribution")
-            categoryList.add("Straw Motility")
+            categoryList.add("Farmer Profile")
+            categoryList.add("Animal Profile")
+//            categoryList.add("Straw Plan")
+//            categoryList.add("Straw Received")
+//            categoryList.add("Straw Distribution")
+//            categoryList.add("Straw Motility")
         }
 
         clickListener = object : HomeMenuAdapter.ClickListener {
@@ -136,17 +140,12 @@ class HomeFragment : Fragment() {
                         Utils.customMessage(activity!!, "Coming soon!!")
                 else if (loginType == 4)
                     if (position == 0) {
-                        var registerFragment = BullListFragment()
+                        var registerFragment = FarmerProfileFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 1) {
-                        var registerFragment = AnnualStrawPlanListFragment()
-                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
-                    } else if (position == 2) {
-                        var registerFragment = StrawProductionLabListFragment()
-                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
-                    } else if (position == 3) {
-                        var registerFragment = StrawDistribitionListFragment()
-                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                        var animalFragment = AnimalProfileFragment()
+                        Config.slideFragment(animalFragment, "", fragmentManager!!, R.id.content_frame, "2")
+
                     } else
                         Utils.customMessage(activity!!, "Coming soon!!")
             }
