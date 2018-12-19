@@ -11,22 +11,19 @@ import android.text.style.StyleSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Filter
-import android.widget.Filterable
-import android.widget.ImageView
+import android.widget.*
 import com.cdat.R
+import java.lang.Exception
 import java.text.Normalizer
 
 /**
  * Created by SAM on 17-11-2018.
  */
-class StrawDistributionListDAICAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
-    : RecyclerView.Adapter<StrawDistributionListDAICAdapter.ViewHolder>(), Filterable {
+class ReceivedStrawDAICListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
+    : RecyclerView.Adapter<ReceivedStrawDAICListAdapter.ViewHolder>(), Filterable {
 
 
     private var mFilteredList: ArrayList<String>
-
-    var clickListener: ManageCart = clickListener
 
     init {
         mFilteredList = productList
@@ -64,12 +61,12 @@ class StrawDistributionListDAICAdapter(private val context: FragmentActivity, pr
     private var mClickListener: ManageCart = clickListener
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_distribution_daic, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.item_received_straw_daic, parent, false)
         return ViewHolder(view)
     }
 
     interface ManageCart {
-        fun cart(position: Int)
+        fun cart()
     }
 
     override fun getItemCount(): Int {
@@ -77,13 +74,30 @@ class StrawDistributionListDAICAdapter(private val context: FragmentActivity, pr
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.iv_view.setOnClickListener {
-            clickListener.cart(position)
+
+//        if (BullListFragment.searchText!!.isEmpty())
+//            holder.tv_product_name.text = mFilteredList.get(position)
+//        else
+//            holder.tv_product_name.text = highlightText(BullListFragment.searchText, mFilteredList.get(position))
+        try {
+            holder.ll_demand.removeAllViews()
+        } catch (e: Exception) {
         }
+        for (i in 0..4) {
+            val inflater = context.getLayoutInflater()
+            val mView = inflater.inflate(R.layout.item_received_sub_view, null)
+            var tv_date: TextView = mView.findViewById<TextView>(R.id.tv_date) as TextView
+            var tv_straw: TextView = mView.findViewById<TextView>(R.id.tv_straw) as TextView
+            holder.ll_demand.addView(mView)
+        }
+
+
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var iv_view: ImageView = itemView.findViewById<ImageView>(R.id.iv_view) as ImageView
+
+        var ll_demand: LinearLayout = itemView.findViewById<LinearLayout>(R.id.ll_demand) as LinearLayout
+
     }
 
     fun highlightText(search: String?, originalText: String): CharSequence {

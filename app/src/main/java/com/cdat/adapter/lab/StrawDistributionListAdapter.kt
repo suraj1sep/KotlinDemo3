@@ -11,9 +11,10 @@ import android.text.style.StyleSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.Filter
+import android.widget.Filterable
+import android.widget.ImageView
 import com.cdat.R
-import java.lang.Exception
 import java.text.Normalizer
 
 /**
@@ -24,6 +25,8 @@ class StrawDistributionListAdapter(private val context: FragmentActivity, privat
 
 
     private var mFilteredList: ArrayList<String>
+
+    var clickListener: ManageCart = clickListener
 
     init {
         mFilteredList = productList
@@ -66,7 +69,7 @@ class StrawDistributionListAdapter(private val context: FragmentActivity, privat
     }
 
     interface ManageCart {
-        fun cart()
+        fun cart(position: Int)
     }
 
     override fun getItemCount(): Int {
@@ -74,21 +77,14 @@ class StrawDistributionListAdapter(private val context: FragmentActivity, privat
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        try {
-            holder.ll_demand.removeAllViews()
-        } catch (e: Exception) {
-        }
-        for (i in 0..4) {
-            val inflater = context.getLayoutInflater()
-            val mView = inflater.inflate(R.layout.item_straw_distribute, null)
-            var tv_date: TextView = mView.findViewById<TextView>(R.id.tv_date) as TextView
-            var tv_straw: TextView = mView.findViewById<TextView>(R.id.tv_straw) as TextView
-            holder.ll_demand.addView(mView)
+
+        holder.iv_view.setOnClickListener {
+            clickListener.cart(position)
         }
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var ll_demand: LinearLayout = itemView.findViewById<LinearLayout>(R.id.ll_demand) as LinearLayout
+        var iv_view: ImageView = itemView.findViewById<ImageView>(R.id.iv_view) as ImageView
 
     }
 

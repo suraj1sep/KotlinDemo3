@@ -1,6 +1,7 @@
-package com.cdat.fragments.lab
+package com.cdat.fragments.daic
 
 import android.annotation.SuppressLint
+import android.app.DatePickerDialog
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
@@ -9,63 +10,54 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Spinner
 import android.widget.TextView
 import com.cdat.R
 import com.cdat.helper.Utils
-import android.app.DatePickerDialog
-import android.support.design.widget.TextInputLayout
-import android.widget.Spinner
 import java.util.*
 
 
-class StrawProductionAddFragment : Fragment() {
+/**
+ * Created by SAM on 17-11-2018.
+ */
+class ReceivedStrawDAICFragment : Fragment() {
 
     companion object {
-        private lateinit var tv_Production_Date: TextView
-        private lateinit var tv_lbl_mode: TextView
+        private lateinit var tv_supply_date: TextView
 
-        private lateinit var et_batch_no: EditText
-        private lateinit var et_straw_produced_no: EditText
+        private lateinit var et_straw_received: EditText
 
-        private lateinit var sp_mode: Spinner
         private lateinit var sp_animal_cate: Spinner
         private lateinit var sp_breed_blood_level: Spinner
-        private lateinit var sp_bluu_reg_no: Spinner
+        private lateinit var sp_bull_reg_no: Spinner
+        private lateinit var sp_Batch_Number: Spinner
 
-        private lateinit var btn_add: Button
-        private lateinit var tl_agency_name: TextInputLayout
+        private lateinit var btn_Distribute: Button
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar!!.title = "Add Straw Production"
+        (activity as AppCompatActivity).supportActionBar!!.title = "Straw Received "
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        var view = inflater.inflate(R.layout.fragment_production_add, container, false)
+        var view = inflater.inflate(R.layout.fragment_recevied_straw_details, container, false)
 
-        tv_Production_Date = view.findViewById<TextView>(R.id.tv_Production_Date) as TextView
-        tv_lbl_mode = view.findViewById<TextView>(R.id.tv_lbl_mode) as TextView
+        tv_supply_date = view.findViewById<TextView>(R.id.tv_supply_date) as TextView
 
-        et_batch_no = view.findViewById<EditText>(R.id.et_batch_no) as EditText
-        et_straw_produced_no = view.findViewById<EditText>(R.id.et_straw_produced_no) as EditText
+        et_straw_received = view.findViewById<EditText>(R.id.et_straw_received) as EditText
 
-        sp_mode = view.findViewById<Spinner>(R.id.sp_mode) as Spinner
         sp_animal_cate = view.findViewById<Spinner>(R.id.sp_animal_cate) as Spinner
         sp_breed_blood_level = view.findViewById<Spinner>(R.id.sp_breed_blood_level) as Spinner
-        sp_bluu_reg_no = view.findViewById<Spinner>(R.id.sp_bluu_reg_no) as Spinner
+        sp_bull_reg_no = view.findViewById<Spinner>(R.id.sp_bull_reg_no) as Spinner
+        sp_Batch_Number = view.findViewById<Spinner>(R.id.sp_Batch_Number) as Spinner
 
-        btn_add = view.findViewById<Button>(R.id.btn_add) as Button
-        tl_agency_name = view.findViewById<TextInputLayout>(R.id.tl_agency_name) as TextInputLayout
+        btn_Distribute = view.findViewById<Button>(R.id.btn_Distribute) as Button
 
-      //  tl_agency_name.visibility = View.GONE
-
-        //   sp_mode.se
-
-        tv_Production_Date.setOnClickListener {
+        tv_supply_date.setOnClickListener {
 
             val c = Calendar.getInstance()
             val mYear = c.get(Calendar.YEAR) // current year
@@ -89,7 +81,7 @@ class StrawProductionAddFragment : Fragment() {
                         } else {
                             month = "" + monthOfYear
                         }
-                        tv_Production_Date.text = (day + "/" + month + "/" + year)
+                        tv_supply_date.text = (day + "/" + month + "/" + year)
                     }, mYear, mMonth, mDay)
             datePickerDialog.datePicker.maxDate = Date().getTime()
             datePickerDialog.show()
@@ -97,7 +89,7 @@ class StrawProductionAddFragment : Fragment() {
 
 
 
-        btn_add.setOnClickListener {
+        btn_Distribute.setOnClickListener {
             if (isValid())
                 Utils.customMessage(this!!.context!!, "Added")
         }
@@ -108,23 +100,16 @@ class StrawProductionAddFragment : Fragment() {
     @SuppressLint("NewApi")
     fun isValid(): Boolean {
 
-        val production_date: String = tv_Production_Date.text.toString()
+        val production_date: String = tv_supply_date.text.toString()
 
         if (production_date.isEmpty()) {
             Utils.customMessage(this!!.context!!, "Please select date !!")
             return false
         }
 
-        if (et_batch_no.text.toString().isEmpty()) {
-            Utils.customMessage(this!!.context!!, "Please enter batch no!!")
-            et_batch_no.requestFocus()
-            return false
-        }
-
-
-        if (et_straw_produced_no.text.toString().isEmpty()) {
-            Utils.customMessage(this!!.context!!, "Please enter STRAWS produced no!!")
-            et_straw_produced_no.requestFocus()
+        if (et_straw_received.text.toString().isEmpty()) {
+            Utils.customMessage(this!!.context!!, "Please enter no of received Straw!!")
+            et_straw_received.requestFocus()
             return false
         }
 

@@ -38,11 +38,39 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
-                    android:text="Production / Purchase Date "
+                    android:text="Mode"
                     android:textColor="@color/txt_secondary"
                     android:textSize="@dimen/size12"
                     android:textStyle="bold" />
 
+                <TextView
+                    android:id="@+id/tv_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="left"
+                    android:text=": Purchase"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="@dimen/size12"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="Production / Purchase Date "
+                    android:textColor="@color/txt_secondary"
+                    android:textSize="@dimen/size12"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tv_production_date"
@@ -236,7 +264,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
                     android:gravity="left"
-                    android:text=": abc"
+                    android:text=": YES"
                     android:textColor="@color/txt_primary"
                     android:textSize="@dimen/size12"
                     android:textStyle="normal"
@@ -319,9 +347,9 @@
                 android:id="@+id/iv_bullDell"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:padding="@dimen/size8"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/size8"
                 android:src="@android:drawable/ic_delete" />
 
             <ImageView
@@ -329,9 +357,9 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginTop="@dimen/size5"
-                android:padding="@dimen/size8"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/size8"
                 android:src="@android:drawable/ic_menu_edit"
                 android:tint="@color/colorPrimary" />
 

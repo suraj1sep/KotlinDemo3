@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,84 +23,61 @@
             android:orientation="vertical"
             android:padding="@dimen/size20">
 
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
 
-                <com.cdat.helper.CircleImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_margin="@dimen/size20"
-                    app2:civ_border_color="@color/colorPrimary"
-                    app2:civ_border_width="1dp"
-                    app2:srcCompat="@drawable/ic_bull" />
-
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="bottom|right"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:tint="@color/remboy1"
-                    android:src="@android:drawable/ic_menu_edit" />
-            </FrameLayout>
-            <LinearLayout
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="@dimen/size5">
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10">
 
-                <TextView
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_animalCat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/size5"
-                    android:text="@string/animal_cat"
-                    android:textColor="@color/txt_secondary" />
+                    android:drawableRight="@drawable/arrow_down"
+                    android:hint="@string/animal_cat"
+                    android:imeOptions="actionNext"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size15" />
+            </android.support.design.widget.TextInputLayout>
 
-                <Spinner
-                    android:id="@+id/sp_distric"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10">
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.1dp"
-                    android:background="@color/txt_third" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/size5"
-                    android:text="@string/animal_breed_cat"
-                    android:textColor="@color/txt_secondary" />
-
-                <Spinner
-                    android:id="@+id/sp_taluka"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.1dp"
-                    android:background="@color/txt_third" />
-
-                <TextView
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_animalBreedCat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/size5"
-                    android:text="@string/animal_breed_blood_cat"
-                    android:textColor="@color/txt_secondary" />
+                    android:drawableRight="@drawable/arrow_down"
+                    android:hint="@string/animal_breed_cat"
+                    android:imeOptions="actionNext"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size15" />
+            </android.support.design.widget.TextInputLayout>
 
-                <Spinner
-                    android:id="@+id/sp_village"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10">
 
-                <View
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_animalBreedBloodLvl"
                     android:layout_width="match_parent"
-                    android:layout_height="0.1dp"
-                    android:background="@color/txt_third" />
-            </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/arrow_down"
+                    android:hint="@string/animal_breed_blood_cat"
+                    android:imeOptions="actionNext"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size15" />
+            </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -219,13 +196,35 @@
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@android:drawable/edit_text"
+                    android:text="Add Photo" />
+
+                <ImageView
+                    android:id="@+id/iv_bull_photo"
+                    app:srcCompat="@drawable/ic_error_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+
             <Button
                 android:id="@+id/btn_add"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="150dp"
+                android:layout_marginTop="@dimen/size10"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/add" />
+                android:text="SAVE" />
 
         </LinearLayout>
     </android.support.v7.widget.CardView>

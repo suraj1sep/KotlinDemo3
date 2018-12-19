@@ -17,6 +17,7 @@ import android.widget.LinearLayout
 import com.cdat.R
 import com.cdat.adapter.HomeMenuAdapter
 import com.cdat.fragments.daic.AnnualStrawPlanListDAICFragment
+import com.cdat.fragments.daic.ReceivedStrawDAICListFragment
 import com.cdat.fragments.daic.StrawDistribitionListDAICFragment
 import com.cdat.fragments.lab.AnnualStrawPlanListFragment
 import com.cdat.fragments.lab.BullListFragment
@@ -114,8 +115,8 @@ class HomeFragment : Fragment() {
                         var registerFragment = AnnualStrawPlanListDAICFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 1) {
-                        var registerFragment = AnnualStrawPlanListFragment()
-                        //  Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                        var registerFragment = ReceivedStrawDAICListFragment()
+                          Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 2) {
                         var registerFragment = StrawDistribitionListDAICFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")

@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/tools"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cv_mainItem"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:clickable="true"
-    android:foreground="?android:attr/selectableItemBackground"
-    app:ignore="NamespaceTypo"
-    card_view:cardBackgroundColor="@android:color/white"
-    card_view:cardElevation="3dp"
-    card_view:cardUseCompatPadding="true">
-
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,11 +20,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:text="Dispensary Name :"
+                android:text="Dispensary Name "
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size12"
                 android:textStyle="normal" />
-
 
             <TextView
                 android:id="@+id/tv_daic_name"
@@ -41,7 +31,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:gravity="left"
-                android:text="Pune Dispensary"
+                android:text=": Pune Dispensary"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size12"
                 android:textStyle="normal"
@@ -60,38 +50,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:text="Taluka :"
-                android:textColor="@color/txt_primary"
-                android:textSize="@dimen/size12"
-                android:textStyle="normal" />
-
-
-            <TextView
-                android:id="@+id/tv_taluka"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.6"
-                android:gravity="left"
-                android:text="Mulashi"
-                android:textColor="@color/txt_primary"
-                android:textSize="@dimen/size12"
-                android:textStyle="normal"
-                android:visibility="visible" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/size5"
-            android:gravity="center|left"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.4"
-                android:text="District :"
+                android:text="District "
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size12"
                 android:textStyle="normal" />
@@ -102,14 +61,42 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:gravity="left"
-                android:text="Pune"
+                android:text=": Pune"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size12"
                 android:textStyle="normal"
                 android:visibility="visible" />
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size5"
+            android:gravity="center|left"
+            android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Taluka"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_taluka"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text=": mulshi"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -122,11 +109,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.4"
-                android:text="Year :"
+                android:text="Financial Year "
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size12"
                 android:textStyle="normal" />
-
 
             <TextView
                 android:id="@+id/tv_year"
@@ -134,7 +120,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:gravity="left"
-                android:text="2018"
+                android:text=": 2018"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size12"
                 android:textStyle="normal"
@@ -152,8 +138,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:minHeight="30dp"
-            android:visibility="visible"
             android:orientation="horizontal">
 
             <View
@@ -165,83 +149,13 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.33"
+                android:layout_weight="0.5"
                 android:gravity="center"
-                android:text="Date"
+                android:minHeight="30dp"
+                android:text="Supply Date"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size11"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="0.1dp"
-                android:layout_height="match_parent"
-                android:background="@color/txt_primary"
-                android:visibility="gone"
-                android:paddingRight="2dp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.35"
-                android:gravity="center"
-                android:text="Animal Cate."
-                android:textColor="@color/txt_primary"
-                android:visibility="gone"
-                android:textSize="@dimen/size11"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="0.1dp"
-                android:layout_height="match_parent"
-                android:background="@color/txt_primary"
-                android:visibility="gone"
-                android:paddingRight="2dp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.4"
-                android:gravity="center"
-                android:text="Breed Cate."
-                android:visibility="gone"
-                android:textColor="@color/txt_primary"
-                android:textSize="@dimen/size11"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="0.1dp"
-                android:layout_height="match_parent"
-                android:background="@color/txt_primary"
-                android:visibility="gone"
-                android:paddingRight="2dp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.4"
-                android:gravity="center"
-                android:text="Breed With Blood level"
-                android:textColor="@color/txt_primary"
-                android:visibility="gone"
-                android:textSize="@dimen/size11"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="0.1dp"
-                android:layout_height="match_parent"
-                android:background="@color/txt_primary"
-                android:visibility="visible"
-                android:paddingRight="2dp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.37"
-                android:gravity="center"
-                android:text="Straw Demand"
-                android:textColor="@color/txt_primary"
-                android:textSize="@dimen/size11"
-                android:textStyle="bold" />
+                android:textStyle="normal" />
 
             <View
                 android:layout_width="0.1dp"
@@ -253,12 +167,12 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.4"
+                android:layout_weight="0.5"
                 android:gravity="center"
-                android:text="Opening Bal."
+                android:text="Straw Distributed"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size11"
-                android:textStyle="bold" />
+                android:textStyle="normal" />
 
             <View
                 android:layout_width="0.1dp"
@@ -281,10 +195,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:minHeight="30dp"
-            android:visibility="visible"
-            android:weightSum="3"
             android:orientation="horizontal">
 
             <View
@@ -296,48 +208,10 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.9"
+                android:layout_weight="0.5"
                 android:gravity="center"
                 android:text="Total"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/size11"
-                android:textStyle="bold" />
-
-
-            <View
-                android:layout_width="0.1dp"
-                android:layout_height="match_parent"
-                android:paddingRight="2dp" />
-
-            <View
-                android:layout_width="0.1dp"
-                android:layout_height="match_parent"
-                android:visibility="gone"
-                android:paddingRight="2dp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.4"
-                android:gravity="center"
                 android:textColor="@color/txt_primary"
-                android:textSize="@dimen/size11"
-                android:visibility="gone"
-                android:textStyle="normal" />
-
-            <View
-                android:layout_width="0.1dp"
-                android:layout_height="match_parent"
-                android:visibility="gone"
-                android:paddingRight="2dp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.4"
-                android:gravity="center"
-                android:textColor="@color/txt_primary"
-                android:visibility="gone"
                 android:textSize="@dimen/size11"
                 android:textStyle="normal" />
 
@@ -347,32 +221,16 @@
                 android:background="@color/txt_primary"
                 android:paddingRight="2dp" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="100"
-                android:textColor="@color/txt_primary"
-                android:textSize="@dimen/size11"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="0.1dp"
-                android:layout_height="match_parent"
-                android:background="@color/txt_primary"
-                android:paddingRight="2dp" />
-
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1.1"
+                android:layout_weight="0.5"
                 android:gravity="center"
                 android:text="100"
                 android:textColor="@color/txt_primary"
                 android:textSize="@dimen/size11"
-                android:textStyle="bold" />
+                android:textStyle="normal" />
 
             <View
                 android:layout_width="0.1dp"
@@ -385,8 +243,6 @@
             android:layout_width="match_parent"
             android:layout_height="0.1dp"
             android:background="@color/txt_primary" />
-
     </LinearLayout>
 
-
-</android.support.v7.widget.CardView>
+</ScrollView>

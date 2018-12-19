@@ -19,60 +19,59 @@ import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.TextView
 import com.cdat.R
-import com.cdat.adapter.daic.StrawDistributionListDAICAdapter
+import com.cdat.adapter.daic.ReceivedStrawDAICListAdapter
 import com.cdat.helper.Config
 
 
 /**
  * Created by SAM on 17-11-2018.
  */
-class StrawDistribitionListDAICFragment : Fragment() {
+class ReceivedStrawDAICListFragment : Fragment() {
 
     companion object {
         private lateinit var recyclerView: RecyclerView
         private lateinit var et_search: EditText
-        private lateinit var fab_add: FloatingActionButton
         private val categoryList: ArrayList<String> = ArrayList()
-        lateinit var manageCart: StrawDistributionListDAICAdapter.ManageCart
+        lateinit var manageCart: ReceivedStrawDAICListAdapter.ManageCart
+        public var searchText: String = ""
+
         private lateinit var tv_year: TextView
-        var searchText: String = ""
+        lateinit var fab_add: FloatingActionButton
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar!!.title = "Straw Distributions"
+        (activity as AppCompatActivity).supportActionBar!!.title = "Straw Received "
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        var view = inflater.inflate(R.layout.fragment_bull_list, container, false)
+        var view = inflater.inflate(R.layout.fragment_received_straw_daic, container, false)
 
         et_search = view.findViewById(R.id.et_search) as EditText
         recyclerView = view.findViewById(R.id.recyclerView) as RecyclerView
-        fab_add = view.findViewById(R.id.fab_add) as FloatingActionButton
-
         tv_year = view.findViewById(R.id.tv_year) as TextView
+        fab_add = view.findViewById(R.id.fab_add) as FloatingActionButton
 
         tv_year.setOnClickListener {
             selectYear()
         }
 
         fab_add.setOnClickListener {
-            val registerFragment = StrawDistributionDAICFragment()
+            val registerFragment = ReceivedStrawDAICFragment()
             Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
         }
 
-        manageCart = object : StrawDistributionListDAICAdapter.ManageCart {
-            override fun cart(position: Int) {
-                var registerFragment = StrawDistributionListDetailsDAICFragment()
-                Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+
+        manageCart = object : ReceivedStrawDAICListAdapter.ManageCart {
+            override fun cart() {
             }
         }
         init()
+        //item_annual_straw_plan_lab
 
         recyclerView.layoutManager = GridLayoutManager(activity, 1)
-        var adapter1 = StrawDistributionListDAICAdapter(this!!.activity!!, categoryList, manageCart)
+        var adapter1 = ReceivedStrawDAICListAdapter(this!!.activity!!, categoryList, manageCart)
         recyclerView.adapter = adapter1
 
         et_search.addTextChangedListener(object : TextWatcher {
@@ -95,11 +94,6 @@ class StrawDistribitionListDAICFragment : Fragment() {
 
     private fun init() {
         categoryList.add("Milk")
-        categoryList.add("Dhahi")
-        categoryList.add("Pneer")
-        categoryList.add("Milk")
-        categoryList.add("Dhahi")
-        categoryList.add("Pneer")
     }
 
     private fun selectYear() {

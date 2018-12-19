@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size5"
-                android:text="Supply Date"
+                android:text="Received Date"
                 android:textColor="@color/txt_secondary" />
 
             <TextView
@@ -111,7 +111,6 @@
                 android:layout_height="0.1dp"
                 android:background="@color/txt_third" />
 
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -130,57 +129,6 @@
                 android:background="@color/txt_third" />
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/size5"
-                android:text="District"
-                android:textColor="@color/txt_secondary" />
-
-            <Spinner
-                android:id="@+id/sp_district"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:background="@color/txt_third" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/size5"
-                android:text="Taluka"
-                android:textColor="@color/txt_secondary" />
-
-            <Spinner
-                android:id="@+id/sp_taluka"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:background="@color/txt_third" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/size5"
-                android:text="Dispensary Name"
-                android:textColor="@color/txt_secondary" />
-
-            <Spinner
-                android:id="@+id/sp_dispensary_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:background="@color/txt_third" />
-
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -189,10 +137,10 @@
                 android:textColorHint="@color/txt_secondary">
 
                 <EditText
-                    android:id="@+id/et_straw_supply_no"
+                    android:id="@+id/et_straw_received"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Straw Distributed"
+                    android:hint="Straws Received"
                     android:imeOptions="actionDone"
                     android:inputType="number"
                     android:maxLength="4"

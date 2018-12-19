@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.v4.app.Fragment
 import android.support.v7.app.AlertDialog
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.text.Editable
@@ -13,11 +14,10 @@ import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
-import com.cdat.R
-import android.support.v7.app.AppCompatActivity
 import android.widget.DatePicker
+import android.widget.EditText
 import android.widget.TextView
+import com.cdat.R
 import com.cdat.adapter.lab.StrawDistributionListAdapter
 import com.cdat.helper.Config
 
@@ -62,8 +62,9 @@ class StrawDistribitionListFragment : Fragment() {
         }
 
         manageCart = object : StrawDistributionListAdapter.ManageCart {
-            override fun cart() {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            override fun cart(position: Int) {
+                var registerFragment = StrawDistributionListDetailsFragment()
+                Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
             }
         }
         init()
@@ -98,6 +99,7 @@ class StrawDistribitionListFragment : Fragment() {
         categoryList.add("Dhahi")
         categoryList.add("Pneer")
     }
+
     private fun selectYear() {
         val builder1 = AlertDialog.Builder(activity!!)
         val inflater = layoutInflater
