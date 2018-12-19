@@ -27,6 +27,7 @@ import com.cdat.helper.Config
 import com.cdat.helper.DensityUtil
 import com.cdat.helper.Utils
 import com.cdat.profile.AnimalProfileFragment
+import com.cdat.profile.AnimalProfileListFragment
 import com.cdat.profile.FarmerProfileFragment
 
 class HomeFragment : Fragment() {
@@ -143,7 +144,7 @@ class HomeFragment : Fragment() {
                         var registerFragment = FarmerProfileFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 1) {
-                        var animalFragment = AnimalProfileFragment()
+                        var animalFragment = AnimalProfileListFragment()
                         Config.slideFragment(animalFragment, "", fragmentManager!!, R.id.content_frame, "2")
 
                     } else
