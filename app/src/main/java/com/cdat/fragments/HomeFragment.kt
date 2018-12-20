@@ -140,7 +140,7 @@ class HomeFragment : Fragment() {
                         var registerFragment = PregnancyDiagnosisDispensaryFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 5) {
-                        var registerFragment = StrawDistribitionListFragment()
+                        var registerFragment = CalfProfileDispensaryFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else
                         Utils.customMessage(activity!!, "Coming soon!!")

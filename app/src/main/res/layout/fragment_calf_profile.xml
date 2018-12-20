@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:padding="@dimen/size10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_margin="@dimen/size3"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="3dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/size10"
+                android:paddingRight="@dimen/size10"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/iv_search_village"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0.15"
+                    android:padding="@dimen/size10"
+                    android:tint="@android:color/holo_blue_dark"
+                    card_view:srcCompat="@drawable/search" />
+
+                <EditText
+                    android:id="@+id/et_search_village"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85"
+                    android:background="@null"
+                    android:gravity="center|start"
+                    android:hint="search village name"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="@dimen/size13" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_margin="@dimen/size3"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="3dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/size10"
+                android:paddingRight="@dimen/size10">
+
+                <ImageView
+                    android:id="@+id/iv_search_farmer"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0.15"
+                    android:padding="@dimen/size10"
+                    android:tint="@android:color/holo_blue_dark"
+                    card_view:srcCompat="@drawable/search" />
+
+                <EditText
+                    android:id="@+id/et_search_farmer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85"
+                    android:background="@null"
+                    android:gravity="center|start"
+                    android:hint="search farmer name"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="@dimen/size13" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="3dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/size20">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size5"
+                    android:text="Village Name"
+                    android:textColor="@color/txt_secondary"
+                    android:textSize="@dimen/size11" />
+
+                <TextView
+                    android:id="@+id/tv_village_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:minHeight="30dp"
+                    android:text="abc village"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="@dimen/size12" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/txt_third" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size10"
+                    android:text="Farmer Name"
+                    android:textColor="@color/txt_secondary"
+                    android:textSize="@dimen/size11" />
+
+                <TextView
+                    android:id="@+id/tv_farmer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:minHeight="30dp"
+                    android:text="abc farmer"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="@dimen/size12" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/txt_third" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size10"
+                    android:text="Animal Ear Tag No."
+                    android:textColor="@color/txt_secondary"
+                    android:textSize="@dimen/size11" />
+
+                <Spinner
+                    android:id="@+id/sp_animal_ear_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/txt_third" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size5"
+                    android:text="Calf Gender"
+                    android:textColor="@color/txt_secondary"
+                    android:textSize="@dimen/size11" />
+
+                <Spinner
+                    android:id="@+id/sp_calf_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/txt_third" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size10"
+                    android:text="Calf DOB"
+                    android:textColor="@color/txt_secondary"
+                    android:textSize="@dimen/size11" />
+
+                <TextView
+                    android:id="@+id/tv_calf_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                    android:gravity="center|left"
+                    android:minHeight="30dp"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="@dimen/size12" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/txt_third" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size10"
+                    android:textColorHint="@color/txt_secondary">
+
+                    <EditText
+                        android:id="@+id/et_calf_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Calf Birth Weight"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:textColor="@color/txt_primary"
+                        android:textSize="@dimen/size15" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size10"
+                    android:text="Calf Parent"
+                    android:textColor="@color/txt_secondary"
+                    android:textSize="@dimen/size11" />
+
+                <TextView
+                    android:id="@+id/tv_calf_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:minHeight="30dp"
+                    android:text="10"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="@dimen/size12" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/txt_third" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_add_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/edit_text"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="Add Photo"
+                        android:textColor="@color/colorPrimary" />
+
+                    <ImageView
+                        android:id="@+id/iv_calf_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        card_view:srcCompat="@drawable/ic_error_img" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_Distribute"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Save" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
