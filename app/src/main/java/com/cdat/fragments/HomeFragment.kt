@@ -20,10 +20,7 @@ import com.cdat.fragments.daic.AnnualStrawPlanListDAICFragment
 import com.cdat.fragments.daic.MotilityStrawDAICFragment
 import com.cdat.fragments.daic.ReceivedStrawDAICListFragment
 import com.cdat.fragments.daic.StrawDistribitionListDAICFragment
-import com.cdat.fragments.dispansary_level.MotilityStrawDispensaryFragment
-import com.cdat.fragments.dispansary_level.PregnancyDiagnosisDispensaryFragment
-import com.cdat.fragments.dispansary_level.ReceivedStrawDispansaryListFragment
-import com.cdat.fragments.dispansary_level.StrawDemandFragment
+import com.cdat.fragments.dispansary_level.*
 import com.cdat.fragments.lab.AnnualStrawPlanListFragment
 import com.cdat.fragments.lab.BullListFragment
 import com.cdat.fragments.lab.StrawDistribitionListFragment
@@ -137,8 +134,8 @@ class HomeFragment : Fragment() {
                         var registerFragment = MotilityStrawDispensaryFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 3) {
-                        var registerFragment = StrawDistribitionListFragment()
-                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                        var strawConsFragment = StrawConsumptionDispensaryFragment()
+                        Config.slideFragment(strawConsFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 4) {
                         var registerFragment = PregnancyDiagnosisDispensaryFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
