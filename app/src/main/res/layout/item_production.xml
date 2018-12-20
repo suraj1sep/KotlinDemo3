@@ -350,7 +350,8 @@
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:padding="@dimen/size8"
-                android:src="@android:drawable/ic_delete" />
+                android:tint="@color/colorPrimary"
+                card_view:srcCompat="@drawable/ic_close" />
 
             <ImageView
                 android:id="@+id/iv_bullEdit"
@@ -360,7 +361,7 @@
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:padding="@dimen/size8"
-                android:src="@android:drawable/ic_menu_edit"
+                card_view:srcCompat="@drawable/ic_edit2"
                 android:tint="@color/colorPrimary" />
 
 

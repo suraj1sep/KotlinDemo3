@@ -18,25 +18,26 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
         android:text="@string/app_name"
-        android:visibility="visible"
-        android:textSize="25dp" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:visibility="visible" />
 
     <TextView
         android:id="@+id/tv_slogan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Maharashtra Livestock Development Board (MLDB)"
         android:layout_marginTop="@dimen/size15"
-        android:visibility="visible"
+        android:text="Maharashtra Livestock Development Board (MLDB)"
+        android:textColor="@color/txt_primary"
         android:textStyle="bold"
-        android:textColor="#000000"/>
+        android:visibility="visible" />
 
     <TextView
         android:id="@+id/tv_slogan1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Animal Husbandry Department, Govt. of Maharashtra"
         android:layout_marginTop="@dimen/size5"
-        android:visibility="visible"
-        android:textColor="#000000"/>
+        android:text="Animal Husbandry Department, Govt. of Maharashtra"
+        android:textColor="@color/txt_primary"
+        android:visibility="visible" />
 </LinearLayout>

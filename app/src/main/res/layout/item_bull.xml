@@ -318,31 +318,30 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.2"
-                android:orientation="vertical"
                 android:gravity="end"
+                android:orientation="vertical"
                 android:padding="@dimen/size3">
 
                 <ImageView
                     android:id="@+id/iv_bullDell"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:padding="@dimen/size8"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:src="@android:drawable/ic_delete" />
+                    android:padding="@dimen/size8"
+                    android:tint="@color/colorPrimary"
+                    card_view:srcCompat="@drawable/ic_close" />
 
-                    <ImageView
-                        android:id="@+id/iv_bullEdit"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:layout_marginTop="@dimen/size5"
-                        android:padding="@dimen/size8"
-                        android:clickable="true"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:src="@android:drawable/ic_menu_edit"
-                        android:tint="@color/colorPrimary" />
-
-
+                <ImageView
+                    android:id="@+id/iv_bullEdit"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="@dimen/size5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/size8"
+                    android:tint="@color/colorPrimary"
+                    card_view:srcCompat="@drawable/ic_edit2" />
 
 
             </LinearLayout>
