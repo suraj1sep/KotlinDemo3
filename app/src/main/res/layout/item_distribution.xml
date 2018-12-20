@@ -306,11 +306,11 @@
 
                 <ImageView
                     android:id="@+id/iv_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_width="24dp"
+                    android:padding="1dp"
+                    android:layout_height="24dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:padding="@dimen/size5"
                     card_view:srcCompat="@drawable/ic_circle_view" />
 
 

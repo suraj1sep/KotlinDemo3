@@ -334,16 +334,16 @@
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:padding="@dimen/size7"
-                    card_view:srcCompat="@drawable/ic_edit2"
-                    android:tint="@color/colorPrimary" />
+                    android:tint="@color/colorPrimary"
+                    card_view:srcCompat="@drawable/ic_edit2" />
 
                 <ImageView
                     android:id="@+id/iv_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:padding="@dimen/size5"
+                    android:padding="1dp"
                     card_view:srcCompat="@drawable/ic_circle_view" />
 
             </LinearLayout>

@@ -89,8 +89,8 @@ class SplashActivity : AppCompatActivity() {
     private fun goToHome() {
 
         Handler().postDelayed({
-//            val mainIntent = Intent(this@SplashActivity, BackgroundActivity::class.java)
-            val mainIntent = Intent(this@SplashActivity, WelcomeActivity::class.java)
+            val mainIntent = Intent(this@SplashActivity, BackgroundActivity::class.java)
+//            val mainIntent = Intent(this@SplashActivity, WelcomeActivity::class.java)
             startActivity(mainIntent)
             finish()
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
