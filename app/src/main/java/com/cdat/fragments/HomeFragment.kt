@@ -20,6 +20,8 @@ import com.cdat.fragments.daic.AnnualStrawPlanListDAICFragment
 import com.cdat.fragments.daic.MotilityStrawDAICFragment
 import com.cdat.fragments.daic.ReceivedStrawDAICListFragment
 import com.cdat.fragments.daic.StrawDistribitionListDAICFragment
+import com.cdat.fragments.dispansary_level.ReceivedStrawDispansaryListFragment
+import com.cdat.fragments.dispansary_level.StrawDemandFragment
 import com.cdat.fragments.lab.AnnualStrawPlanListFragment
 import com.cdat.fragments.lab.BullListFragment
 import com.cdat.fragments.lab.StrawDistribitionListFragment
@@ -79,10 +81,12 @@ class HomeFragment : Fragment() {
             categoryList.add("Straw Distribution")
             categoryList.add("Straw Motility")
         } else if (loginType == 3) {
-            categoryList.add("Straw Plan")
+            categoryList.add("Straw Demand")
             categoryList.add("Straw Received")
-            categoryList.add("Straw Distribution")
             categoryList.add("Straw Motility")
+            categoryList.add("Straw Consumption")
+            categoryList.add("Pregnancy Diagnosis")
+            categoryList.add("Calf Profile")
         } else if (loginType == 4) {
             categoryList.add("Farmer Profile")
             categoryList.add("Animal Profile")
@@ -127,15 +131,21 @@ class HomeFragment : Fragment() {
                         Utils.customMessage(activity!!, "Coming soon!!")
                 else if (loginType == 3)
                     if (position == 0) {
-                        var registerFragment = BullListFragment()
-                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                        var strawDmdFragment = StrawDemandFragment()
+                        Config.slideFragment(strawDmdFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 1) {
-                        var registerFragment = AnnualStrawPlanListFragment()
-                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                        var dispansaryListFragment = ReceivedStrawDispansaryListFragment()
+                        Config.slideFragment(dispansaryListFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 2) {
                         var registerFragment = StrawProductionLabListFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 3) {
+                        var registerFragment = StrawDistribitionListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    }else if (position == 4) {
+                        var registerFragment = StrawDistribitionListFragment()
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                    }else if (position == 5) {
                         var registerFragment = StrawDistribitionListFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else

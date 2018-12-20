@@ -12,9 +12,9 @@
         android:layout_gravity="center|top"
         android:padding="@dimen/size10"
         android:text="Farmer Profile"
-        android:visibility="gone"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="@dimen/size15" />
+        android:textSize="@dimen/size15"
+        android:visibility="gone" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,57 +28,64 @@
             android:background="@drawable/shadow"
             android:orientation="vertical"
             android:padding="@dimen/size10">
-            <TextView
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/size5"
-                android:text="@string/animal_cat"
-                android:textColor="@color/txt_secondary" />
+                android:orientation="vertical"
+                android:padding="@dimen/size5">
 
-            <Spinner
-                android:id="@+id/sp_animal_cate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size5"
+                    android:text="@string/animal_cat"
+                    android:textColor="@color/txt_secondary" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:background="@color/txt_third" />
+                <Spinner
+                    android:id="@+id/sp_animal_cate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/size5"
-                android:text="@string/animal_breed_cat"
-                android:textColor="@color/txt_secondary" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/txt_third" />
 
-            <Spinner
-                android:id="@+id/sp_breed_cate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size5"
+                    android:text="@string/animal_breed_cat"
+                    android:textColor="@color/txt_secondary" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:background="@color/txt_third" />
+                <Spinner
+                    android:id="@+id/sp_breed_cate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/size5"
-                android:text="@string/animal_breed_blood_cat"
-                android:textColor="@color/txt_secondary" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/txt_third" />
 
-            <Spinner
-                android:id="@+id/sp_breed_blood_level"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size5"
+                    android:text="@string/animal_breed_blood_cat"
+                    android:textColor="@color/txt_secondary" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.1dp"
-                android:background="@color/txt_third" />
+                <Spinner
+                    android:id="@+id/sp_breed_blood_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/txt_third" />
+            </LinearLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -99,6 +106,7 @@
                     android:singleLine="true"
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -164,14 +172,15 @@
                     android:textStyle="bold" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:gravity="end"
                 android:orientation="horizontal"
-                android:visibility="gone"
                 android:padding="@dimen/size3"
+                android:visibility="gone"
                 android:weightSum="2">
 
                 <TextView

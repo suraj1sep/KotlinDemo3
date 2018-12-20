@@ -31,9 +31,12 @@
     <string name="no_of_animal">No Of Animals Owned *</string>
 
     <!--Bull Registration-->
+    <string name="financial_year">Financial Year *</string>
     <string name="animal_cat">Animal Category *</string>
     <string name="animal_breed_cat">Animal Breed Category *</string>
     <string name="animal_breed_blood_cat">Animal Breed with Blood Level *</string>
+    <string name="straw_demand">Straw Demand *</string>
+    <string name="opening_balance">Opening Balance *</string>
     <string name="bull_id_no">Bull Id No. *</string>
     <string name="animal_ear_tag_no">Animal Ear Tag No. *</string>
     <string name="animal_age">Animal Age*</string>
