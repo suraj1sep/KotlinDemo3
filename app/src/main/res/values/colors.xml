@@ -49,7 +49,7 @@
         <item>@color/dot_dark_screen4</item>
     </array>
 
-    <color name="bg">#23bdbdbd</color>
+    <color name="bg">#23aeacac</color>
     <color name="sami_tran">#92424242</color>
 
     <color name="off_white_new">#a0fafafa</color>

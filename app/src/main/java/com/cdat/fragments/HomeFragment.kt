@@ -20,6 +20,8 @@ import com.cdat.fragments.daic.AnnualStrawPlanListDAICFragment
 import com.cdat.fragments.daic.MotilityStrawDAICFragment
 import com.cdat.fragments.daic.ReceivedStrawDAICListFragment
 import com.cdat.fragments.daic.StrawDistribitionListDAICFragment
+import com.cdat.fragments.dispansary_level.MotilityStrawDispensaryFragment
+import com.cdat.fragments.dispansary_level.PregnancyDiagnosisDispensaryFragment
 import com.cdat.fragments.dispansary_level.ReceivedStrawDispansaryListFragment
 import com.cdat.fragments.dispansary_level.StrawDemandFragment
 import com.cdat.fragments.lab.AnnualStrawPlanListFragment
@@ -30,7 +32,6 @@ import com.cdat.helper.AutoScrollViewPager
 import com.cdat.helper.Config
 import com.cdat.helper.DensityUtil
 import com.cdat.helper.Utils
-import com.cdat.profile.AnimalProfileFragment
 import com.cdat.profile.AnimalProfileListFragment
 import com.cdat.profile.FarmerProfileFragment
 
@@ -90,10 +91,6 @@ class HomeFragment : Fragment() {
         } else if (loginType == 4) {
             categoryList.add("Farmer Profile")
             categoryList.add("Animal Profile")
-//            categoryList.add("Straw Plan")
-//            categoryList.add("Straw Received")
-//            categoryList.add("Straw Distribution")
-//            categoryList.add("Straw Motility")
         }
 
         clickListener = object : HomeMenuAdapter.ClickListener {
@@ -120,13 +117,13 @@ class HomeFragment : Fragment() {
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 1) {
                         var registerFragment = ReceivedStrawDAICListFragment()
-                          Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 2) {
                         var registerFragment = StrawDistribitionListDAICFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 3) {
                         var registerFragment = MotilityStrawDAICFragment()
-                           Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+                        Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else
                         Utils.customMessage(activity!!, "Coming soon!!")
                 else if (loginType == 3)
@@ -137,15 +134,15 @@ class HomeFragment : Fragment() {
                         var dispansaryListFragment = ReceivedStrawDispansaryListFragment()
                         Config.slideFragment(dispansaryListFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 2) {
-                        var registerFragment = StrawProductionLabListFragment()
+                        var registerFragment = MotilityStrawDispensaryFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 3) {
                         var registerFragment = StrawDistribitionListFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
-                    }else if (position == 4) {
-                        var registerFragment = StrawDistribitionListFragment()
+                    } else if (position == 4) {
+                        var registerFragment = PregnancyDiagnosisDispensaryFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
-                    }else if (position == 5) {
+                    } else if (position == 5) {
                         var registerFragment = StrawDistribitionListFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else
