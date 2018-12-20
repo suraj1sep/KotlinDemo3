@@ -23,12 +23,16 @@
         <ImageView
             android:layout_width="35dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/size20"
             android:src="@drawable/cdat_logo" />
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/cdat_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:text="CDAT PUNE"
+            android:textColor="#0D6698"
+            android:textSize="@dimen/size16"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <View

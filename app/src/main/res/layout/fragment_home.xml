@@ -20,7 +20,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:background="@drawable/carousel_half_curv"
             android:gravity="center"
             android:orientation="horizontal"
             android:paddingBottom="@dimen/size10"
