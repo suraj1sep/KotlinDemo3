@@ -128,16 +128,16 @@ class HomeFragment : Fragment() {
                         var dispansaryListFragment = ReceivedStrawDispansaryListFragment()
                         Config.slideFragment(dispansaryListFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 2) {
-                        var registerFragment = MotilityStrawDispensaryFragment()
+                        var registerFragment = MotilityStrawDispansaryListFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 3) {
-                        var strawConsFragment = StrawConsumptionDispensaryFragment()
+                        var strawConsFragment = StrawConsumptionListFragment()
                         Config.slideFragment(strawConsFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 4) {
-                        var registerFragment = PregnancyDiagnosisDispensaryFragment()
+                        var registerFragment = PregnancyDiagnosisListFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else if (position == 5) {
-                        var registerFragment = CalfProfileDispensaryFragment()
+                        var registerFragment = CalfProfileListFragment()
                         Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
                     } else
                         Utils.customMessage(activity!!, "Coming soon!!")
