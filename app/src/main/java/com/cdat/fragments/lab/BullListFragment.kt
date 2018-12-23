@@ -23,9 +23,6 @@ import android.widget.TextView
 import com.cdat.helper.Config
 
 
-/**
- * Created by SAM on 17-11-2018.
- */
 class BullListFragment : Fragment() {
 
     companion object {

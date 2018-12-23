@@ -45,8 +45,7 @@
                     android:background="@null"
                     android:gravity="center|start"
                     android:hint="search village name"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size13" />
+                    android:textColor="@color/txt_primary"/>
 
 
             </LinearLayout>
@@ -85,8 +84,7 @@
                     android:background="@null"
                     android:gravity="center|start"
                     android:hint="search farmer name"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size13" />
+                    android:textColor="@color/txt_primary"/>
 
 
             </LinearLayout>
@@ -112,8 +110,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size5"
                     android:text="Village Name"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <TextView
                     android:id="@+id/tv_village_name"
@@ -122,8 +119,7 @@
                     android:gravity="center|left"
                     android:minHeight="30dp"
                     android:text="abc village"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size12" />
+                    android:textColor="@color/txt_primary"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -135,8 +131,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size10"
                     android:text="Farmer Name"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <TextView
                     android:id="@+id/tv_farmer_name"
@@ -145,8 +140,7 @@
                     android:gravity="center|left"
                     android:minHeight="30dp"
                     android:text="abc farmer"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size12" />
+                    android:textColor="@color/txt_primary"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -158,8 +152,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size10"
                     android:text="Animal Ear Tag No."
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <Spinner
                     android:id="@+id/sp_animal_ear_tag"
@@ -177,8 +170,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size5"
                     android:text="AI Date"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <Spinner
                     android:id="@+id/sp_ai_date"
@@ -196,8 +188,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size10"
                     android:text="Animal Category"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <TextView
                     android:id="@+id/tv_animal_cate"
@@ -206,8 +197,7 @@
                     android:gravity="center|left"
                     android:minHeight="30dp"
                     android:text="animal Category"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size12" />
+                    android:textColor="@color/txt_primary"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -219,8 +209,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size10"
                     android:text="Animal Breed Category"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <TextView
                     android:id="@+id/tv_animal_breed_category"
@@ -229,8 +218,7 @@
                     android:gravity="center|left"
                     android:minHeight="30dp"
                     android:text="animal breed category"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size12" />
+                    android:textColor="@color/txt_primary"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -242,8 +230,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size10"
                     android:text="Animal Breed with Blood Level"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <TextView
                     android:id="@+id/tv_breed_blood_level"
@@ -252,8 +239,7 @@
                     android:gravity="center|left"
                     android:minHeight="30dp"
                     android:text="breed_blood_level"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size12" />
+                    android:textColor="@color/txt_primary"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -265,8 +251,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size10"
                     android:text="PD Test Date"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <TextView
                     android:id="@+id/tv_pd_tested_date"
@@ -275,8 +260,7 @@
                     android:drawableRight="@android:drawable/ic_menu_my_calendar"
                     android:gravity="center|left"
                     android:minHeight="30dp"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size12" />
+                    android:textColor="@color/txt_primary"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -288,8 +272,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size10"
                     android:text="PD Result"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <Spinner
                     android:id="@+id/sp_pd_result"
@@ -307,8 +290,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size5"
                     android:text="Date of Calving"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <TextView
                     android:id="@+id/tv_date_calving"
@@ -317,8 +299,7 @@
                     android:gravity="center|left"
                     android:minHeight="30dp"
                     android:text="Date of Calving data"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size12" />
+                    android:textColor="@color/txt_primary"/>
 
                 <View
                     android:layout_width="match_parent"

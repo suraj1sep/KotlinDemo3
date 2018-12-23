@@ -126,36 +126,6 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/size3"
-                    android:gravity="center|left"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.4"
-                        android:text="Bull No "
-                        android:textColor="@color/txt_secondary"
-                        android:textSize="@dimen/size12"
-                        android:textStyle="bold" />
-
-
-                    <TextView
-                        android:id="@+id/tv_bull_no"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:gravity="left"
-                        android:text=": 1"
-                        android:textColor="@color/txt_primary"
-                        android:textSize="@dimen/size12"
-                        android:textStyle="normal"
-                        android:visibility="visible" />
-
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -168,100 +138,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
-                        android:text="DOB "
-                        android:textColor="@color/txt_secondary"
-                        android:textSize="@dimen/size12"
-                        android:textStyle="bold" />
-
-
-                    <TextView
-                        android:id="@+id/tv_dob"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:gravity="left"
-                        android:text=": 11/11/2018"
-                        android:textColor="@color/txt_primary"
-                        android:textSize="@dimen/size12"
-                        android:textStyle="normal"
-                        android:visibility="visible" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/size3"
-                    android:gravity="center|left"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.4"
-                        android:text="Date of Procurement "
-                        android:textColor="@color/txt_secondary"
-                        android:textSize="@dimen/size12"
-                        android:textStyle="bold" />
-
-
-                    <TextView
-                        android:id="@+id/tv_date_procurement"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:gravity="left"
-                        android:text=": 11/11/2018"
-                        android:textColor="@color/txt_primary"
-                        android:textSize="@dimen/size12"
-                        android:textStyle="normal"
-                        android:visibility="visible" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/size3"
-                    android:gravity="center|left"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.4"
-                        android:text="DAM Milk Yield"
-                        android:textColor="@color/txt_secondary"
-                        android:textSize="@dimen/size12"
-                        android:textStyle="bold" />
-
-
-                    <TextView
-                        android:id="@+id/tv_DAM_milk_yield"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:gravity="left"
-                        android:text=": 70"
-                        android:textColor="@color/txt_primary"
-                        android:textSize="@dimen/size12"
-                        android:textStyle="normal"
-                        android:visibility="visible" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/size3"
-                    android:gravity="center|left"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.4"
-                        android:text="SIRE DAM Milk Yield "
+                        android:text="Straw Demand"
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
                         android:textStyle="bold" />
@@ -292,7 +169,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
-                        android:text="Bull Origin"
+                        android:text="Opening Balance"
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
                         android:textStyle="bold" />

@@ -15,9 +15,6 @@ import android.widget.*
 import com.cdat.R
 import java.text.Normalizer
 
-/**
- * Created by SAM on 17-11-2018.
- */
 class BullListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
     : RecyclerView.Adapter<BullListAdapter.ViewHolder>(), Filterable {
 

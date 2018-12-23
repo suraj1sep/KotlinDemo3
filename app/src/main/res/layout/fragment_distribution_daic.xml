@@ -10,7 +10,7 @@
         android:id="@+id/cv_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="top"
         card_view:cardBackgroundColor="@android:color/white"
         card_view:cardElevation="3dp"
         card_view:cardUseCompatPadding="true">
@@ -35,6 +35,7 @@
                 android:layout_height="wrap_content"
                 android:drawableRight="@android:drawable/ic_menu_my_calendar"
                 android:gravity="center|left"
+                android:drawableTint="@color/colorPrimary"
                 android:padding="@dimen/size3"
                 android:textColor="@color/txt_primary" />
 

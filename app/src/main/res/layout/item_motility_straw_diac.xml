@@ -44,6 +44,37 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
+                        android:text="Motility Date "
+                        android:textColor="@color/txt_secondary"
+                        android:textSize="@dimen/size12"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tv_dob"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:gravity="left"
+                        android:text=": 11/11/2018"
+                        android:textColor="@color/txt_primary"
+                        android:textSize="@dimen/size12"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size3"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
                         android:text="Animal Category "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
@@ -137,7 +168,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
-                        android:text="Bull No "
+                        android:text="Bull Id No. "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
                         android:textStyle="bold" />
@@ -168,69 +199,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
-                        android:text="DOB "
-                        android:textColor="@color/txt_secondary"
-                        android:textSize="@dimen/size12"
-                        android:textStyle="bold" />
-
-
-                    <TextView
-                        android:id="@+id/tv_dob"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:gravity="left"
-                        android:text=": 11/11/2018"
-                        android:textColor="@color/txt_primary"
-                        android:textSize="@dimen/size12"
-                        android:textStyle="normal"
-                        android:visibility="visible" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/size3"
-                    android:gravity="center|left"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.4"
-                        android:text="Date of Procurement "
-                        android:textColor="@color/txt_secondary"
-                        android:textSize="@dimen/size12"
-                        android:textStyle="bold" />
-
-
-                    <TextView
-                        android:id="@+id/tv_date_procurement"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.6"
-                        android:gravity="left"
-                        android:text=": 11/11/2018"
-                        android:textColor="@color/txt_primary"
-                        android:textSize="@dimen/size12"
-                        android:textStyle="normal"
-                        android:visibility="visible" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/size3"
-                    android:gravity="center|left"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.4"
-                        android:text="DAM Milk Yield"
+                        android:text="Batch No."
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
                         android:textStyle="bold" />
@@ -261,7 +230,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
-                        android:text="SIRE DAM Milk Yield "
+                        android:text="Straw Used "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
                         android:textStyle="bold" />
@@ -292,7 +261,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
-                        android:text="Bull Origin"
+                        android:text="Motility Result"
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
                         android:textStyle="bold" />

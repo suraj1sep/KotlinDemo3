@@ -39,7 +39,7 @@ class StrawDistributionFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar!!.title = "Straw Distribution"
+        (activity as AppCompatActivity).supportActionBar!!.title = "Straw Distribution sss"
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,

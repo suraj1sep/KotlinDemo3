@@ -1,4 +1,4 @@
-package com.cdat.adapter.daic
+package com.cdat.adapter.dispansary_level
 
 import android.graphics.Color
 import android.graphics.Typeface
@@ -11,19 +11,15 @@ import android.text.style.StyleSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Filter
-import android.widget.Filterable
-import android.widget.ImageView
+import android.widget.*
 import com.cdat.R
 import java.text.Normalizer
 
-class StrawDistributionListDAICAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
-    : RecyclerView.Adapter<StrawDistributionListDAICAdapter.ViewHolder>(), Filterable {
+class StrawDemandListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
+    : RecyclerView.Adapter<StrawDemandListAdapter.ViewHolder>(), Filterable {
 
 
     private var mFilteredList: ArrayList<String>
-
-    var clickListener: ManageCart = clickListener
 
     init {
         mFilteredList = productList
@@ -61,12 +57,12 @@ class StrawDistributionListDAICAdapter(private val context: FragmentActivity, pr
     private var mClickListener: ManageCart = clickListener
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_distribution_daic, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.item_straw_demand, parent, false)
         return ViewHolder(view)
     }
 
     interface ManageCart {
-        fun cart(position: Int)
+        fun cart()
     }
 
     override fun getItemCount(): Int {
@@ -74,13 +70,21 @@ class StrawDistributionListDAICAdapter(private val context: FragmentActivity, pr
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.iv_view.setOnClickListener {
-            clickListener.cart(position)
-        }
+
+//        if (BullListFragment.searchText!!.isEmpty())
+//            holder.tv_product_name.text = mFilteredList.get(position)
+//        else
+//            holder.tv_product_name.text = highlightText(BullListFragment.searchText, mFilteredList.get(position))
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var iv_view: ImageView = itemView.findViewById<ImageView>(R.id.iv_view) as ImageView
+
+//        var tv_product_name: TextView = itemView.findViewById<TextView>(R.id.tv_product_name) as TextView
+//        var tv_qty: TextView = itemView.findViewById<TextView>(R.id.tv_qty) as TextView
+//        var tv_price: TextView = itemView.findViewById<TextView>(R.id.tv_price) as TextView
+//        var btn_add_cart: Button = itemView.findViewById<Button>(R.id.btn_add_cart) as Button
+//        var iv_product_image: ImageView = itemView.findViewById<ImageView>(R.id.iv_product_image) as ImageView
+
     }
 
     fun highlightText(search: String?, originalText: String): CharSequence {

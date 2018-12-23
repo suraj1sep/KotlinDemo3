@@ -16,9 +16,6 @@ import android.app.DatePickerDialog
 import java.util.*
 
 
-/**
- * Created by SAM on 17-11-2018.
- */
 class StrawDemandFragment : Fragment() {
 
     companion object {

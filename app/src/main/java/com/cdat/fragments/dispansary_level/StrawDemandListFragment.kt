@@ -1,4 +1,4 @@
-package com.cdat.fragments.daic
+package com.cdat.fragments.dispansary_level
 
 import android.content.res.Resources
 import android.os.Build
@@ -6,49 +6,48 @@ import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.v4.app.Fragment
 import android.support.v7.app.AlertDialog
-import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.DatePicker
 import android.widget.EditText
-import android.widget.TextView
 import com.cdat.R
-import com.cdat.adapter.daic.StrawDistributionListDAICAdapter
+import android.support.v7.app.AppCompatActivity
+import android.util.Log
+import android.widget.DatePicker
+import android.widget.TextView
+import com.cdat.adapter.dispansary_level.StrawDemandListAdapter
 import com.cdat.helper.Config
 
 
-class StrawDistribitionListDAICFragment : Fragment() {
+class StrawDemandListFragment : Fragment() {
 
     companion object {
         private lateinit var recyclerView: RecyclerView
         private lateinit var et_search: EditText
         private lateinit var fab_add: FloatingActionButton
         private val categoryList: ArrayList<String> = ArrayList()
-        lateinit var manageCart: StrawDistributionListDAICAdapter.ManageCart
+        lateinit var manageCart: StrawDemandListAdapter.ManageCart
+        public var searchText: String = ""
         private lateinit var tv_year: TextView
-        var searchText: String = ""
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar!!.title = "Straw Distributions"
+        (activity as AppCompatActivity).supportActionBar!!.title = "Straw Demand List"
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        var view = inflater.inflate(R.layout.fragment_bull_list, container, false)
+        var view = inflater.inflate(R.layout.fragment_straw_demand_list, container, false)
 
         et_search = view.findViewById(R.id.et_search) as EditText
         recyclerView = view.findViewById(R.id.recyclerView) as RecyclerView
         fab_add = view.findViewById(R.id.fab_add) as FloatingActionButton
-
         tv_year = view.findViewById(R.id.tv_year) as TextView
 
         tv_year.setOnClickListener {
@@ -56,20 +55,19 @@ class StrawDistribitionListDAICFragment : Fragment() {
         }
 
         fab_add.setOnClickListener {
-            val registerFragment = StrawDistributionDAICFragment()
+            val registerFragment = StrawDemandFragment()
             Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
         }
 
-        manageCart = object : StrawDistributionListDAICAdapter.ManageCart {
-            override fun cart(position: Int) {
-                var registerFragment = StrawDistributionListDetailsDAICFragment()
-                Config.slideFragment(registerFragment, "", fragmentManager!!, R.id.content_frame, "2")
+        manageCart = object : StrawDemandListAdapter.ManageCart {
+            override fun cart() {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
             }
         }
         init()
 
         recyclerView.layoutManager = GridLayoutManager(activity, 1)
-        var adapter1 = StrawDistributionListDAICAdapter(this!!.activity!!, categoryList, manageCart)
+        var adapter1 = StrawDemandListAdapter(this!!.activity!!, categoryList, manageCart)
         recyclerView.adapter = adapter1
 
         et_search.addTextChangedListener(object : TextWatcher {
@@ -98,7 +96,6 @@ class StrawDistribitionListDAICFragment : Fragment() {
         categoryList.add("Dhahi")
         categoryList.add("Pneer")
     }
-
     private fun selectYear() {
         val builder1 = AlertDialog.Builder(activity!!)
         val inflater = layoutInflater

@@ -45,8 +45,7 @@
                     android:background="@null"
                     android:gravity="center|start"
                     android:hint="search village name"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size13" />
+                    android:textColor="@color/txt_primary"/>
 
 
             </LinearLayout>
@@ -85,8 +84,7 @@
                     android:background="@null"
                     android:gravity="center|start"
                     android:hint="search farmer name"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size13" />
+                    android:textColor="@color/txt_primary"/>
 
 
             </LinearLayout>
@@ -112,8 +110,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size5"
                     android:text="Village Name"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <TextView
                     android:id="@+id/tv_village_name"
@@ -122,8 +119,7 @@
                     android:gravity="center|left"
                     android:minHeight="30dp"
                     android:text="abc village"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size12" />
+                    android:textColor="@color/txt_primary"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -135,8 +131,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size10"
                     android:text="Farmer Name"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <TextView
                     android:id="@+id/tv_farmer_name"
@@ -145,8 +140,7 @@
                     android:gravity="center|left"
                     android:minHeight="30dp"
                     android:text="abc farmer"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size12" />
+                    android:textColor="@color/txt_primary"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -158,8 +152,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size10"
                     android:text="Animal Ear Tag No."
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <Spinner
                     android:id="@+id/sp_animal_ear_tag"
@@ -177,8 +170,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size5"
                     android:text="Calf Gender"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <Spinner
                     android:id="@+id/sp_calf_gender"
@@ -196,8 +188,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size10"
                     android:text="Calf DOB"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <TextView
                     android:id="@+id/tv_calf_dob"
@@ -206,8 +197,7 @@
                     android:drawableRight="@android:drawable/ic_menu_my_calendar"
                     android:gravity="center|left"
                     android:minHeight="30dp"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size12" />
+                    android:textColor="@color/txt_primary"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -238,8 +228,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/size10"
                     android:text="Calf Parent"
-                    android:textColor="@color/txt_secondary"
-                    android:textSize="@dimen/size11" />
+                    android:textColor="@color/txt_secondary"/>
 
                 <TextView
                     android:id="@+id/tv_calf_parent"
@@ -248,8 +237,7 @@
                     android:gravity="center|left"
                     android:minHeight="30dp"
                     android:text="10"
-                    android:textColor="@color/txt_primary"
-                    android:textSize="@dimen/size12" />
+                    android:textColor="@color/txt_primary"/>
 
                 <View
                     android:layout_width="match_parent"
