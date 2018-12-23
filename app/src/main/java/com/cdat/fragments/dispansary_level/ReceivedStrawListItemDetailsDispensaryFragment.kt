@@ -1,4 +1,4 @@
-package com.cdat.fragments.daic
+package com.cdat.fragments.dispansary_level
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -14,7 +14,7 @@ import com.cdat.R
 /**
  * Created by SAM on 17-11-2018.
  */
-class StrawDistributionListDetailsDAICFragment : Fragment() {
+class ReceivedStrawListItemDetailsDispensaryFragment : Fragment() {
 
     companion object {
         private lateinit var ll_demand: LinearLayout
@@ -23,13 +23,13 @@ class StrawDistributionListDetailsDAICFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar!!.title = "Straw Distribution Details"
+        (activity as AppCompatActivity).supportActionBar!!.title = "Straw Received Details"
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        var view = inflater.inflate(R.layout.fragment_straw_distribution_list_details_daic, container, false)
+        var view = inflater.inflate(R.layout.fragment_received_straw_list_item_details_dispensary, container, false)
         ll_demand = view.findViewById<LinearLayout>(R.id.ll_demand)
 
 

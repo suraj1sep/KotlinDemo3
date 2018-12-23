@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="DAIC Name "
+                android:textColor="@color/txt_secondary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_daic_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text=": Pune DAIC"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size5"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Financial Year "
+                android:textColor="@color/txt_secondary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="left"
+                android:text=": 2018"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size12"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/size5"
+            android:background="@color/txt_primary"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/txt_primary"
+                android:paddingRight="2dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Received Date"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size11"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/txt_primary"
+                android:paddingRight="2dp" />
+
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/txt_primary"
+                android:paddingRight="2dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Straw Received"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size11"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/txt_primary"
+                android:paddingRight="2dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/txt_primary"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ll_demand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/txt_primary"
+                android:paddingRight="2dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Total"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/size11"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/txt_primary"
+                android:paddingRight="2dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="@color/txt_primary"
+                android:textSize="@dimen/size11"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/txt_primary"
+                android:paddingRight="2dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/txt_primary"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</ScrollView>

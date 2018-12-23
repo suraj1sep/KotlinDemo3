@@ -61,7 +61,9 @@ class ReceivedStrawDispansaryListFragment : Fragment() {
 
 
         manageCart = object : ReceivedStrawDispansaryListAdapter.ManageCart {
-            override fun cart() {
+            override fun cart(position: Int) {
+                var fm = ReceivedStrawListItemDetailsDispensaryFragment()
+                Config.slideFragment(fm, "", fragmentManager!!, R.id.content_frame, "2")
             }
         }
         init()

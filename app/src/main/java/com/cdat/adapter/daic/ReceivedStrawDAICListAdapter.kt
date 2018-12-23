@@ -13,17 +13,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import com.cdat.R
-import java.lang.Exception
 import java.text.Normalizer
 
 /**
  * Created by SAM on 17-11-2018.
  */
-class ReceivedStrawDAICListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
+class ReceivedStrawDAICListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener1: ManageCart)
     : RecyclerView.Adapter<ReceivedStrawDAICListAdapter.ViewHolder>(), Filterable {
 
 
     private var mFilteredList: ArrayList<String>
+
+    var clickListener: ManageCart = clickListener1
 
     init {
         mFilteredList = productList
@@ -58,15 +59,13 @@ class ReceivedStrawDAICListAdapter(private val context: FragmentActivity, privat
         }
     }
 
-    private var mClickListener: ManageCart = clickListener
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_received_straw_daic, parent, false)
         return ViewHolder(view)
     }
 
     interface ManageCart {
-        fun cart()
+        fun cart(position: Int)
     }
 
     override fun getItemCount(): Int {
@@ -79,24 +78,16 @@ class ReceivedStrawDAICListAdapter(private val context: FragmentActivity, privat
 //            holder.tv_product_name.text = mFilteredList.get(position)
 //        else
 //            holder.tv_product_name.text = highlightText(BullListFragment.searchText, mFilteredList.get(position))
-        try {
-            holder.ll_demand.removeAllViews()
-        } catch (e: Exception) {
-        }
-        for (i in 0..4) {
-            val inflater = context.getLayoutInflater()
-            val mView = inflater.inflate(R.layout.item_received_sub_view, null)
-            var tv_date: TextView = mView.findViewById<TextView>(R.id.tv_date) as TextView
-            var tv_straw: TextView = mView.findViewById<TextView>(R.id.tv_straw) as TextView
-            holder.ll_demand.addView(mView)
-        }
 
+        holder.iv_view.setOnClickListener {
+            clickListener.cart(position)
+        }
 
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var ll_demand: LinearLayout = itemView.findViewById<LinearLayout>(R.id.ll_demand) as LinearLayout
+        var iv_view: ImageView = itemView.findViewById<ImageView>(R.id.iv_view) as ImageView
 
     }
 

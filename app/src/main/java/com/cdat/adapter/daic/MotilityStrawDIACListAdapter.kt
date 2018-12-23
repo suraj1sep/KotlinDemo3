@@ -1,4 +1,4 @@
-package com.cdat.fragments.daic
+package com.cdat.adapter.daic
 
 import android.graphics.Color
 import android.graphics.Typeface

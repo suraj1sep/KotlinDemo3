@@ -64,7 +64,9 @@ class ReceivedStrawDAICListFragment : Fragment() {
 
 
         manageCart = object : ReceivedStrawDAICListAdapter.ManageCart {
-            override fun cart() {
+            override fun cart(position: Int) {
+                var fm = ReceivedStrawListItemDetailsDAICFragment()
+                Config.slideFragment(fm, "", fragmentManager!!, R.id.content_frame, "2")
             }
         }
         init()
@@ -93,6 +95,8 @@ class ReceivedStrawDAICListFragment : Fragment() {
     }
 
     private fun init() {
+        categoryList.add("Milk")
+        categoryList.add("Milk")
         categoryList.add("Milk")
     }
 

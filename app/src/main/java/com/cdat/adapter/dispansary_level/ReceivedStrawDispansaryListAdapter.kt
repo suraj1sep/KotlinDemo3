@@ -13,7 +13,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import com.cdat.R
-import java.lang.Exception
 import java.text.Normalizer
 
 class ReceivedStrawDispansaryListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
@@ -63,7 +62,7 @@ class ReceivedStrawDispansaryListAdapter(private val context: FragmentActivity, 
     }
 
     interface ManageCart {
-        fun cart()
+        fun cart(position: Int)
     }
 
     override fun getItemCount(): Int {
@@ -76,24 +75,15 @@ class ReceivedStrawDispansaryListAdapter(private val context: FragmentActivity, 
 //            holder.tv_product_name.text = mFilteredList.get(position)
 //        else
 //            holder.tv_product_name.text = highlightText(BullListFragment.searchText, mFilteredList.get(position))
-        try {
-            holder.ll_demand.removeAllViews()
-        } catch (e: Exception) {
+        holder.iv_view.setOnClickListener {
+            mClickListener.cart(position)
         }
-        for (i in 0..4) {
-            val inflater = context.getLayoutInflater()
-            val mView = inflater.inflate(R.layout.item_received_sub_view, null)
-            var tv_date: TextView = mView.findViewById<TextView>(R.id.tv_date) as TextView
-            var tv_straw: TextView = mView.findViewById<TextView>(R.id.tv_straw) as TextView
-            holder.ll_demand.addView(mView)
-        }
-
 
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var ll_demand: LinearLayout = itemView.findViewById<LinearLayout>(R.id.ll_demand) as LinearLayout
+        var iv_view: ImageView = itemView.findViewById<ImageView>(R.id.iv_view) as ImageView
 
     }
 

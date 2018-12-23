@@ -47,7 +47,7 @@
                         android:text="Animal Category "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="bold" />
+                        android:textStyle="normal" />
 
 
                     <TextView
@@ -78,7 +78,7 @@
                         android:text="Animal Breed Category "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="bold" />
+                        android:textStyle="normal" />
 
 
                     <TextView
@@ -109,7 +109,7 @@
                         android:text="Animal Breed with blood level "
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="bold" />
+                        android:textStyle="normal" />
 
 
                     <TextView
@@ -141,7 +141,7 @@
                         android:text="Straw Demand"
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="bold" />
+                        android:textStyle="normal" />
 
 
                     <TextView
@@ -172,7 +172,7 @@
                         android:text="Opening Balance"
                         android:textColor="@color/txt_secondary"
                         android:textSize="@dimen/size12"
-                        android:textStyle="bold" />
+                        android:textStyle="normal" />
 
 
                     <TextView
