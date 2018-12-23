@@ -1,7 +1,5 @@
 package com.cdat.activity
 
-import android.app.PendingIntent.getActivity
-import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -11,15 +9,13 @@ import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
-import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.LinearLayout
 import android.widget.Toast
 import com.cdat.R
 import com.cdat.fragments.HomeFragment
 import com.cdat.helper.Config
-import com.cdat.profile.FarmerProfileFragment
+import com.cdat.fragments.profile.FarmerProfileFragment
 
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 

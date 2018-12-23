@@ -29,8 +29,8 @@ import com.cdat.helper.AutoScrollViewPager
 import com.cdat.helper.Config
 import com.cdat.helper.DensityUtil
 import com.cdat.helper.Utils
-import com.cdat.profile.AnimalProfileListFragment
-import com.cdat.profile.FarmerProfileFragment
+import com.cdat.fragments.profile.AnimalProfileListFragment
+import com.cdat.fragments.profile.FarmerProfileFragment
 
 class HomeFragment : Fragment() {
 

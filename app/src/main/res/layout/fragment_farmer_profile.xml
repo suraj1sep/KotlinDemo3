@@ -6,15 +6,6 @@
     android:orientation="vertical"
     android:padding="@dimen/size10">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|top"
-        android:padding="@dimen/size10"
-        android:text="Farmer Profile"
-        android:visibility="gone"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="@dimen/size15" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,6 +19,7 @@
             android:background="@drawable/shadow"
             android:orientation="vertical"
             android:padding="@dimen/size10">
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -40,11 +32,12 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/first_name"
                     android:imeOptions="actionNext"
-                    android:paddingBottom="10dp"
                     android:maxLength="30"
+                    android:paddingBottom="10dp"
                     android:singleLine="true"
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -57,11 +50,12 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/middle_name"
                     android:imeOptions="actionNext"
-                    android:paddingBottom="10dp"
                     android:maxLength="30"
+                    android:paddingBottom="10dp"
                     android:singleLine="true"
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,11 +68,31 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/last_name"
                     android:imeOptions="actionNext"
-                    android:paddingBottom="10dp"
                     android:maxLength="30"
+                    android:paddingBottom="10dp"
                     android:singleLine="true"
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_aadhar_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Aadhar No"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size15" />
+            </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -93,11 +107,12 @@
                     android:hint="@string/enter_mobile_no"
                     android:imeOptions="actionNext"
                     android:inputType="number"
-                    android:paddingBottom="10dp"
                     android:maxLength="10"
+                    android:paddingBottom="10dp"
                     android:singleLine="true"
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -112,8 +127,8 @@
                     android:hint="@string/enter_email"
                     android:imeOptions="actionNext"
                     android:inputType="textEmailAddress"
-                    android:paddingBottom="10dp"
                     android:maxLength="40"
+                    android:paddingBottom="10dp"
                     android:singleLine="true"
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
@@ -130,9 +145,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/address"
+                    android:inputType="textEmailAddress"
                     android:imeOptions="actionNext"
-                    android:paddingBottom="10dp"
                     android:maxLength="250"
+                    android:paddingBottom="10dp"
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
 
@@ -213,6 +229,7 @@
                     android:singleLine="true"
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -227,32 +244,13 @@
                     android:hint="@string/usr_name"
                     android:imeOptions="actionNext"
                     android:inputType="text"
+                    android:editable="false"
                     android:maxLength="30"
                     android:paddingBottom="10dp"
                     android:singleLine="true"
                     android:textSize="@dimen/size15" />
             </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/tl_password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginTop="@dimen/size10"
-                app:passwordToggleEnabled="true">
-
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/et_password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/password"
-                    android:imeOptions="actionDone"
-                    android:inputType="textPassword"
-                    android:maxLength="30"
-                    android:paddingBottom="10dp"
-                    android:singleLine="true"
-                    android:textSize="@dimen/size15" />
-            </android.support.design.widget.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -278,14 +276,15 @@
                     android:textStyle="bold" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:gravity="end"
                 android:orientation="horizontal"
-                android:visibility="gone"
                 android:padding="@dimen/size3"
+                android:visibility="gone"
                 android:weightSum="2">
 
                 <TextView

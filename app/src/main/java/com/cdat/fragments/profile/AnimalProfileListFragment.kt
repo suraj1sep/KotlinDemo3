@@ -1,4 +1,4 @@
-package com.cdat.profile
+package com.cdat.fragments.profile
 
 import android.content.res.Resources
 import android.os.Build

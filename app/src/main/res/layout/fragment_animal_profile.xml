@@ -6,16 +6,6 @@
     android:orientation="vertical"
     android:padding="@dimen/size10">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|top"
-        android:padding="@dimen/size10"
-        android:text="Farmer Profile"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="@dimen/size15"
-        android:visibility="gone" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -99,6 +89,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/animal_ear_tag_no"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="4"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size15" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size10"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_animal_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Animal Age"
                     android:imeOptions="actionNext"
                     android:inputType="text"
                     android:maxLength="4"

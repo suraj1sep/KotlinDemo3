@@ -1,4 +1,4 @@
-package com.cdat.profile
+package com.cdat.fragments.profile
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -15,15 +15,15 @@ import com.cdat.fragments.LoginFragment
 import com.cdat.helper.Config
 import com.cdat.helper.Utils
 
-class FarmerProfileFragment : Fragment() {
+class AnimalProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar!!.title = "Farmer Profile"
+        (activity as AppCompatActivity).supportActionBar!!.title = "Animal Profile"
     }
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-        val view = inflater.inflate(R.layout.fragment_farmer_profile, container, false)
+        val view = inflater.inflate(R.layout.fragment_animal_profile, container, false)
         activity!!.window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
 
         var btn_sign_up = view.findViewById<Button>(R.id.btn_sign_up)
@@ -43,7 +43,7 @@ class FarmerProfileFragment : Fragment() {
     }
 
     companion object {
-        private val TAG = FarmerProfileFragment::class.java.simpleName
+        private val TAG = AnimalProfileFragment::class.java.simpleName
     }
 
 }
