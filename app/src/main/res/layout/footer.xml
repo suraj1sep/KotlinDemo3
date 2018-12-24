@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white"
+    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
     <LinearLayout
@@ -17,12 +17,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:textColor="@color/white"
             android:gravity="center"
             android:text="Powered By :" />
 
         <ImageView
             android:layout_width="35dp"
             android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
             android:src="@drawable/cdat_logo" />
 
         <TextView
@@ -30,7 +32,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="Arial"
             android:text="CDAT PUNE"
-            android:textColor="#0D6698"
+            android:textColor="@color/white"
             android:textSize="@dimen/size16"
             android:textStyle="bold" />
     </LinearLayout>
