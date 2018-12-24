@@ -262,23 +262,23 @@
 
                 <ImageView
                     android:id="@+id/iv_bullDell"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:padding="@dimen/size8"
-                    android:src="@android:drawable/ic_delete" />
+                    android:tint="@color/colorPrimary"
+                    card_view:srcCompat="@drawable/ic_delete" />
 
                 <ImageView
                     android:id="@+id/iv_bullEdit"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="@dimen/size5"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:padding="@dimen/size8"
-                    android:src="@android:drawable/ic_menu_edit"
-                    android:tint="@color/colorPrimary" />
+                    android:tint="@color/colorPrimary"
+                    card_view:srcCompat="@drawable/ic_edit2" />
 
 
             </LinearLayout>
