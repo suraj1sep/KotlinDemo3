@@ -47,7 +47,7 @@
 
 
                     <TextView
-                        android:id="@+id/tv_daic_name"
+                        android:id="@+id/tv_dispensaryname"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.6"
@@ -171,7 +171,7 @@
 
 
                     <TextView
-                        android:id="@+id/tv_animal_cate"
+                        android:id="@+id/tv_animalCate"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.6"
@@ -202,12 +202,12 @@
 
 
                     <TextView
-                        android:id="@+id/tv_breed_cate"
+                        android:id="@+id/tv_breedCate"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.6"
                         android:gravity="left"
-                        android:text=": 80"
+                        android:text=": abc"
                         android:textColor="@color/txt_primary"
                         android:textSize="@dimen/size12"
                         android:textStyle="normal"
@@ -233,7 +233,7 @@
 
 
                     <TextView
-                        android:id="@+id/tv_date_procurement"
+                        android:id="@+id/tv_animalBrdLvl"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.6"
@@ -264,7 +264,7 @@
 
 
                     <TextView
-                        android:id="@+id/tv_bull_reg_no"
+                        android:id="@+id/tv_bullRegNo"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.6"
@@ -295,7 +295,7 @@
 
 
                     <TextView
-                        android:id="@+id/tv_Sire_DAM_milk_yield"
+                        android:id="@+id/tv_batchNo"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.6"
@@ -318,7 +318,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/iv_bullDell"
+                    android:id="@+id/iv_delete"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:clickable="true"
@@ -328,7 +328,7 @@
                     card_view:srcCompat="@drawable/ic_delete" />
 
                 <ImageView
-                    android:id="@+id/iv_bullEdit"
+                    android:id="@+id/iv_edit"
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:clickable="true"

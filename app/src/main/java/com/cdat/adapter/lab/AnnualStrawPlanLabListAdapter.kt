@@ -16,9 +16,7 @@ import com.cdat.R
 import java.lang.Exception
 import java.text.Normalizer
 
-/**
- * Created by SAM on 17-11-2018.
- */
+
 class AnnualStrawPlanLabListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
     : RecyclerView.Adapter<AnnualStrawPlanLabListAdapter.ViewHolder>(), Filterable {
 
@@ -98,6 +96,12 @@ class AnnualStrawPlanLabListAdapter(private val context: FragmentActivity, priva
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
+        var tv_daicName: TextView = itemView.findViewById<TextView>(R.id.tv_daicName) as TextView
+        var tv_financialYear: TextView = itemView.findViewById<TextView>(R.id.tv_financialYear) as TextView
+        var tv_district: TextView = itemView.findViewById<TextView>(R.id.tv_district) as TextView
+        var tv_totalStrawDemand: TextView = itemView.findViewById<TextView>(R.id.tv_totalStrawDemand) as TextView
+        var tv_openingBlc: TextView = itemView.findViewById<TextView>(R.id.tv_openingBlc) as TextView
 
         var ll_demand: LinearLayout = itemView.findViewById<LinearLayout>(R.id.ll_demand) as LinearLayout
 

@@ -14,6 +14,7 @@ import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
 import android.widget.ImageView
+import android.widget.TextView
 import com.cdat.R
 import java.text.Normalizer
 
@@ -80,6 +81,18 @@ class StrawDistributionListDAICAdapter(private val context: FragmentActivity, pr
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        var tv_dispensaryname: TextView = itemView.findViewById<TextView>(R.id.tv_dispensaryname) as TextView
+        var tv_taluka: TextView = itemView.findViewById<TextView>(R.id.tv_taluka) as TextView
+        var tv_district: TextView = itemView.findViewById<TextView>(R.id.tv_district) as TextView
+        var tv_year: TextView = itemView.findViewById<TextView>(R.id.tv_year) as TextView
+        var tv_animalCate: TextView = itemView.findViewById<TextView>(R.id.tv_animalCate) as TextView
+        var tv_breedCate: TextView = itemView.findViewById<TextView>(R.id.tv_breedCate) as TextView
+        var tv_animalBrdLvl: TextView = itemView.findViewById<TextView>(R.id.tv_animalBrdLvl) as TextView
+        var tv_bullRegNo: TextView = itemView.findViewById<TextView>(R.id.tv_bullRegNo) as TextView
+        var tv_batchNo: TextView = itemView.findViewById<TextView>(R.id.tv_batchNo) as TextView
+
+        var iv_delete: ImageView = itemView.findViewById<ImageView>(R.id.iv_delete) as ImageView
+        var iv_edit: ImageView = itemView.findViewById<ImageView>(R.id.iv_edit) as ImageView
         var iv_view: ImageView = itemView.findViewById<ImageView>(R.id.iv_view) as ImageView
     }
 

@@ -24,9 +24,6 @@ import android.widget.Toast
 import com.cdat.helper.Utils
 
 
-/**
- * Created by SAM on 17-11-2018.
- */
 class AnnualStrawPlanListDAICFragment : Fragment() {
 
     companion object {

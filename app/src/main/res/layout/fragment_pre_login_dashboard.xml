@@ -5,18 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/txthead"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:gravity="center_vertical|center"
-        android:text="Health Calculator"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:visibility="gone" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -33,8 +21,9 @@
             <LinearLayout
                 android:id="@+id/ll_login"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@color/remboy1"
+                android:layout_height="70dp"
+                android:background="@drawable/corner_rounded_for"
+                android:backgroundTint="@color/remboy1"
                 android:clickable="true"
                 android:gravity="center|center_vertical"
                 android:foreground="?android:attr/selectableItemBackground"
@@ -42,7 +31,7 @@
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="80dp"
+                    android:layout_width="70dp"
                     android:layout_height="match_parent"
                     android:padding="@dimen/size25"
                     app:srcCompat="@drawable/ic_login"
@@ -54,15 +43,16 @@
                     android:gravity="center"
                     android:textSize="@dimen/size20"
                     android:textStyle="bold"
-                    android:layout_marginEnd="80dp"
+                    android:layout_marginEnd="70dp"
                     android:text="Login"
                     android:textColor="@color/white" />
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/ll_registration"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@color/remboy10"
+                android:layout_height="70dp"
+                android:background="@drawable/corner_rounded_for"
+                android:backgroundTint="@color/remboy10"
                 android:layout_marginTop="@dimen/size20"
                 android:clickable="true"
                 android:gravity="center|center_vertical"
@@ -71,7 +61,7 @@
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="80dp"
+                    android:layout_width="70dp"
                     android:layout_height="match_parent"
                     android:padding="@dimen/size25"
                     app:srcCompat="@drawable/ic_farmer"
@@ -83,15 +73,16 @@
                     android:gravity="center"
                     android:textSize="@dimen/size20"
                     android:textStyle="bold"
-                    android:layout_marginEnd="80dp"
+                    android:layout_marginEnd="70dp"
                     android:text="Farmer Registration"
                     android:textColor="@color/white" />
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/ll_contactUs"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@color/remboy4"
+                android:layout_height="70dp"
+                android:background="@drawable/corner_rounded_for"
+                android:backgroundTint="@color/remboy4"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginTop="@dimen/size20"
@@ -99,7 +90,7 @@
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="80dp"
+                    android:layout_width="70dp"
                     android:layout_height="match_parent"
                     android:padding="@dimen/size25"
                     app:srcCompat="@drawable/ic_contactus"
@@ -111,7 +102,7 @@
                     android:text="Contact Us"
                     android:gravity="center"
                     android:textSize="@dimen/size20"
-                    android:layout_marginEnd="80dp"
+                    android:layout_marginEnd="70dp"
                     android:textStyle="bold"
                     android:textColor="@color/white" />
             </LinearLayout>
@@ -119,8 +110,9 @@
             <LinearLayout
                 android:id="@+id/ll_techSupport"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@color/remboy3"
+                android:layout_height="70dp"
+                android:background="@drawable/corner_rounded_for"
+                android:backgroundTint="@color/remboy3"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginTop="@dimen/size20"
@@ -128,7 +120,7 @@
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="80dp"
+                    android:layout_width="70dp"
                     android:layout_height="match_parent"
                     android:padding="@dimen/size25"
                     app:srcCompat="@drawable/ic_tech_support"
@@ -140,7 +132,7 @@
                     android:gravity="center"
                     android:text="Technical Support"
                     android:textColor="@color/white"
-                    android:layout_marginEnd="80dp"
+                    android:layout_marginEnd="70dp"
                     android:textSize="@dimen/size20"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -148,8 +140,9 @@
             <LinearLayout
                 android:id="@+id/ll_usrManual"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@color/remboy7"
+                android:layout_height="70dp"
+                android:background="@drawable/corner_rounded_for"
+                android:backgroundTint="@color/remboy7"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginTop="@dimen/size20"
@@ -157,7 +150,7 @@
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="80dp"
+                    android:layout_width="70dp"
                     android:layout_height="match_parent"
                     android:padding="@dimen/size25"
                     app:srcCompat="@drawable/ic_user_manual"
@@ -168,7 +161,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:textSize="@dimen/size20"
-                    android:layout_marginEnd="80dp"
+                    android:layout_marginEnd="70dp"
                     android:textStyle="bold"
                     android:text="User Manual"
                     android:textColor="@color/white" />

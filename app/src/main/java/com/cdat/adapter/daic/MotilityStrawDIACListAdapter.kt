@@ -79,11 +79,16 @@ class MotilityStrawDIACListAdapter(private val context: FragmentActivity, privat
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-//        var tv_product_name: TextView = itemView.findViewById<TextView>(R.id.tv_product_name) as TextView
-//        var tv_qty: TextView = itemView.findViewById<TextView>(R.id.tv_qty) as TextView
-//        var tv_price: TextView = itemView.findViewById<TextView>(R.id.tv_price) as TextView
-//        var btn_add_cart: Button = itemView.findViewById<Button>(R.id.btn_add_cart) as Button
-//        var iv_product_image: ImageView = itemView.findViewById<ImageView>(R.id.iv_product_image) as ImageView
+        var tv_dob: TextView = itemView.findViewById<TextView>(R.id.tv_dob) as TextView
+        var tv_animalCat: TextView = itemView.findViewById<TextView>(R.id.tv_animalCat) as TextView
+        var tv_animalBreedCat: TextView = itemView.findViewById<TextView>(R.id.tv_animalBreedCat) as TextView
+        var tv_animalBreedBldLvl: TextView = itemView.findViewById<TextView>(R.id.tv_animalBreedBldLvl) as TextView
+        var tv_bull_no: TextView = itemView.findViewById<TextView>(R.id.tv_bull_no) as TextView
+        var tv_batchNo: TextView = itemView.findViewById<TextView>(R.id.tv_batchNo) as TextView
+        var tv_StrawUsed: TextView = itemView.findViewById<TextView>(R.id.tv_StrawUsed) as TextView
+        var tv_mobilityResult: TextView = itemView.findViewById<TextView>(R.id.tv_mobilityResult) as TextView
+        var iv_delete: ImageView = itemView.findViewById<ImageView>(R.id.iv_delete) as ImageView
+        var iv_edit: ImageView = itemView.findViewById<ImageView>(R.id.iv_edit) as ImageView
 
     }
 

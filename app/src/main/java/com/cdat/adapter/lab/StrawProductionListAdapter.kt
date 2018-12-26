@@ -15,9 +15,7 @@ import android.widget.*
 import com.cdat.R
 import java.text.Normalizer
 
-/**
- * Created by SAM on 17-11-2018.
- */
+
 class StrawProductionListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
     : RecyclerView.Adapter<StrawProductionListAdapter.ViewHolder>(), Filterable {
 
@@ -82,11 +80,19 @@ class StrawProductionListAdapter(private val context: FragmentActivity, private 
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-//        var tv_product_name: TextView = itemView.findViewById<TextView>(R.id.tv_product_name) as TextView
-//        var tv_qty: TextView = itemView.findViewById<TextView>(R.id.tv_qty) as TextView
-//        var tv_price: TextView = itemView.findViewById<TextView>(R.id.tv_price) as TextView
-//        var btn_add_cart: Button = itemView.findViewById<Button>(R.id.btn_add_cart) as Button
-//        var iv_product_image: ImageView = itemView.findViewById<ImageView>(R.id.iv_product_image) as ImageView
+        var tv_mode: TextView = itemView.findViewById<TextView>(R.id.tv_mode) as TextView
+        var tv_productionDate: TextView = itemView.findViewById<TextView>(R.id.tv_productionDate) as TextView
+        var tv_animalCate: TextView = itemView.findViewById<TextView>(R.id.tv_animalCate) as TextView
+        var tv_breedCate: TextView = itemView.findViewById<TextView>(R.id.tv_breedCate) as TextView
+        var tv_animalBrdBldLvl: TextView = itemView.findViewById<TextView>(R.id.tv_animalBrdBldLvl) as TextView
+        var tv_bullRegVo: TextView = itemView.findViewById<TextView>(R.id.tv_bullRegVo) as TextView
+        var tv_batchNo: TextView = itemView.findViewById<TextView>(R.id.tv_batchNo) as TextView
+        var tv_ptBullTested: TextView = itemView.findViewById<TextView>(R.id.tv_ptBullTested) as TextView
+        var tv_strawProduced: TextView = itemView.findViewById<TextView>(R.id.tv_strawProduced) as TextView
+        var tv_agencyName: TextView = itemView.findViewById<TextView>(R.id.tv_agencyName) as TextView
+
+        var iv_delete: ImageView = itemView.findViewById<ImageView>(R.id.iv_delete) as ImageView
+        var iv_edit: ImageView = itemView.findViewById<ImageView>(R.id.iv_edit) as ImageView
 
     }
 

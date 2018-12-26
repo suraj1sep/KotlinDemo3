@@ -38,7 +38,6 @@ class HomeFragment : Fragment() {
         internal var sampleImages: IntArray? = intArrayOf(R.drawable.banner)
         private val categoryList: ArrayList<String> = ArrayList()
         lateinit var clickListener: HomeMenuAdapter.ClickListener
-
         var loginType: Int = 1
     }
 

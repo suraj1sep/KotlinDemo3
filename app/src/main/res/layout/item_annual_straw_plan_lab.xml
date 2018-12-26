@@ -37,7 +37,7 @@
 
 
             <TextView
-                android:id="@+id/tv_daic_name"
+                android:id="@+id/tv_daicName"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
@@ -68,7 +68,7 @@
 
 
             <TextView
-                android:id="@+id/tv_year"
+                android:id="@+id/tv_financialYear"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
@@ -320,6 +320,7 @@
                 android:paddingRight="2dp" />
 
             <TextView
+                android:id="@+id/tv_totalStrawDemand"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -337,6 +338,7 @@
 
 
             <TextView
+                android:id="@+id/tv_openingBlc"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1.1"

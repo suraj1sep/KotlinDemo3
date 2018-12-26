@@ -50,38 +50,11 @@ class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
             llUsrManual = rootView.findViewById<LinearLayout>(R.id.ll_usrManual) as LinearLayout
 
 
-            llLogin!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_right))
-            llRegistration!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_left))
-            llContactUs!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_right))
-            llTechSupport!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_left))
-            llUsrManual!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_right))
-
-            /* final AnimatorSet mAnimationSet = new AnimatorSet();
-
-            ObjectAnimator moveY_tl_otp = ObjectAnimator.ofFloat(llLogin, "translationX", -1500f, 0);
-            moveY_tl_otp.setDuration(1500);
-
-            ObjectAnimator moveY_tl_otp2 = ObjectAnimator.ofFloat(llContactUs, "translationX", 1500f, 0);
-            moveY_tl_otp2.setDuration(1500);
-
-            ObjectAnimator moveY_tl_otp3 = ObjectAnimator.ofFloat(llTechSupport, "translationX", -1500f, 0);
-            moveY_tl_otp3.setDuration(1500);
-
-            ObjectAnimator moveY_tl_otp4 = ObjectAnimator.ofFloat(llUsrManual, "translationX", 1500f, 0);
-            moveY_tl_otp4.setDuration(1500);
-
-            mAnimationSet.play(moveY_tl_otp);
-            mAnimationSet.play(moveY_tl_otp2);
-            mAnimationSet.play(moveY_tl_otp3);
-            mAnimationSet.play(moveY_tl_otp4);
-            mAnimationSet.addListener(new AnimatorListenerAdapter() {
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                    super.onAnimationEnd(animation);
-
-                }
-            });
-            mAnimationSet.start();*/
+            llLogin!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_up))
+            llRegistration!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_down))
+            llContactUs!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_up))
+            llTechSupport!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_out_left))
+            llUsrManual!!.setAnimation(AnimationUtils.loadAnimation(activity, R.anim.slide_in_up))
 
 
 

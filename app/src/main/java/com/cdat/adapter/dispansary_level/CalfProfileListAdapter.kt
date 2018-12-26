@@ -79,11 +79,17 @@ class CalfProfileListAdapter(private val context: FragmentActivity, private val 
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-//        var tv_product_name: TextView = itemView.findViewById<TextView>(R.id.tv_product_name) as TextView
-//        var tv_qty: TextView = itemView.findViewById<TextView>(R.id.tv_qty) as TextView
-//        var tv_price: TextView = itemView.findViewById<TextView>(R.id.tv_price) as TextView
-//        var btn_add_cart: Button = itemView.findViewById<Button>(R.id.btn_add_cart) as Button
-//        var iv_product_image: ImageView = itemView.findViewById<ImageView>(R.id.iv_product_image) as ImageView
+        var tv_villName: TextView = itemView.findViewById<TextView>(R.id.tv_villName) as TextView
+        var tv_farmerName: TextView = itemView.findViewById<TextView>(R.id.tv_farmerName) as TextView
+        var tv_animalEarTagNo: TextView = itemView.findViewById<TextView>(R.id.tv_animalEarTagNo) as TextView
+        var tv_calfGender: TextView = itemView.findViewById<TextView>(R.id.tv_calfGender) as TextView
+        var tv_calfDOB: TextView = itemView.findViewById<TextView>(R.id.tv_calfDOB) as TextView
+        var tv_calfWeight: TextView = itemView.findViewById<TextView>(R.id.tv_calfWeight) as TextView
+        var tv_bullOrigin: TextView = itemView.findViewById<TextView>(R.id.tv_bullOrigin) as TextView
+        var tv_calfParent: TextView = itemView.findViewById<TextView>(R.id.tv_calfParent) as TextView
+
+        var iv_delete: ImageView = itemView.findViewById<ImageView>(R.id.iv_delete) as ImageView
+        var iv_edit: ImageView = itemView.findViewById<ImageView>(R.id.iv_edit) as ImageView
 
     }
 
