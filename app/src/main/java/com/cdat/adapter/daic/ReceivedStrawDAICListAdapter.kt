@@ -15,9 +15,6 @@ import android.widget.*
 import com.cdat.R
 import java.text.Normalizer
 
-/**
- * Created by SAM on 17-11-2018.
- */
 class ReceivedStrawDAICListAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener1: ManageCart)
     : RecyclerView.Adapter<ReceivedStrawDAICListAdapter.ViewHolder>(), Filterable {
 
@@ -87,6 +84,14 @@ class ReceivedStrawDAICListAdapter(private val context: FragmentActivity, privat
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
+        var tv_daicName: TextView = itemView.findViewById<TextView>(R.id.tv_daicName) as TextView
+        var tv_finantialYear: TextView = itemView.findViewById<TextView>(R.id.tv_finantialYear) as TextView
+        var tv_AnimalBrdCat: TextView = itemView.findViewById<TextView>(R.id.tv_AnimalBrdCat) as TextView
+        var tv_animalBrdBldLvl: TextView = itemView.findViewById<TextView>(R.id.tv_animalBrdBldLvl) as TextView
+        var tv_bullIdNo: TextView = itemView.findViewById<TextView>(R.id.tv_bullIdNo) as TextView
+        var tv_batchNo: TextView = itemView.findViewById<TextView>(R.id.tv_batchNo) as TextView
+        var iv_delete: ImageView = itemView.findViewById<ImageView>(R.id.iv_delete) as ImageView
+        var iv_edit: ImageView = itemView.findViewById<ImageView>(R.id.iv_edit) as ImageView
         var iv_view: ImageView = itemView.findViewById<ImageView>(R.id.iv_view) as ImageView
 
     }

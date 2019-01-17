@@ -83,6 +83,16 @@ class ReceivedStrawDispansaryListAdapter(private val context: FragmentActivity, 
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
+        var tv_daicName: TextView = itemView.findViewById<TextView>(R.id.tv_daicName) as TextView
+        var tv_financialYear: TextView = itemView.findViewById<TextView>(R.id.tv_financialYear) as TextView
+        var tv_animalCate: TextView = itemView.findViewById<TextView>(R.id.tv_animalCate) as TextView
+        var tv_breedCate: TextView = itemView.findViewById<TextView>(R.id.tv_breedCate) as TextView
+        var tv_animalBrdBldLvl: TextView = itemView.findViewById<TextView>(R.id.tv_animalBrdBldLvl) as TextView
+        var tv_bullIdNo: TextView = itemView.findViewById<TextView>(R.id.tv_bullIdNo) as TextView
+        var tv_BatchNo: TextView = itemView.findViewById<TextView>(R.id.tv_BatchNo) as TextView
+
+        var iv_delete: ImageView = itemView.findViewById<ImageView>(R.id.iv_delete) as ImageView
+        var iv_edit: ImageView = itemView.findViewById<ImageView>(R.id.iv_edit) as ImageView
         var iv_view: ImageView = itemView.findViewById<ImageView>(R.id.iv_view) as ImageView
 
     }

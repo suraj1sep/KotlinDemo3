@@ -16,9 +16,6 @@ import com.cdat.R
 import java.lang.Exception
 import java.text.Normalizer
 
-/**
- * Created by SAM on 17-11-2018.
- */
 class AnnualStrawPlanLisDAICtAdapter(private val context: FragmentActivity, private val productList: ArrayList<String>, clickListener: ManageCart)
     : RecyclerView.Adapter<AnnualStrawPlanLisDAICtAdapter.ViewHolder>(), Filterable {
 

@@ -144,7 +144,7 @@
 
 
                     <TextView
-                        android:id="@+id/tv_bull_no"
+                        android:id="@+id/tv_bullNo"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.6"
@@ -206,7 +206,7 @@
 
 
                     <TextView
-                        android:id="@+id/tv_date_procurement"
+                        android:id="@+id/tv_dateProcurement"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.6"
@@ -237,7 +237,7 @@
 
 
                     <TextView
-                        android:id="@+id/tv_DAM_milk_yield"
+                        android:id="@+id/tv_DamMilkYield"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.6"
@@ -268,7 +268,7 @@
 
 
                     <TextView
-                        android:id="@+id/tv_Sire_DAM_milk_yield"
+                        android:id="@+id/tv_sireDamMilkYield"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.6"
@@ -299,7 +299,7 @@
 
 
                     <TextView
-                        android:id="@+id/tv_bull_origin"
+                        android:id="@+id/tv_bullOrigin"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.6"
@@ -323,7 +323,7 @@
                 android:padding="@dimen/size3">
 
                 <ImageView
-                    android:id="@+id/iv_bullDell"
+                    android:id="@+id/iv_delete"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:clickable="true"
@@ -333,7 +333,7 @@
                     card_view:srcCompat="@drawable/ic_delete" />
 
                 <ImageView
-                    android:id="@+id/iv_bullEdit"
+                    android:id="@+id/iv_edit"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="@dimen/size10"

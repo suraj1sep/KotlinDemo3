@@ -73,7 +73,7 @@
                     android:textStyle="normal" />
 
                 <TextView
-                    android:id="@+id/tv_production_date"
+                    android:id="@+id/tv_productionDate"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
@@ -104,7 +104,7 @@
 
 
                 <TextView
-                    android:id="@+id/tv_animal_cate"
+                    android:id="@+id/tv_animalCate"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
@@ -135,7 +135,7 @@
 
 
                 <TextView
-                    android:id="@+id/tv_breed_cate"
+                    android:id="@+id/tv_breedCate"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
@@ -166,7 +166,7 @@
 
 
                 <TextView
-                    android:id="@+id/tv_date_procurement"
+                    android:id="@+id/tv_animalBrdBldLvl"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
@@ -197,7 +197,7 @@
 
 
                 <TextView
-                    android:id="@+id/tv_bull_reg_no"
+                    android:id="@+id/tv_bullRegVo"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
@@ -228,7 +228,7 @@
 
 
                 <TextView
-                    android:id="@+id/tv_Sire_DAM_milk_yield"
+                    android:id="@+id/tv_batchNo"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
@@ -259,7 +259,7 @@
 
 
                 <TextView
-                    android:id="@+id/tv_pt_bull_tested"
+                    android:id="@+id/tv_ptBullTested"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
@@ -290,7 +290,7 @@
 
 
                 <TextView
-                    android:id="@+id/tv_straw_produced"
+                    android:id="@+id/tv_strawProduced"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
@@ -321,7 +321,7 @@
 
 
                 <TextView
-                    android:id="@+id/tv_agency_name"
+                    android:id="@+id/tv_agencyName"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
@@ -344,7 +344,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/iv_bullDell"
+                android:id="@+id/iv_delete"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:clickable="true"
@@ -354,7 +354,7 @@
                 card_view:srcCompat="@drawable/ic_delete" />
 
             <ImageView
-                android:id="@+id/iv_bullEdit"
+                android:id="@+id/iv_edit"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="@dimen/size5"

@@ -18,7 +18,6 @@ import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
-import com.cdat.pre_login.WelcomeActivity
 
 
 class SplashActivity : AppCompatActivity() {
@@ -35,9 +34,9 @@ class SplashActivity : AppCompatActivity() {
         val tvSlogan1 = findViewById(R.id.tv_slogan1) as TextView
 
         ivLogo.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.zoom_in);
-        tvAppName.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_left);
-        tvSlogan.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_right);
-        tvSlogan1.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_left);
+        tvAppName.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.abc_slide_out_bottom);
+        tvSlogan.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.abc_grow_fade_in_from_bottom);
+        tvSlogan1.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.abc_slide_out_top);
 
         try {
             window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
