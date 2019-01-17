@@ -28,10 +28,7 @@ android {
         disable 'MissingTranslation'
         abortOnError false
     }
-    dexOptions {
-        jumboMode true
-        javaMaxHeapSize "4g"
-    }
+
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
         exclude 'META-INF/LICENSE'

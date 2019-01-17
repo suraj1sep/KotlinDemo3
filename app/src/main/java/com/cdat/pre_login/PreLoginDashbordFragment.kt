@@ -19,7 +19,7 @@ import com.cdat.fragments.SignUpFragment
 import com.cdat.helper.Config
 
 
-class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
+class PreLoginDashbordFragment : Fragment() {
 
     private lateinit var llLogin: LinearLayout
     private lateinit var llRegistration: LinearLayout
@@ -88,44 +88,4 @@ class PreLoginDashbordFragment : Fragment(), View.OnClickListener {
         return rootView
     }
 
-    override fun onClick(view: View) {
-
-        if (SystemClock.elapsedRealtime() - mLastClickTime < 1000) {
-            return
-        }
-        mLastClickTime = SystemClock.elapsedRealtime()
-        try {
-            when (view.id) {
-
-                R.id.ll_login -> {
-
-//                    fragmentManager!!.popBackStack()
-                    val loginFragment = LoginFragment()
-                    Config.slideFragment(loginFragment, "", fragmentManager!!, R.id.content_frame, "2")
-                }
-                R.id.ll_contactUs -> {
-
-                    val contactusFragment = ContactUsFragment()
-                    Config.slideFragment(contactusFragment, "", fragmentManager!!, R.id.content_frame, "2")
-                }
-                R.id.ll_techSupport -> {
-
-                    val techSupportFragment = TechnicalSupportFragment()
-                    Config.slideFragment(techSupportFragment, "", fragmentManager!!, R.id.content_frame, "2")
-                }
-                R.id.ll_usrManual -> {
-//                    fragmentManager!!.popBackStack()
-                    val homeFragment = HomeFragment()
-                    Config.slideFragment(homeFragment, "", fragmentManager!!, R.id.content_frame, "2")
-                }
-
-                else -> {
-                }
-            }
-
-        } catch (e: Exception) {
-
-        }
-
-    }
 }

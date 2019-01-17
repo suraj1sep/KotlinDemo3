@@ -25,8 +25,8 @@
                 android:background="@drawable/round_shape"
                 android:backgroundTint="@color/remboy1"
                 android:clickable="true"
-                android:gravity="center|center_vertical"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center|center_vertical"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -34,29 +34,30 @@
                     android:layout_width="70dp"
                     android:layout_height="match_parent"
                     android:padding="@dimen/size25"
-                    app:srcCompat="@drawable/ic_login"
-                    android:tint="@color/white" />
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_login" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:textSize="@dimen/size20"
-                    android:textStyle="bold"
                     android:layout_marginEnd="70dp"
+                    android:gravity="center"
                     android:text="Login"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size20"
+                    android:textStyle="bold" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_registration"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+                android:layout_marginTop="@dimen/size20"
                 android:background="@drawable/round_shape"
                 android:backgroundTint="@color/remboy10"
-                android:layout_marginTop="@dimen/size20"
                 android:clickable="true"
-                android:gravity="center|center_vertical"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center|center_vertical"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -64,28 +65,29 @@
                     android:layout_width="70dp"
                     android:layout_height="match_parent"
                     android:padding="@dimen/size25"
-                    app:srcCompat="@drawable/ic_farmer"
-                    android:tint="@color/white" />
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_farmer" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:textSize="@dimen/size20"
-                    android:textStyle="bold"
                     android:layout_marginEnd="70dp"
+                    android:gravity="center"
                     android:text="Farmer Registration"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size20"
+                    android:textStyle="bold" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_contactUs"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+                android:layout_marginTop="@dimen/size20"
                 android:background="@drawable/round_shape"
                 android:backgroundTint="@color/remboy4"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:layout_marginTop="@dimen/size20"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -93,29 +95,29 @@
                     android:layout_width="70dp"
                     android:layout_height="match_parent"
                     android:padding="@dimen/size25"
-                    app:srcCompat="@drawable/ic_contactus"
-                    android:tint="@color/white" />
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_contactus" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Contact Us"
-                    android:gravity="center"
-                    android:textSize="@dimen/size20"
                     android:layout_marginEnd="70dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/white" />
+                    android:gravity="center"
+                    android:text="Contact Us"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size20"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ll_techSupport"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+                android:layout_marginTop="@dimen/size20"
                 android:background="@drawable/round_shape"
                 android:backgroundTint="@color/remboy3"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:layout_marginTop="@dimen/size20"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -123,16 +125,16 @@
                     android:layout_width="70dp"
                     android:layout_height="match_parent"
                     android:padding="@dimen/size25"
-                    app:srcCompat="@drawable/ic_tech_support"
-                    android:tint="@color/white" />
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_tech_support" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginEnd="70dp"
                     android:gravity="center"
                     android:text="Technical Support"
                     android:textColor="@color/white"
-                    android:layout_marginEnd="70dp"
                     android:textSize="@dimen/size20"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -141,11 +143,11 @@
                 android:id="@+id/ll_usrManual"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+                android:layout_marginTop="@dimen/size20"
                 android:background="@drawable/round_shape"
                 android:backgroundTint="@color/remboy7"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:layout_marginTop="@dimen/size20"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -153,18 +155,18 @@
                     android:layout_width="70dp"
                     android:layout_height="match_parent"
                     android:padding="@dimen/size25"
-                    app:srcCompat="@drawable/ic_user_manual"
-                    android:tint="@color/white" />
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_user_manual" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:textSize="@dimen/size20"
                     android:layout_marginEnd="70dp"
-                    android:textStyle="bold"
+                    android:gravity="center"
                     android:text="User Manual"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size20"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
